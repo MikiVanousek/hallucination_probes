@@ -1,0 +1,90 @@
+# Training datasets configuration for Llama 3.1 8B model
+
+llama3_1_8b_train:
+  dataset_id: "llama3_1_8b_train"
+  hf_repo: "obalcells/hallucination-heads"
+  subset: "Meta-Llama-3.1-8B-Instruct"
+  split: "train"
+  max_length: 1536
+  default_ignore: false
+  last_span_token: false
+  ignore_buffer: 0
+  pos_weight: 10.0
+  neg_weight: 10.0
+  shuffle: true
+  seed: 42
+  process_on_the_fly: false
+
+llama3_3_70b_train:
+  dataset_id: "llama3_3_70b_train"
+  hf_repo: "obalcells/hallucination-heads"
+  subset: "Llama-3.3-70B-Instruct"
+  split: "train"
+  max_length: 1536
+  default_ignore: false
+  last_span_token: false
+  ignore_buffer: 0
+  pos_weight: 10.0
+  neg_weight: 10.0
+  shuffle: true
+  seed: 42
+  process_on_the_fly: false
+  max_num_samples: 250
+
+qwen2_5_7b_train:
+  dataset_id: "qwen2_5_7b_train"
+  hf_repo: "obalcells/hallucination-heads"
+  subset: "Qwen2.5-7B-Instruct"
+  split: "train"
+  max_length: 1536
+  default_ignore: false
+  last_span_token: false
+  ignore_buffer: 0
+  max_num_samples: 2000
+
+gemma2_9b_train:
+  dataset_id: "gemma2_9b_train"
+  hf_repo: "obalcells/hallucination-heads"
+  subset: "gemma-2-9b-it"
+  split: "train"
+  max_length: 1536
+  default_ignore: false
+  last_span_token: false
+  ignore_buffer: 0
+  pos_weight: 10.0
+  neg_weight: 10.0
+  shuffle: true
+  seed: 42
+  process_on_the_fly: false
+  max_num_samples: 2000
+
+mistral_small_24b_train:
+  dataset_id: "mistral_small_24b_train"
+  hf_repo: "obalcells/hallucination-heads"
+  subset: "Mistral-Small-24B-Instruct-2501"
+  split: "train"
+  max_length: 1536
+  default_ignore: false
+  last_span_token: false
+  ignore_buffer: 0
+  pos_weight: 10.0
+  neg_weight: 10.0
+  shuffle: true
+  seed: 42
+  process_on_the_fly: false
+  max_num_samples: 250
+
+llama3_1_8b_trivia_qa_train:
+  dataset_id: "llama3_1_8b_trivia_qa_train"
+  hf_repo: "obalcells/triviaqa-balanced"
+  subset: "Meta-Llama-3.1-8B-Instruct"
+  split: "train"
+  max_length: 1536
+  default_ignore: true
+  last_span_token: false
+  ignore_buffer: 0
+  pos_weight: 10.0
+  neg_weight: 10.0
+  shuffle: true
+  seed: 42
+  process_on_the_fly: false
