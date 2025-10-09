@@ -9,7 +9,7 @@ runai submit \
   -e GITCONFIG_AT=/mloscratch/users/$GASPAR/.gitconfig \
   -e GIT_CREDENTIALS_AT=/mloscratch/users/$GASPAR/.git-credentials \
   -e VSCODE_CONFIG_AT=/mloscratch/users/$GASPAR/.vscode-server \
-  --backoff-limit 0 \
+  --backoff-limit 3 \
   --run-as-gid 84257 \
   --node-pool h100 \
   --gpu 1 \
