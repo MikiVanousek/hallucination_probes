@@ -61,7 +61,7 @@ class ProbeConfig:
 @dataclass
 class TrainingConfig:
     """Configuration for probe training."""
-    
+    wandb_entity: Optional[str] = None
     wandb_project: str = "hallucination-probes"
     wandb_name: Optional[str] = None
     

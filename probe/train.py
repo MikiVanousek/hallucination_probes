@@ -32,8 +32,8 @@ def main(training_config: TrainingConfig):
 
     if training_config.upload_to_hf:
         assert os.environ.get("HF_WRITE_TOKEN", None) is not None
-    
-    wandb.init(project=training_config.wandb_project, name=training_config.probe_config.probe_id)
+
+    wandb.init(entity=training_config.wandb_entity, project=training_config.wandb_project, name=training_config.probe_config.probe_id)
 
     print("Training config:")
     for key, value in asdict(training_config).items():
