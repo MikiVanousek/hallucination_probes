@@ -18,6 +18,7 @@ probe_config:
 
 
 wandb_project: "hallucination-probes"
+wandb_entity: "miki-light"
 
 upload_to_hf: false
 save_evaluation_metrics: true
