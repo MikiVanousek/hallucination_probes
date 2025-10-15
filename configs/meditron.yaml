@@ -24,14 +24,14 @@ probe_config:
   lora_dropout: 0.05
 
   load_from: null
-  hf_repo_id: "obalcells/hallucination-probes"
+  hf_repo_id: "FayElhassan/hallucination-probes"
 
   # Start a bit lower; 0.35–0.4 usually yields nicer abstention curves
   threshold: 0.38
 
 # Logging & exports
 wandb_project: "hallucination-probes"
-upload_to_hf: false
+upload_to_hf: true
 save_evaluation_metrics: true
 save_roc_curves: false
 dump_raw_eval_results: false
