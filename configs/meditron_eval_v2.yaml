@@ -1,0 +1,41 @@
+probe_config:
+  probe_id: "meditron3_8b_lora_probe"
+  model_name: "OpenMeditron/Meditron3-8B"
+  layer: 30
+  threshold: 0.46   # set your operating point here
+
+# where to write eval outputs (metrics.jsonl, optional ROC, etc.)
+output_dir: "value_head_probes/meditron3_8b_lora_probe"
+
+# batch size for evaluation
+per_device_eval_batch_size: 2
+
+# toggles used by evaluate.py
+save_roc_curves: false
+save_raw_results: false
+
+# Datasets to evaluate on (note the key name: dataset_configs)
+dataset_configs:
+  - dataset_id: "llama3_1_8b_longform_test"
+    hf_repo: "obalcells/longfact-annotations"
+    subset: "Meta-Llama-3.1-8B-Instruct"
+    split: "test"
+    max_length: 1536
+
+  - dataset_id: "llama3_1_8b_longform_augmented_test"
+    hf_repo: "obalcells/longfact-augmented-annotations"
+    subset: "Meta-Llama-3.1-8B-Instruct"
+    split: "test"
+    max_length: 1536
+
+  - dataset_id: "llama3_1_8b_trivia_qa_test"
+    hf_repo: "obalcells/triviaqa-balanced"
+    subset: "Meta-Llama-3.1-8B-Instruct"
+    split: "test"
+    max_length: 128
+
+  - dataset_id: "llama3_1_8b_healthbench_test"
+    hf_repo: "obalcells/healthbench-annotations"
+    subset: "Meta-Llama-3.1-8B-Instruct"
+    split: "test"
+    max_length: 1536
