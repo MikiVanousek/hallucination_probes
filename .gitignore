@@ -15,3 +15,14 @@ value_head_probes/
 
 *.egg-info/
 **/*.egg-info/
+.venv/
+__pycache__/
+*.pyc
+.env
+value_head_probes/
+wandb/
+*.safetensors
+*.bin
+*.pt
+*.jsonl
+.cache/
