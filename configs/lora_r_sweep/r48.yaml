@@ -1,5 +1,5 @@
 probe_config:
-  probe_id: meditron3_8b_lora_probe_r16
+  probe_id: meditron3_8b_lora_probe_r48
   model_name: OpenMeditron/Meditron3-8B
   layer: 30
   lora_layers:
@@ -33,7 +33,7 @@ probe_config:
     - 27
     - 28
     - 29
-  lora_r: 16
+  lora_r: 4
   lora_alpha: 64
   lora_dropout: 0.05
   load_from: null
