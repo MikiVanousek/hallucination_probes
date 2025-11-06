@@ -23,15 +23,17 @@ class ProbeConfig:
     lora_layers: Optional[Union[List[int], str]] = (
         "all"  # Which layers to apply LoRA to
     )
-    lora_module_suffixes: List[str] = [
-        "self_attn.q_proj",
-        "self_attn.k_proj",
-        "self_attn.v_proj",
-        "self_attn.o_proj",
-        "mlp.gate_proj",
-        "mlp.up_proj",
-        "mlp.down_proj",
-    ]
+    lora_module_suffixes: List[str] = field(
+        default_factory=lambda: [
+            "self_attn.q_proj",
+            "self_attn.k_proj",
+            "self_attn.v_proj",
+            "self_attn.o_proj",
+            "mlp.gate_proj",
+            "mlp.up_proj",
+            "mlp.down_proj",
+        ]
+    )
     lora_r: int = 16  # LoRA rank
     lora_alpha: int = 32  # LoRA alpha scaling
     lora_dropout: float = 0.05  # LoRA dropout
