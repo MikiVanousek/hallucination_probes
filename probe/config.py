@@ -17,7 +17,7 @@ class ProbeConfig:
     probe_id: str = "llama3_1_8b_lora_lambda_kl=0.5"
 
     model_name: str = "meta-llama/Meta-Llama-3.1-8B-Instruct"
-    layer: Optional[int] = None  # Which layer to attach the probe to
+    layer: Optional[int | List[int]] = None  # Which layer to attach the probe to
 
     # LoRA configuration
     lora_layers: Optional[Union[List[int], str]] = (

@@ -36,7 +36,7 @@ class ValueHeadProbe(nn.Module):
     def __init__(
         self,
         model: Union[AutoModelForCausalLM, PeftModel],
-        layer_idx: Optional[int] = None,
+        layer_idx: Optional[Union[int, List[int]]] = None,
         path: Optional[Union[str, Path]] = None,
     ):
         """
@@ -67,8 +67,14 @@ class ValueHeadProbe(nn.Module):
 
         self.model = model
         self.layer_idx = layer_idx
-        self.target_module = model_layers[layer_idx]
-        self.target_layer_name = self.target_module.__class__.__name__
+
+        # Handle both single layer index and list of layer indices
+        if isinstance(layer_idx, (list, tuple)):
+            self.target_modules = [model_layers[idx] for idx in layer_idx]
+            self.target_layer_name = self.target_modules[0].__class__.__name__
+        else:
+            self.target_modules = [model_layers[layer_idx]]
+            self.target_layer_name = self.target_modules[0].__class__.__name__
 
         if not isinstance(model, PeftModel):
             print(
@@ -90,8 +96,10 @@ class ValueHeadProbe(nn.Module):
             self._initialize_weights()
 
         # Initialize hook state
-        self._hooked_hidden_states: Optional[torch.Tensor] = None
-        self._hook_fn = self._get_hook_fn()
+        self._hooked_hidden_states: List[Optional[torch.Tensor]] = [None] * len(
+            self.target_modules
+        )
+        self._hook_fns = [self._get_hook_fn(i) for i in range(len(self.target_modules))]
 
     def _initialize_weights(self):
         """Initialize the value head weights with small random values."""
@@ -100,7 +108,7 @@ class ValueHeadProbe(nn.Module):
             if self.value_head.bias is not None:
                 self.value_head.bias.data.zero_()
 
-    def _get_hook_fn(self):
+    def _get_hook_fn(self, idx):
         """
         Forward hook to capture hidden states from target layer.
         `module_output` is typically [batch_size, seq_len, hidden_dim].
@@ -109,9 +117,9 @@ class ValueHeadProbe(nn.Module):
 
         def hook_fn(module, module_input, module_output):
             if isinstance(module_input, tuple) and module_output[0].ndim == 3:
-                self._hooked_hidden_states = module_output[0]
+                self._hooked_hidden_states[idx] = module_output[0]
             else:
-                self._hooked_hidden_states = module_output
+                self._hooked_hidden_states[idx] = module_output
 
         return hook_fn
 
@@ -138,10 +146,13 @@ class ValueHeadProbe(nn.Module):
                 - lm_loss: Language modeling loss (if labels provided)
         """
         # Reset hooked hidden states
-        self._hooked_hidden_states = None
+        self._hooked_hidden_states = [None] * len(self.target_modules)
 
-        # Set up hooks
-        fwd_hooks = [(self.target_module, self._hook_fn)]
+        # Set up hooks for all target modules
+        fwd_hooks = [
+            (module, hook_fn)
+            for module, hook_fn in zip(self.target_modules, self._hook_fns)
+        ]
 
         with add_hooks(module_forward_pre_hooks=[], module_forward_hooks=fwd_hooks):
             # Forward pass through the model
@@ -154,11 +165,17 @@ class ValueHeadProbe(nn.Module):
             )
 
         # Check that hidden states were captured
-        if self._hooked_hidden_states is None:
-            raise RuntimeError("Failed to capture hidden states from target layer")
+        if any(hidden_state is None for hidden_state in self._hooked_hidden_states):
+            raise RuntimeError("Failed to capture hidden states from target layer(s)")
+
+        # Average hidden states if multiple layers
+        if len(self._hooked_hidden_states) > 1:
+            averaged_hidden_states = torch.stack(self._hooked_hidden_states).mean(dim=0)
+        else:
+            averaged_hidden_states = self._hooked_hidden_states[0]
 
         probe_logits: Float[Tensor, "batch_size seq_len 1"] = self.value_head(
-            self._hooked_hidden_states.to(self.value_head.weight.device)
+            averaged_hidden_states.to(self.value_head.weight.device)
         )
 
         return {
@@ -185,7 +202,7 @@ class ValueHeadProbe(nn.Module):
 
         # Save configuration
         probe_config = {
-            "target_layer_name": self.target_module.__class__.__name__,
+            "target_layer_name": self.target_layer_name,
             "layer_idx": self.layer_idx,
             "hidden_size": self.value_head.in_features,
         }
