@@ -1,9 +1,3 @@
-if [ -z "$1" ]; then
-  echo "Error: No argument provided"
-  echo "Usage: $0 <config path>"
-  exit 1
-fi
-
 # Check for uncommitted changes
 if ! git diff-index --quiet HEAD --; then
   echo "Warning: You have uncommitted changes."
@@ -29,7 +23,7 @@ if [ ! -z "$UNPUSHED" ]; then
   fi
 fi
 
-JOB_PREFIX="probe"
+JOB_PREFIX="interprobe"
 JOB_NUM=1
 while runai list | grep -q "${JOB_PREFIX}-${JOB_NUM}"; do
   ((JOB_NUM++))
@@ -57,4 +51,4 @@ runai submit \
   --run-as-gid 84257 \
   --node-pool h100 \
   --gpu 1 \
-  -- bash -c "cd /mloscratch/users/vanousek/hallucination_probes && git pull origin main && ./run.sh $1"
+  -- sleep infinity
