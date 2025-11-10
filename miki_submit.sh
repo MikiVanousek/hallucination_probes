@@ -35,7 +35,7 @@ while runai list | grep -q "${JOB_PREFIX}-${JOB_NUM}"; do
   ((JOB_NUM++))
 done
 
-JOB_NAME="probe${JOB_NUM}"
+JOB_NAME="${JOB_PREFIX}-${JOB_NUM}"
 echo "Submitting job: $JOB_NAME"
 
 runai submit \
