@@ -12,6 +12,7 @@ probe_config:
   lora_dropout: 0.05
 
   load_from: null
+  hf_repo_id: "MikiV/hallucination-probes"
 
   threshold: 0.5
 
@@ -19,7 +20,6 @@ wandb_project: "hallucination-probes"
 wandb_entity: "miki-light"
 
 upload_to_hf: true
-hf_repo_id: "MikiV/hallucination-probes"
 
 save_evaluation_metrics: true
 save_roc_curves: false
