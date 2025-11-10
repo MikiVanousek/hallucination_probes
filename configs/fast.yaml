@@ -17,8 +17,11 @@ probe_config:
   threshold: 0.5
 
 wandb_project: "hallucination-probes"
+wandb_entity: "miki-light"
 
-upload_to_hf: false
+upload_to_hf: true
+hf_repo_id: "MikiV/hallucination-probes"
+
 save_evaluation_metrics: true
 save_roc_curves: false
 dump_raw_eval_results: false
