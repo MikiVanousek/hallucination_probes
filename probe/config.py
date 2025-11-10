@@ -189,6 +189,12 @@ class EvaluationConfig:
     save_roc_curves: bool = True
     save_raw_results: bool = False  # Save all predictions and labels
 
+    # Confidence interval parameters
+    compute_ci: bool = True  # Whether to compute confidence intervals
+    n_bootstrap: int = 1000  # Number of bootstrap samples for CI
+    confidence_level: float = 0.95  # Confidence level (e.g., 0.95 for 95% CI)
+    ci_random_state: int = 42  # Random seed for bootstrap sampling
+
     # This will be populated in __post_init__
     dataset_configs: List[TokenizedProbingDatasetConfig] = field(
         default_factory=list, init=False
