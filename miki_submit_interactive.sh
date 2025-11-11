@@ -47,7 +47,7 @@ runai submit \
   -e WANDB_API_KEY=$WANDB_API_KEY \
   -e HF_TOKEN=$HF_TOKEN \
   -e HF_WRITE_TOKEN=$HF_TOKEN \
-  --backoff-limit 3 \
+  --backoff-limit 0 \
   --run-as-gid 84257 \
   --node-pool h100 \
   --gpu 1 \
