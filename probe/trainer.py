@@ -317,7 +317,6 @@ class ProbeTrainer(Trainer):
             if verbose:
                 print_eval_metrics(metrics, metric_key_prefix=dataset.config.dataset_id)
 
-            # Log evaluation metrics with val/ prefix
             val_metrics = {f"val/{k}": v for k, v in metrics.items()}
             self.log(val_metrics)
             all_eval_metrics.update(metrics)
