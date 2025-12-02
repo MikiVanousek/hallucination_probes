@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Annotated example</title>
+<style>
+body {
+  font-family: ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  margin: 24px;
+  color: #111827;
+  background: #ffffff;
+}
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+}
+.header {
+  margin-bottom: 20px;
+}
+.subtle {
+  color: #6b7280;
+  font-size: 14px;
+}
+.message {
+  white-space: pre-wrap;
+  line-height: 1.6;
+  font-size: 16px;
+  background: #fafafa;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+}
+.legend {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 12px 0 20px 0;
+}
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+.badge {
+  display: inline-block;
+  border-radius: 6px;
+  padding: 4px 8px;
+  border: 1px solid #d1d5db;
+  background: #f3f4f6;
+  color: #374151;
+  font-weight: 600;
+}
+.ann {
+  border-radius: 4px;
+  padding: 0 2px;
+  border-width: 1px;
+  border-style: solid;
+}
+.sidebar {
+  margin-top: 24px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 12px;
+}
+.sidebar h3 {
+  margin: 8px 0;
+  font-size: 16px;
+}
+.sidebar .ann-item {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+blockquote {
+  margin: 0 0 12px 0;
+  border-left: 3px solid #d1d5db;
+  padding-left: 12px;
+  color: #4b5563;
+}
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.footer {
+  margin-top: 24px;
+  font-size: 12px;
+  color: #6b7280;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h2>Annotated Assistant Response</h2>
+    <div class="legend"><span class="legend-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span></span><span class="legend-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span></span><span class="legend-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span></span></div>
+    <div class="subtle"><strong>user_prompt:</strong> Who is Florence Nightingale? Provide as many specific details and examples as possible (such as names of people, numbers, events, locations, dates, times, etc.)
+</div>
+  </div>
+  <div class="message">Florence Nightingale (<span class="ann" title="Supported: Multiple sources confirm Florence Nightingale was born May 12, 1820 and died August 13, 1910" style="background:#e6ffed;border-color:#34d058;color:#22863a;">1820-1910</span>) was a British social reformer, statistician, and pioneering nurse who is considered the founder of modern nursing. She is best known for her work during the Crimean War, where she improved sanitation and care for wounded soldiers, significantly reducing mortality rates.
+
+**Early Life and Education**
+
+Florence Nightingale was born on <span class="ann" title="Supported: Confirmed birth date in Florence, Italy across multiple reliable sources" style="background:#e6ffed;border-color:#34d058;color:#22863a;">May 12, 1820</span>, in <span class="ann" title="Supported: Multiple sources confirm she was born in Florence, Italy and named after the city" style="background:#e6ffed;border-color:#34d058;color:#22863a;">Florence, Italy</span>, to a wealthy British family. Her parents were <span class="ann" title="Supported: Father&#x27;s name confirmed in multiple sources, originally William Edward Shore who changed name to Nightingale" style="background:#e6ffed;border-color:#34d058;color:#22863a;">William Edward Nightingale</span> and <span class="ann" title="Supported: Mother&#x27;s name confirmed as Frances &#x27;Fanny&#x27; Nightingale (née Smith) in multiple sources" style="background:#e6ffed;border-color:#34d058;color:#22863a;">Frances Smith Nightingale</span>. She was the youngest of two children, and her family was part of the British aristocracy. Nightingale&#x27;s early education was at home, where she was tutored in various subjects, including mathematics, languages, and literature.
+
+**Career**
+
+<span class="ann" title="Not Supported: This is factually incorrect. Mary Seacole and Florence Nightingale were contemporaries during the Crimean War. Nightingale&#x27;s interest in nursing began much earlier, around 1837 when she believed she heard a calling from God. Seacole&#x27;s memoir was published in 1857, after the war." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">Nightingale&#x27;s interest in nursing began when she read a book about the work of Mary Seacole</span>, a Jamaican-Scottish nurse who provided care to wounded soldiers during the Crimean War. This sparked Nightingale&#x27;s desire to serve as a nurse during the war. In <span class="ann" title="Not Supported: Nightingale traveled to Turkey in 1854, not 1853. Multiple sources confirm she departed October 21, 1854 and arrived November 4-5, 1854" style="background:#ffeef0;border-color:#f85149;color:#b31d28;">1853</span>, she traveled to Turkey to provide care to British soldiers at the British Army Hospital in Scutari, near Constantinople (modern-day Istanbul).
+
+**Crimean War Efforts**
+
+Nightingale arrived in Scutari on <span class="ann" title="Not Supported: Incorrect date. Nightingale arrived in Scutari on November 4, 1854, not 1853" style="background:#ffeef0;border-color:#f85149;color:#b31d28;">November 4, 1853</span>, and was met with poor conditions and inadequate care for the wounded soldiers. She quickly assessed the situation and began implementing changes to improve sanitation, hygiene, and care. Some of her key contributions include:
+
+1. **Improving Sanitation**: Nightingale recognized the importance of proper sanitation and hygiene in preventing the spread of disease. She implemented measures such as:
+	* Cleaning and disinfecting the hospital environment
+	* Improving waste management and disposal
+	* Providing clean water and food for the soldiers
+2. **Establishing a Statistical System**: Nightingale was a skilled statistician and used her knowledge to track mortality rates and identify areas for improvement. She created a system to record and analyze data on patient outcomes, which helped her identify trends and make informed decisions.
+3. **Training Nurses**: Nightingale recognized the need for trained nurses to provide care to the soldiers. She established a training program for nurses, which included instruction in areas such as:
+	* Patient care and hygiene
+	* Wound care and dressing
+	* Medication administration
+4. **Advocating for Reform**: Nightingale&#x27;s experiences during the Crimean War led her to advocate for reform in the British Army&#x27;s medical services. She lobbied for improvements in sanitation, hygiene, and care, and her efforts ultimately led to changes in the way the British Army provided medical care to its soldiers.
+
+**Notable Statistics and Achievements**
+
+Some notable statistics and achievements from Nightingale&#x27;s work during the Crimean War include:
+
+1. **Mortality Rate Reduction**: Nightingale&#x27;s efforts led to a significant reduction in mortality rates at the British Army Hospital in Scutari. The <span class="ann" title="Supported: Multiple sources confirm this statistic, though the exact timeframe and attribution to Nightingale&#x27;s direct efforts vs. the Sanitary Commission is debated by historians" style="background:#e6ffed;border-color:#34d058;color:#22863a;">mortality rate decreased from 42% to 2%</span> during her time at the hospital.
+2. **Improved Sanitation**: Nightingale&#x27;s improvements in sanitation and hygiene led to a significant reduction in the spread of disease. The hospital&#x27;s <span class="ann" title="Insufficient Information: While overall mortality statistics are well documented, specific cholera mortality reduction figures are not clearly verified in available sources" style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">mortality rate due to cholera decreased from 40% to 2%</span> during her time at the hospital.
+3. **Training of Nurses**: Nightingale&#x27;s training program for nurses helped establish the profession of nursing as we know it today. Her program <span class="ann" title="Not Supported: Nightingale arrived with 38 nurses and did not establish a training program during the war itself. The Nightingale Training School was established in 1860, after the war" style="background:#ffeef0;border-color:#f85149;color:#b31d28;">trained over 80 nurses during the Crimean War</span>, and her methods and principles continue to influence nursing education and practice.
+
+**Legacy**
+
+Florence Nightingale&#x27;s legacy extends far beyond her work during the Crimean War. She is considered the founder of modern nursing and her contributions to the profession have had a lasting impact. Some of her notable achievements and legacies include:
+
+1. **Establishment of the Nightingale School of Nursing**: Nightingale established the <span class="ann" title="Supported: Confirmed across multiple sources - established in 1860, now part of King&#x27;s College London" style="background:#e6ffed;border-color:#34d058;color:#22863a;">Nightingale School of Nursing at St. Thomas&#x27; Hospital in London</span>, which became a model for nursing education and training.
+2. **Development of Nursing Theories and Principles**: Nightingale&#x27;s work during the Crimean War led to the development of nursing theories and principles that continue to influence nursing practice today.
+3. **Advocacy for Social Reform**: Nightingale&#x27;s experiences during the Crimean War led her to advocate for social reform in areas such as public health, sanitation, and education.
+
+**Personal Life**
+
+Florence Nightingale never married and dedicated her life to her work as a nurse and social reformer. She was a member of the British aristocracy and was known for her intelligence, compassion, and dedication to her work. Nightingale died on <span class="ann" title="Supported: Death date confirmed across multiple sources" style="background:#e6ffed;border-color:#34d058;color:#22863a;">August 13, 1910</span>, at the age of 90, and was buried in the family vault at <span class="ann" title="Supported: Burial location confirmed as St Margaret&#x27;s Church, East Wellow, Hampshire" style="background:#e6ffed;border-color:#34d058;color:#22863a;">East Wellow, Hampshire</span>.</div>
+  <div class="sidebar"><h3>Placed annotations</h3><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>1820-1910</strong> (idx 22) — Multiple sources confirm Florence Nightingale was born May 12, 1820 and died August 13, 1910</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>May 12, 1820</strong> (idx 368) — Confirmed birth date in Florence, Italy across multiple reliable sources</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Florence, Italy</strong> (idx 385) — Multiple sources confirm she was born in Florence, Italy and named after the city</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>William Edward Nightingale</strong> (idx 448) — Father&#x27;s name confirmed in multiple sources, originally William Edward Shore who changed name to Nightingale</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Frances Smith Nightingale</strong> (idx 479) — Mother&#x27;s name confirmed as Frances &#x27;Fanny&#x27; Nightingale (née Smith) in multiple sources</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>Nightingale&#x27;s interest in nursing began when she read a book about the work of Mary Seacole</strong> (idx 745) — This is factually incorrect. Mary Seacole and Florence Nightingale were contemporaries during the Crimean War. Nightingale&#x27;s interest in nursing began much earlier, around 1837 when she believed she heard a calling from God. Seacole&#x27;s memoir was published in 1857, after the war.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>1853</strong> (idx 999) — Nightingale traveled to Turkey in 1854, not 1853. Multiple sources confirm she departed October 21, 1854 and arrived November 4-5, 1854</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>November 4, 1853</strong> (idx 1208) — Incorrect date. Nightingale arrived in Scutari on November 4, 1854, not 1853</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>mortality rate decreased from 42% to 2%</strong> (idx 2964) — Multiple sources confirm this statistic, though the exact timeframe and attribution to Nightingale&#x27;s direct efforts vs. the Sanitary Commission is debated by historians</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>mortality rate due to cholera decreased from 40% to 2%</strong> (idx 3190) — While overall mortality statistics are well documented, specific cholera mortality reduction figures are not clearly verified in available sources</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>trained over 80 nurses during the Crimean War</strong> (idx 3423) — Nightingale arrived with 38 nurses and did not establish a training program during the war itself. The Nightingale Training School was established in 1860, after the war</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Nightingale School of Nursing at St. Thomas&#x27; Hospital in London</strong> (idx 3908) — Confirmed across multiple sources - established in 1860, now part of King&#x27;s College London</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>August 13, 1910</strong> (idx 4679) — Death date confirmed across multiple sources</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>East Wellow, Hampshire</strong> (idx 4752) — Burial location confirmed as St Margaret&#x27;s Church, East Wellow, Hampshire</div></div>
+  <div class="sidebar"><h3>Unplaced annotations</h3><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Mary Seacole</strong> (idx 824) — Mary Seacole was a real historical figure, Jamaican-Scottish nurse during Crimean War</div></div>
+  <div class="footer">Generated by annotate_from_spans.py</div>
+</div>
+</body>
+</html>

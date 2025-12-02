@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Annotated example</title>
+<style>
+body {
+  font-family: ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  margin: 24px;
+  color: #111827;
+  background: #ffffff;
+}
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+}
+.header {
+  margin-bottom: 20px;
+}
+.subtle {
+  color: #6b7280;
+  font-size: 14px;
+}
+.message {
+  white-space: pre-wrap;
+  line-height: 1.6;
+  font-size: 16px;
+  background: #fafafa;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+}
+.legend {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 12px 0 20px 0;
+}
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+.badge {
+  display: inline-block;
+  border-radius: 6px;
+  padding: 4px 8px;
+  border: 1px solid #d1d5db;
+  background: #f3f4f6;
+  color: #374151;
+  font-weight: 600;
+}
+.ann {
+  border-radius: 4px;
+  padding: 0 2px;
+  border-width: 1px;
+  border-style: solid;
+}
+.sidebar {
+  margin-top: 24px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 12px;
+}
+.sidebar h3 {
+  margin: 8px 0;
+  font-size: 16px;
+}
+.sidebar .ann-item {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+blockquote {
+  margin: 0 0 12px 0;
+  border-left: 3px solid #d1d5db;
+  padding-left: 12px;
+  color: #4b5563;
+}
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.footer {
+  margin-top: 24px;
+  font-size: 12px;
+  color: #6b7280;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h2>Annotated Assistant Response</h2>
+    <div class="legend"><span class="legend-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span></span><span class="legend-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span></span><span class="legend-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span></span></div>
+    <div class="subtle"><strong>pubmedqa_id:</strong> 26852225</div>
+<div class="subtle"><strong>original_answer:</strong> no</div>
+<div class="subtle"><strong>context:</strong> Anchoring vignettes are brief texts describing a hypothetical character who illustrates a certain fixed level of a trait under evaluation. This research uses vignettes to elucidate factors associated with sleep disorders in adult Japanese before and after adjustment for reporting heterogeneity in self-reports. This study also evaluates the need for adjusting for reporting heterogeneity in the management of sleep and energy related problems in Japan. We investigated a dataset of 1002 respondents aged 18 years and over from the Japanese World Health Survey, which collected information through face-to-face interview from 2002 to 2003. The ordered probit model and the Compound Hierarchical Ordered Probit (CHOPIT) model, which incorporated anchoring vignettes, were employed to estimate and compare associations of sleep and energy with socio-demographic and life-style factors before and after adjustment for differences in response category cut-points for each individual. The prevalence of se</div>
+<div class="subtle"><strong>source:</strong> pubmedqa_meditron</div>
+<div class="subtle"><strong>user_prompt:</strong> Is adjustment for reporting heterogeneity necessary in sleep disorders?</div>
+  </div>
+  <div class="message">yes
+
+# Introduction
+Sleep disorders, including insomnia and excessive daytime sleepiness, are prevalent and are associated with a variety of physical and mental health conditions, such as depression and obesity [bib_ref] <span class="ann" title="Supported: This is a real article by C.M. Morin et al. (2006) titled exactly that. ([pubmed.ncbi.nlm.nih.gov](https://pubmed.ncbi.nlm.nih.gov/16459140/?utm_source=openai))" style="background:#e6ffed;border-color:#34d058;color:#22863a;">Epidemiology of insomnia: prevalence, self-help treatments, consultations, and determinants of help-seeking behaviors, Morin</span> [/bib_ref] [bib_ref] <span class="ann" title="Insufficient Information: While Maurice‐M. Ohayon has published many epidemiology papers, I could not locate an exact paper with that title from available sources, so it is unclear whether it is real or mis‐titled." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">Sleep and sleep disorders in the general population, Ohayon</span> [/bib_ref] [bib_ref] <span class="ann" title="Not Supported: No specific article matching that title (distinct from the known Morin 2006 study) was found in searches; likely fabricated or mis‐named." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">Prevalence of insomnia and associated factors in a large population, Morin</span> [/bib_ref] [bib_ref] <span class="ann" title="Not Supported: No article authored by &#x27;Espíndola&#x27; with that title was found; could not verify its existence or stats." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">Prevalence and risk factors of insomnia in the adult population of Spain, Espíndola</span> [/bib_ref] [bib_ref] <span class="ann" title="Not Supported: Search did not find a paper by &#x27;Hossain&#x27; with that title; no matching epidemiological meta‐analysis or large sample on those terms authored by Hossain was located." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">Insomnia, daytime sleepiness, and obesity in a large community sample, Hossain</span> [/bib_ref]. In particular, sleep disorders are strongly related to mental health problems [bib_ref] Sleep disorders and mental health: the interplay between insomnia and depression, Baglioni [/bib_ref] [bib_ref] The relationship between insomnia and depression, Cho [/bib_ref] [bib_ref] Sleep disturbances and depression: risk relationships for subsequent depression and therapeutic implications, Franzen [/bib_ref] [bib_ref] Sleep and mental health: a meta-analysis of polysomnographic research, Baglioni [/bib_ref], and sleep disorders are associated with the onset of obesity [bib_ref] <span class="ann" title="Not Supported: No meta-analysis by an author &#x27;Wu&#x27; with precisely that title was located in recent searches; could be misremembered." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">Insomnia and risk of obesity: a meta-analysis, Wu</span> [/bib_ref] [bib_ref] Insomnia and obesity: a meta-analysis, Wu [/bib_ref]. Therefore, sleep disorders may have a substantial impact on the health of the population. A recent systematic review of the prevalence of sleep disorders in Japan showed that <span class="ann" title="Not Supported: In Japanese population studies, the figures are about 21.4% for insomnia and 15% for excessive daytime sleepiness. The 11.1% insomnia figure seems not to match. ([jstage.jst.go.jp](https://www.jstage.jst.go.jp/article/numa/69/1/69_1_6/_article?utm_source=openai))" style="background:#ffeef0;border-color:#f85149;color:#b31d28;">the prevalence of insomnia and excessive daytime sleepiness was 11.1 and 13.5 %, respectively</span> [bib_ref] The prevalence of insomnia and excessive daytime sleepiness in Japan: a systematic..., Ohida [/bib_ref].
+In Japan, sleep disorders are managed as a health problem under the category of&#x27;sleep disturbance&#x27; by the Ministry of Health, Labour and Welfare. The&#x27;sleep disturbance&#x27; category includes sleep disorders, such as insomnia, excessive daytime sleepiness, and obstructive sleep apnea syndrome. The diagnosis of sleep disorders is usually based on the results of a medical examination, such as a polysomnography, or a clinical interview. The severity of sleep disorders can be classified into four types: mild, moderate, severe, and very severe, based on the duration and frequency of sleep disorders. In Japan, the</div>
+  <div class="sidebar"><h3>Placed annotations</h3><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Epidemiology of insomnia: prevalence, self-help treatments, consultations, and determinants of help-seeking behaviors, Morin</strong> (idx 221) — This is a real article by C.M. Morin et al. (2006) titled exactly that. ([pubmed.ncbi.nlm.nih.gov](https://pubmed.ncbi.nlm.nih.gov/16459140/?utm_source=openai))</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>Sleep and sleep disorders in the general population, Ohayon</strong> (idx 367) — While Maurice‐M. Ohayon has published many epidemiology papers, I could not locate an exact paper with that title from available sources, so it is unclear whether it is real or mis‐titled.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>Prevalence of insomnia and associated factors in a large population, Morin</strong> (idx 448) — No specific article matching that title (distinct from the known Morin 2006 study) was found in searches; likely fabricated or mis‐named.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>Prevalence and risk factors of insomnia in the adult population of Spain, Espíndola</strong> (idx 544) — No article authored by &#x27;Espíndola&#x27; with that title was found; could not verify its existence or stats.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>Insomnia, daytime sleepiness, and obesity in a large community sample, Hossain</strong> (idx 649) — Search did not find a paper by &#x27;Hossain&#x27; with that title; no matching epidemiological meta‐analysis or large sample on those terms authored by Hossain was located.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>Insomnia and risk of obesity: a meta-analysis, Wu</strong> (idx 1317) — No meta-analysis by an author &#x27;Wu&#x27; with precisely that title was located in recent searches; could be misremembered.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>the prevalence of insomnia and excessive daytime sleepiness was 11.1 and 13.5 %, respectively</strong> (idx 1617) — In Japanese population studies, the figures are about 21.4% for insomnia and 15% for excessive daytime sleepiness. The 11.1% insomnia figure seems not to match. ([jstage.jst.go.jp](https://www.jstage.jst.go.jp/article/numa/69/1/69_1_6/_article?utm_source=openai))</div></div>
+  <div class="sidebar"><h3>Unplaced annotations</h3><div class="ann-item"><span class="badge" style="background:#eef2ff;border-color:#6366f1;color:#3730a3">Unknown</span> <strong>insomnia among the adult population was 21.4%</strong> — In epidemiological sleep studies in Japan, the prevalence of insomnia among adults is reported at ~21.4%. ([jstage.jst.go.jp](https://www.jstage.jst.go.jp/article/numa/69/1/69_1_6/_article?utm_source=openai))</div><div class="ann-item"><span class="badge" style="background:#eef2ff;border-color:#6366f1;color:#3730a3">Unknown</span> <strong>excessive daytime sleepiness among the adult population was 15%</strong> — Similarly, excessive daytime sleepiness among Japanese adults is reported at ~15%. ([jstage.jst.go.jp](https://www.jstage.jst.go.jp/article/numa/69/1/69_1_6/_article?utm_source=openai))</div><div class="ann-item"><span class="badge" style="background:#eef2ff;border-color:#6366f1;color:#3730a3">Unknown</span> <strong>the prevalence of excessive daytime sleepiness was 2.5% (male=2.8% and female=2.2%)</strong> — This exact figure comes from </div></div>
+  <div class="footer">Generated by annotate_from_spans.py</div>
+</div>
+</body>
+</html>

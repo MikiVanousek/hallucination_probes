@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Annotated example</title>
+<style>
+body {
+  font-family: ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  margin: 24px;
+  color: #111827;
+  background: #ffffff;
+}
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+}
+.header {
+  margin-bottom: 20px;
+}
+.subtle {
+  color: #6b7280;
+  font-size: 14px;
+}
+.message {
+  white-space: pre-wrap;
+  line-height: 1.6;
+  font-size: 16px;
+  background: #fafafa;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+}
+.legend {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 12px 0 20px 0;
+}
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+.badge {
+  display: inline-block;
+  border-radius: 6px;
+  padding: 4px 8px;
+  border: 1px solid #d1d5db;
+  background: #f3f4f6;
+  color: #374151;
+  font-weight: 600;
+}
+.ann {
+  border-radius: 4px;
+  padding: 0 2px;
+  border-width: 1px;
+  border-style: solid;
+}
+.sidebar {
+  margin-top: 24px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 12px;
+}
+.sidebar h3 {
+  margin: 8px 0;
+  font-size: 16px;
+}
+.sidebar .ann-item {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+blockquote {
+  margin: 0 0 12px 0;
+  border-left: 3px solid #d1d5db;
+  padding-left: 12px;
+  color: #4b5563;
+}
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.footer {
+  margin-top: 24px;
+  font-size: 12px;
+  color: #6b7280;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h2>Annotated Assistant Response</h2>
+    <div class="legend"><span class="legend-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span></span><span class="legend-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span></span><span class="legend-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span></span></div>
+    <div class="subtle"><strong>user_prompt:</strong> What is the Swine flu pandemic of 2009? Provide as many specific details and examples as possible (such as names of people, numbers, events, locations, dates, times, etc.)
+</div>
+  </div>
+  <div class="message">The Swine flu pandemic of 2009, also known as the H1N1 pandemic, was a global outbreak of a new strain of the influenza A virus. It was first detected in Mexico in <span class="ann" title="Supported: The first cases were indeed detected in March 2009, with the earliest known case traced to March 9, 2009 in La Gloria, Mexico." style="background:#e6ffed;border-color:#34d058;color:#22863a;">March 2009</span> and quickly spread to other parts of the world.
+
+**Initial Outbreak:**
+The first reported cases of the new strain of the virus occurred in the Mexican states of <span class="ann" title="Supported: La Gloria is confirmed to be in Veracruz state, Mexico, where the first cases were detected." style="background:#e6ffed;border-color:#34d058;color:#22863a;">Veracruz</span> and <span class="ann" title="Supported: Mexico City was indeed one of the early locations where cases were reported in mid-March 2009." style="background:#e6ffed;border-color:#34d058;color:#22863a;">Mexico City</span> in mid-March 2009. The Mexican government reported that <span class="ann" title="Insufficient Information: Cannot verify this specific number from available sources. Early Mexican death reports were later found to be overestimated." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">61 people had died</span> from the virus, and <span class="ann" title="Insufficient Information: Cannot verify this specific early infection count from available sources." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">1,614 people had been infected</span>.
+
+**Global Spread:**
+The virus quickly spread to other parts of the world, including the United States, Canada, and Europe. The World Health Organization (WHO) declared a public health emergency of international concern on <span class="ann" title="Supported: WHO declared the pandemic on June 11, 2009, confirmed by multiple sources including CDC and WHO records." style="background:#e6ffed;border-color:#34d058;color:#22863a;">June 11, 2009</span>.
+
+**Key Events:**
+
+1. **April 2009:** The first cases of the virus were reported in the United States, with cases in California, Texas, and New York.
+2. **<span class="ann" title="Supported: CDC confirmed the new H1N1 strain on April 26, 2009, according to CDC timeline." style="background:#e6ffed;border-color:#34d058;color:#22863a;">April 26, 2009</span>:** The Centers for Disease Control and Prevention (CDC) confirmed that the virus was a new strain of the H1N1 virus.
+3. **<span class="ann" title="Insufficient Information: Cannot verify the specific claim about WHO reporting virus spread to 15 countries on this exact date." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">May 1, 2009</span>:** The WHO reported that the virus had spread to 15 countries, including the United States, Canada, and Mexico.
+4. **June 11, 2009:** The WHO declared a public health emergency of international concern.
+5. **<span class="ann" title="Not Supported: The US declared a public health emergency on April 26, 2009, not June 12. The WHO pandemic declaration was June 11." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">June 12, 2009</span>:** The US government declared a public health emergency and authorized the use of antiviral medications to treat the virus.
+6. **July 2009:** The virus had spread to over 100 countries, and the WHO reported that over 30,000 people had been infected.
+
+**Notable Cases:**
+
+1. **<span class="ann" title="Not Supported: No evidence found for this person as the first H1N1 death. This appears to be fabricated." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">Pablo Guerrero</span>:** A 22-year-old Mexican man who died from the virus on April 13, 2009, is believed to be the first reported death from the virus.
+2. **<span class="ann" title="Not Supported: No evidence found for this person or the claim about being first US case. This appears to be fabricated." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">Jose Antonio Elizondo</span>:** A 35-year-old Mexican man who died from the virus on April 18, 2009, was one of the first reported cases of the virus in the United States.
+3. **<span class="ann" title="Supported: Nancy Cox was indeed a CDC scientist who played a key role in H1N1 response as director of the Influenza Division." style="background:#e6ffed;border-color:#34d058;color:#22863a;">Nancy Cox</span>:** A CDC scientist who played a key role in identifying the virus and developing a vaccine.
+
+**Vaccine Development:**
+The CDC and other organizations developed a vaccine against the virus, which was approved for use in the United States in <span class="ann" title="Supported: H1N1 vaccine was approved and began distribution in October 2009, confirmed by CDC sources." style="background:#e6ffed;border-color:#34d058;color:#22863a;">October 2009</span>. The vaccine was made available to high-risk groups, including healthcare workers, pregnant women, and people with certain underlying health conditions.
+
+**Economic Impact:**
+The pandemic had a significant economic impact, with estimates suggesting that the global economy lost <span class="ann" title="Insufficient Information: Cannot verify this specific economic impact figure for the 2009 H1N1 pandemic from available sources." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">over $1 trillion</span> in 2009.
+
+**Key Statistics:**
+
+1. **Global Cases:** <span class="ann" title="Not Supported: This number is vastly inflated. CDC estimated 60.8 million cases in US alone, global estimates much lower." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">Over 1.4 billion people were infected</span> with the virus worldwide.
+2. **Global Deaths:** <span class="ann" title="Supported: WHO-CDC study estimated 284,000 deaths (range 150,000-575,000), so 150,000+ is within the range." style="background:#e6ffed;border-color:#34d058;color:#22863a;">Over 150,000 people died</span> from the virus worldwide.
+3. **US Cases:** Over 60 million people were infected with the virus in the United States.
+4. **US Deaths:** <span class="ann" title="Supported: CDC estimated 12,469 deaths in the US, so over 12,000 is accurate." style="background:#e6ffed;border-color:#34d058;color:#22863a;">Over 12,000 people died from the virus in the United States</span>.
+
+**Timeline:**
+
+1. **March 2009:** The first reported cases of the virus occur in Mexico.
+2. **April 2009:** The virus spreads to the United States, Canada, and Europe.
+3. **June 2009:** The WHO declares a public health emergency of international concern.
+4. **July 2009:** The virus has spread to over 100 countries.
+5. **October 2009:** A vaccine against the virus is approved for use in the United States.
+6. **<span class="ann" title="Not Supported: WHO declared the pandemic over on August 10, 2010, not December 2009." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">December 2009</span>:** The WHO declares the pandemic over.
+
+**Notable Locations:**
+
+1. **Mexico City:** The virus was first detected in Mexico City in March 2009.
+2. **<span class="ann" title="Supported: First US cases were confirmed in California, including San Diego County, which is near Los Angeles." style="background:#e6ffed;border-color:#34d058;color:#22863a;">Los Angeles</span>:** The first reported case of the virus in the United States occurred in Los Angeles in April 2009.
+3. **New York City:** The virus spread rapidly in New York City in April 2009.
+4. **London:** The virus was detected in London in May 2009.
+5. **Paris:** The virus was detected in Paris in May 2009.
+
+**Notable People:**
+
+1. **<span class="ann" title="Supported: Margaret Chan was WHO Director-General who declared the pandemic and its end." style="background:#e6ffed;border-color:#34d058;color:#22863a;">Dr. Margaret Chan</span>:** The Director-General of the WHO, who played a key role in responding to the pandemic.
+2. **Dr. Nancy Cox:** A CDC scientist who played a key role in identifying the virus and developing a vaccine.
+3. **<span class="ann" title="Supported: Richard Besser was Acting Director of CDC from January to June 2009 during the H1N1 response." style="background:#e6ffed;border-color:#34d058;color:#22863a;">Dr. Richard Besser</span>:** The Acting Director of the CDC, who played a key role in responding to the pandemic.
+4. **<span class="ann" title="Supported: Obama was President and declared a national emergency for H1N1 on October 24, 2009." style="background:#e6ffed;border-color:#34d058;color:#22863a;">President Barack Obama</span>:** The President of the United States, who declared a public health emergency and authorized the use of antiviral medications to treat the virus.</div>
+  <div class="sidebar"><h3>Placed annotations</h3><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>March 2009</strong> (idx 164) — The first cases were indeed detected in March 2009, with the earliest known case traced to March 9, 2009 in La Gloria, Mexico.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Veracruz</strong> (idx 336) — La Gloria is confirmed to be in Veracruz state, Mexico, where the first cases were detected.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Mexico City</strong> (idx 349) — Mexico City was indeed one of the early locations where cases were reported in mid-March 2009.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>61 people had died</strong> (idx 417) — Cannot verify this specific number from available sources. Early Mexican death reports were later found to be overestimated.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>1,614 people had been infected</strong> (idx 456) — Cannot verify this specific early infection count from available sources.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>June 11, 2009</strong> (idx 710) — WHO declared the pandemic on June 11, 2009, confirmed by multiple sources including CDC and WHO records.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>April 26, 2009</strong> (idx 879) — CDC confirmed the new H1N1 strain on April 26, 2009, according to CDC timeline.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>May 1, 2009</strong> (idx 1016) — Cannot verify the specific claim about WHO reporting virus spread to 15 countries on this exact date.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>June 12, 2009</strong> (idx 1236) — The US declared a public health emergency on April 26, 2009, not June 12. The WHO pandemic declaration was June 11.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>Pablo Guerrero</strong> (idx 1526) — No evidence found for this person as the first H1N1 death. This appears to be fabricated.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>Jose Antonio Elizondo</strong> (idx 1677) — No evidence found for this person or the claim about being first US case. This appears to be fabricated.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Nancy Cox</strong> (idx 1847) — Nancy Cox was indeed a CDC scientist who played a key role in H1N1 response as director of the Influenza Division.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>October 2009</strong> (idx 2097) — H1N1 vaccine was approved and began distribution in October 2009, confirmed by CDC sources.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>Over 1.4 billion people were infected</strong> (idx 2457) — This number is vastly inflated. CDC estimated 60.8 million cases in US alone, global estimates much lower.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Over 150,000 people died</strong> (idx 2543) — WHO-CDC study estimated 284,000 deaths (range 150,000-575,000), so 150,000+ is within the range.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Over 12,000 people died from the virus in the United States</strong> (idx 2703) — CDC estimated 12,469 deaths in the US, so over 12,000 is accurate.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>December 2009</strong> (idx 3178) — WHO declared the pandemic over on August 10, 2010, not December 2009.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Los Angeles</strong> (idx 3340) — First US cases were confirmed in California, including San Diego County, which is near Los Angeles.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Dr. Margaret Chan</strong> (idx 3678) — Margaret Chan was WHO Director-General who declared the pandemic and its end.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Dr. Richard Besser</strong> (idx 3901) — Richard Besser was Acting Director of CDC from January to June 2009 during the H1N1 response.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>President Barack Obama</strong> (idx 4013) — Obama was President and declared a national emergency for H1N1 on October 24, 2009.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>over $1 trillion</strong> (idx 2388) — Cannot verify this specific economic impact figure for the 2009 H1N1 pandemic from available sources.</div></div>
+  <div class="sidebar"><h3>Unplaced annotations</h3><div class="ann-item"><span class="badge" style="background:#eef2ff;border-color:#6366f1;color:#3730a3">Unknown</span> <strong>Over 60 million people were infected in the United States</strong> — CDC estimated 60.8 million cases in the US from April 2009 to April 2010.</div></div>
+  <div class="footer">Generated by annotate_from_spans.py</div>
+</div>
+</body>
+</html>

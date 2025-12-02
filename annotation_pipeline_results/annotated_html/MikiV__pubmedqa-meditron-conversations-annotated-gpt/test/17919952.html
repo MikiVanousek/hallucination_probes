@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Annotated example</title>
+<style>
+body {
+  font-family: ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  margin: 24px;
+  color: #111827;
+  background: #ffffff;
+}
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+}
+.header {
+  margin-bottom: 20px;
+}
+.subtle {
+  color: #6b7280;
+  font-size: 14px;
+}
+.message {
+  white-space: pre-wrap;
+  line-height: 1.6;
+  font-size: 16px;
+  background: #fafafa;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+}
+.legend {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 12px 0 20px 0;
+}
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+.badge {
+  display: inline-block;
+  border-radius: 6px;
+  padding: 4px 8px;
+  border: 1px solid #d1d5db;
+  background: #f3f4f6;
+  color: #374151;
+  font-weight: 600;
+}
+.ann {
+  border-radius: 4px;
+  padding: 0 2px;
+  border-width: 1px;
+  border-style: solid;
+}
+.sidebar {
+  margin-top: 24px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 12px;
+}
+.sidebar h3 {
+  margin: 8px 0;
+  font-size: 16px;
+}
+.sidebar .ann-item {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+blockquote {
+  margin: 0 0 12px 0;
+  border-left: 3px solid #d1d5db;
+  padding-left: 12px;
+  color: #4b5563;
+}
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.footer {
+  margin-top: 24px;
+  font-size: 12px;
+  color: #6b7280;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h2>Annotated Assistant Response</h2>
+    <div class="legend"><span class="legend-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span></span><span class="legend-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span></span><span class="legend-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span></span></div>
+    <div class="subtle"><strong>pubmedqa_id:</strong> 17919952</div>
+<div class="subtle"><strong>original_answer:</strong> yes</div>
+<div class="subtle"><strong>context:</strong> (i) To examine the association between self-reported mechanical factors and chronic oro-facial pain. (ii) To test the hypothesis that this relationship could be explained by: (a) reporting of psychological factors, (b) common association of self-reported mechanical factors with other unexplained syndromes. A population based cross-sectional study of 4200 randomly selected adults registered with a General Medical Practice in North West, England. The study examined the association of chronic oro-facial pain with a variety of self-reported mechanical factors: teeth grinding, facial trauma, missing teeth and the feeling that the teeth did not fit together properly. Information was also collected on demographic factors, psychological factors and the reporting of other frequently unexplained syndromes. An adjusted response rate of 72% was achieved. Only two mechanical factors: teeth grinding (odds ratio (OR) 2.0, 95% CI 1.3-3.0) and facial trauma (OR 2.0; 95% CI 1.3-2.9) were independently a</div>
+<div class="subtle"><strong>source:</strong> pubmedqa_meditron</div>
+<div class="subtle"><strong>user_prompt:</strong> Are reports of mechanical dysfunction in chronic oro-facial pain related to somatisation?</div>
+  </div>
+  <div class="message">Yes
+
+Explanation: <span class="ann" title="Unknown: The univariate analyses show this, but in multivariate (adjusted) models the mechanical factors did *not* independently predict onset once psychosocial and unexplained symptoms are controlled for. So &#x27;independently&#x27; is misleading. ([pmc.ncbi.nlm.nih.gov](https://pmc.ncbi.nlm.nih.gov/articles/PMC2877804/?utm_source=openai))" style="background:#eef2ff;border-color:#6366f1;color:#3730a3;">Reports of teeth grinding and facial trauma were independently associated with chronic oro-facial pain</span>. However, <span class="ann" title="Supported: The North Cheshire study found that the mechanical factors (e.g. grinding, missing teeth, phantom bite) were also associated with other unexplained symptoms like chronic widespread pain, IBS, and chronic fatigue. ([pmc.ncbi.nlm.nih.gov](https://pmc.ncbi.nlm.nih.gov/articles/PMC2877804/?utm_source=openai))" style="background:#e6ffed;border-color:#34d058;color:#22863a;">these factors were also commonly associated with the reporting of other frequently unexplained syndromes</span>, suggesting that the association with <span class="ann" title="Supported: The term is used commonly in epidemiological and clinical literature (e.g. the North Cheshire study) to denote persistent oro-facial pain lasting at least several weeks/months. ([pmc.ncbi.nlm.nih.gov](https://pmc.ncbi.nlm.nih.gov/articles/PMC2877804/?utm_source=openai))" style="background:#e6ffed;border-color:#34d058;color:#22863a;">chronic oro-facial pain</span> may be due to <span class="ann" title="Supported: The literature refers to psychological distress, health anxiety, and somatic symptoms (i.e. somatisation) being associated with orofacial pain in these studies. ([pubmed.ncbi.nlm.nih.gov](https://pubmed.ncbi.nlm.nih.gov/12406520/?utm_source=openai))" style="background:#e6ffed;border-color:#34d058;color:#22863a;">somatisation</span>.</div>
+  <div class="sidebar"><h3>Placed annotations</h3><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>chronic oro-facial pain</strong> (idx 97) — The term is used commonly in epidemiological and clinical literature (e.g. the North Cheshire study) to denote persistent oro-facial pain lasting at least several weeks/months. ([pmc.ncbi.nlm.nih.gov](https://pmc.ncbi.nlm.nih.gov/articles/PMC2877804/?utm_source=openai))</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>somatisation</strong> (idx 312) — The literature refers to psychological distress, health anxiety, and somatic symptoms (i.e. somatisation) being associated with orofacial pain in these studies. ([pubmed.ncbi.nlm.nih.gov](https://pubmed.ncbi.nlm.nih.gov/12406520/?utm_source=openai))</div><div class="ann-item"><span class="badge" style="background:#eef2ff;border-color:#6366f1;color:#3730a3">Unknown</span> <strong>Reports of teeth grinding and facial trauma were independently associated with chronic oro-facial pain</strong> (idx 18) — The univariate analyses show this, but in multivariate (adjusted) models the mechanical factors did *not* independently predict onset once psychosocial and unexplained symptoms are controlled for. So &#x27;independently&#x27; is misleading. ([pmc.ncbi.nlm.nih.gov](https://pmc.ncbi.nlm.nih.gov/articles/PMC2877804/?utm_source=openai))</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>these factors were also commonly associated with the reporting of other frequently unexplained syndromes</strong> (idx 131) — The North Cheshire study found that the mechanical factors (e.g. grinding, missing teeth, phantom bite) were also associated with other unexplained symptoms like chronic widespread pain, IBS, and chronic fatigue. ([pmc.ncbi.nlm.nih.gov](https://pmc.ncbi.nlm.nih.gov/articles/PMC2877804/?utm_source=openai))</div></div>
+  <div class="sidebar"><h3>Unplaced annotations</h3><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>teeth grinding</strong> (idx 29) — Studies such as the North Cheshire prospective study found self-reported teeth grinding is associated with new onset of chronic oro-facial pain in univariate analyses. ([pmc.ncbi.nlm.nih.gov](https://pmc.ncbi.nlm.nih.gov/articles/PMC2877804/?utm_source=openai))</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>facial trauma</strong> (idx 48) — Same study reported facial trauma among mechanical dysfunctions that predicted chronic oro-facial pain in univariate analysis. ([pmc.ncbi.nlm.nih.gov](https://pmc.ncbi.nlm.nih.gov/articles/PMC2877804/?utm_source=openai))</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>unexplained syndromes</strong> (idx 214) — The study noted &#x27;other unexplained symptoms&#x27;-including chronic widespread pain, irritable bowel syndrome and chronic fatigue-as associated with reports of mechanical dysfunction. ([pmc.ncbi.nlm.nih.gov](https://pmc.ncbi.nlm.nih.gov/articles/PMC2877804/?utm_source=openai))</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>suggesting that the association with chronic oro-facial pain may be due to somatisation</strong> (idx 237) — The authors concluded that psychosocial factors (somatisation etc.) might underlie the relationship, and that mechanical factors did not contribute independently in multivariate models. ([pmc.ncbi.nlm.nih.gov](https://pmc.ncbi.nlm.nih.gov/articles/PMC2877804/?utm_source=openai))</div></div>
+  <div class="footer">Generated by annotate_from_spans.py</div>
+</div>
+</body>
+</html>

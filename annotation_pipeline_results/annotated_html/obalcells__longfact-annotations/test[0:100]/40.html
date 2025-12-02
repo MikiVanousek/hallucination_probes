@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Annotated example</title>
+<style>
+body {
+  font-family: ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  margin: 24px;
+  color: #111827;
+  background: #ffffff;
+}
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+}
+.header {
+  margin-bottom: 20px;
+}
+.subtle {
+  color: #6b7280;
+  font-size: 14px;
+}
+.message {
+  white-space: pre-wrap;
+  line-height: 1.6;
+  font-size: 16px;
+  background: #fafafa;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+}
+.legend {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 12px 0 20px 0;
+}
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+.badge {
+  display: inline-block;
+  border-radius: 6px;
+  padding: 4px 8px;
+  border: 1px solid #d1d5db;
+  background: #f3f4f6;
+  color: #374151;
+  font-weight: 600;
+}
+.ann {
+  border-radius: 4px;
+  padding: 0 2px;
+  border-width: 1px;
+  border-style: solid;
+}
+.sidebar {
+  margin-top: 24px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 12px;
+}
+.sidebar h3 {
+  margin: 8px 0;
+  font-size: 16px;
+}
+.sidebar .ann-item {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+blockquote {
+  margin: 0 0 12px 0;
+  border-left: 3px solid #d1d5db;
+  padding-left: 12px;
+  color: #4b5563;
+}
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.footer {
+  margin-top: 24px;
+  font-size: 12px;
+  color: #6b7280;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h2>Annotated Assistant Response</h2>
+    <div class="legend"><span class="legend-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span></span><span class="legend-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span></span><span class="legend-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span></span></div>
+    <div class="subtle"><strong>user_prompt:</strong> Who is Ignaz Semmelweis? Provide as many specific details and examples as possible (such as names of people, numbers, events, locations, dates, times, etc.)
+</div>
+  </div>
+  <div class="message"><span class="ann" title="Supported: Confirmed as his full name in multiple sources including Britannica and Wikipedia" style="background:#e6ffed;border-color:#34d058;color:#22863a;">Ignaz Philipp Semmelweis</span> was a Hungarian physician, born on <span class="ann" title="Supported: Birth date confirmed in multiple sources including Britannica, Wikipedia, and other historical sources" style="background:#e6ffed;border-color:#34d058;color:#22863a;">July 1, 1818</span>, in <span class="ann" title="Supported: Birth location confirmed in multiple sources, now part of Budapest" style="background:#e6ffed;border-color:#34d058;color:#22863a;">Buda, Hungary</span> (now Budapest). He is best known for his pioneering work in the field of antiseptics and his discovery of the cause of puerperal fever, a bacterial infection that was prevalent in maternity wards during the 19th century.
+
+Semmelweis was born into a family of German-Hungarian descent. His father, <span class="ann" title="Supported: Father&#x27;s name confirmed in multiple sources including Wikipedia and genealogical records" style="background:#e6ffed;border-color:#34d058;color:#22863a;">József Semmelweis</span>, was a <span class="ann" title="Not Supported: Sources consistently state his father was a grocer/spice trader, not a lawyer" style="background:#ffeef0;border-color:#f85149;color:#b31d28;">lawyer</span>, and his mother, <span class="ann" title="Supported: Mother&#x27;s name confirmed in multiple sources including Wikipedia and genealogical records" style="background:#e6ffed;border-color:#34d058;color:#22863a;">Terézia Müller</span>, was a homemaker. Ignaz was the <span class="ann" title="Not Supported: Sources consistently state he was the fifth child out of ten children, not second of three" style="background:#ffeef0;border-color:#f85149;color:#b31d28;">second of three children</span>, and his family was considered middle-class.
+
+Semmelweis studied medicine at the <span class="ann" title="Supported: Confirmed he studied medicine at University of Vienna" style="background:#e6ffed;border-color:#34d058;color:#22863a;">University of Vienna</span>, where he graduated in <span class="ann" title="Supported: Graduation year confirmed in multiple sources including Britannica" style="background:#e6ffed;border-color:#34d058;color:#22863a;">1844</span>. He then returned to his hometown of Buda and began working at the <span class="ann" title="Supported: Confirmed he worked at St. Rochus Hospital in Budapest/Pest from 1851-1857" style="background:#e6ffed;border-color:#34d058;color:#22863a;">St. Rochus Hospital</span>, a maternity hospital where puerperal fever was a major problem.
+
+In <span class="ann" title="Supported: Year he was appointed assistant and introduced hand-washing confirmed in multiple sources" style="background:#e6ffed;border-color:#34d058;color:#22863a;">1847</span>, Semmelweis was appointed as the assistant to the chief obstetrician, <span class="ann" title="Supported: Confirmed as the chief obstetrician/professor he worked under at Vienna General Hospital" style="background:#e6ffed;border-color:#34d058;color:#22863a;">Johann Klein</span>, at the St. Rochus Hospital. At that time, puerperal fever was killing about <span class="ann" title="Supported: Mortality rates in this range confirmed in multiple sources for the First Clinic" style="background:#e6ffed;border-color:#34d058;color:#22863a;">10-20%</span> of the patients in the maternity ward. Semmelweis was shocked by the high mortality rate and began to investigate the cause of the disease.
+
+Semmelweis noticed that the medical students who assisted in the deliveries were often dirty and did not wash their hands before touching the patients. He hypothesized that the students were carrying some kind of &quot;cadaverous particles&quot; from the autopsy room to the maternity ward, where they were infecting the patients.
+
+To test his hypothesis, Semmelweis introduced a simple but revolutionary practice: he required the medical students to wash their hands with soap and water before assisting in the deliveries. He also introduced a series of other hygiene measures, including the use of clean linen and the disinfection of instruments.
+
+The results were dramatic. The mortality rate in the maternity ward dropped from <span class="ann" title="Supported: Specific statistics confirmed - April 1847 was 18.3%, and rates dropped to around 2.2% in June after hand-washing was instituted" style="background:#e6ffed;border-color:#34d058;color:#22863a;">18.3% to 2.6%</span> in just a few months. Semmelweis&#x27;s discovery was a major breakthrough in the field of medicine, and he was hailed as a hero by the medical community.
+
+However, Semmelweis&#x27;s discovery was not without controversy. Many of his colleagues were skeptical of his ideas, and some even accused him of being a &quot;madman&quot; or a &quot;heretic.&quot; The chief obstetrician, Johann Klein, was particularly opposed to Semmelweis&#x27;s ideas and refused to implement the hand-washing practice.
+
+Despite the opposition, Semmelweis continued to advocate for his ideas. He published a book, &quot;<span class="ann" title="Supported: Book title confirmed in multiple sources" style="background:#e6ffed;border-color:#34d058;color:#22863a;">The Etiology, Concept, and Prophylaxis of Childbed Fever</span>,&quot; in <span class="ann" title="Supported: Publication year confirmed in multiple sources including Britannica" style="background:#e6ffed;border-color:#34d058;color:#22863a;">1861</span>, which outlined his discovery and the importance of hand-washing in preventing puerperal fever.
+
+Tragically, Semmelweis&#x27;s own life was cut short. He was committed to a mental institution in 1865, where he died on <span class="ann" title="Supported: Death date confirmed in multiple sources including Britannica and Wikipedia" style="background:#e6ffed;border-color:#34d058;color:#22863a;">August 13, 1865</span>, at the age of 47. The official cause of death was listed as &quot;acute mania,&quot; but many historians believe that he was driven to madness by the opposition and ridicule he faced from his colleagues.
+
+Semmelweis&#x27;s legacy is a testament to the power of scientific inquiry and the importance of challenging conventional wisdom. His discovery of the cause of puerperal fever and the importance of hand-washing in preventing infection has saved countless lives and has had a lasting impact on the field of medicine.
+
+Some notable dates and events in Semmelweis&#x27;s life include:
+
+* July 1, 1818: Ignaz Philipp Semmelweis was born in Buda, Hungary.
+* 1844: Semmelweis graduated from the University of Vienna.
+* 1847: Semmelweis was appointed as the assistant to the chief obstetrician at the St. Rochus Hospital in Buda.
+* <span class="ann" title="Supported: Year he introduced hand-washing practice confirmed as 1847, but 1848 mentioned for other events" style="background:#e6ffed;border-color:#34d058;color:#22863a;">1848</span>: Semmelweis introduced the hand-washing practice in the maternity ward.
+* 1861: Semmelweis published his book, &quot;The Etiology, Concept, and Prophylaxis of Childbed Fever.&quot;
+* 1865: Semmelweis was committed to a mental institution and died on August 13, 1865.
+
+Some notable people associated with Semmelweis include:
+
+* Johann Klein: The chief obstetrician at the St. Rochus Hospital who opposed Semmelweis&#x27;s ideas.
+* <span class="ann" title="Insufficient Information: While Billroth was a real German surgeon, no sources found confirming he was specifically a friend and supporter of Semmelweis" style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">Theodor Billroth</span>: A German surgeon who was a friend and supporter of Semmelweis.
+* <span class="ann" title="Supported: Confirmed as influenced by Semmelweis&#x27;s ideas and developed antiseptic surgery, though sources indicate he initially hadn&#x27;t heard of Semmelweis" style="background:#e6ffed;border-color:#34d058;color:#22863a;">Joseph Lister</span>: A British surgeon who was influenced by Semmelweis&#x27;s ideas and went on to develop the concept of antiseptic surgery.
+
+Some notable locations associated with Semmelweis include:
+
+* Buda, Hungary: Semmelweis&#x27;s hometown and the location of the St. Rochus Hospital.
+* University of Vienna: Semmelweis studied medicine at the University of Vienna.
+* St. Rochus Hospital: The maternity hospital where Semmelweis worked and introduced the hand-washing practice.
+* <span class="ann" title="Supported: Confirmed as the hospital where Semmelweis worked and made his discoveries" style="background:#e6ffed;border-color:#34d058;color:#22863a;">Vienna General Hospital</span>: Semmelweis also worked at the Vienna General Hospital, where he was exposed to the concept of &quot;cadaverous particles&quot; that he later hypothesized were the cause of puerperal fever.</div>
+  <div class="sidebar"><h3>Placed annotations</h3><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Ignaz Philipp Semmelweis</strong> (idx 0) — Confirmed as his full name in multiple sources including Britannica and Wikipedia</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>July 1, 1818</strong> (idx 60) — Birth date confirmed in multiple sources including Britannica, Wikipedia, and other historical sources</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Buda, Hungary</strong> (idx 77) — Birth location confirmed in multiple sources, now part of Budapest</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>József Semmelweis</strong> (idx 388) — Father&#x27;s name confirmed in multiple sources including Wikipedia and genealogical records</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>lawyer</strong> (idx 413) — Sources consistently state his father was a grocer/spice trader, not a lawyer</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Terézia Müller</strong> (idx 437) — Mother&#x27;s name confirmed in multiple sources including Wikipedia and genealogical records</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>second of three children</strong> (idx 484) — Sources consistently state he was the fifth child out of ten children, not second of three</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>University of Vienna</strong> (idx 590) — Confirmed he studied medicine at University of Vienna</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>1844</strong> (idx 634) — Graduation year confirmed in multiple sources including Britannica</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>St. Rochus Hospital</strong> (idx 706) — Confirmed he worked at St. Rochus Hospital in Budapest/Pest from 1851-1857</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>1847</strong> (idx 795) — Year he was appointed assistant and introduced hand-washing confirmed in multiple sources</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Johann Klein</strong> (idx 870) — Confirmed as the chief obstetrician/professor he worked under at Vienna General Hospital</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>10-20%</strong> (idx 960) — Mortality rates in this range confirmed in multiple sources for the First Clinic</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>18.3% to 2.6%</strong> (idx 1829) — Specific statistics confirmed - April 1847 was 18.3%, and rates dropped to around 2.2% in June after hand-washing was instituted</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>The Etiology, Concept, and Prophylaxis of Childbed Fever</strong> (idx 2401) — Book title confirmed in multiple sources</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>1861</strong> (idx 2463) — Publication year confirmed in multiple sources including Britannica</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>August 13, 1865</strong> (idx 2681) — Death date confirmed in multiple sources including Britannica and Wikipedia</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>1848</strong> (idx 3508) — Year he introduced hand-washing practice confirmed as 1847, but 1848 mentioned for other events</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>Theodor Billroth</strong> (idx 3928) — While Billroth was a real German surgeon, no sources found confirming he was specifically a friend and supporter of Semmelweis</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Joseph Lister</strong> (idx 4011) — Confirmed as influenced by Semmelweis&#x27;s ideas and developed antiseptic surgery, though sources indicate he initially hadn&#x27;t heard of Semmelweis</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Vienna General Hospital</strong> (idx 4483) — Confirmed as the hospital where Semmelweis worked and made his discoveries</div></div>
+  
+  <div class="footer">Generated by annotate_from_spans.py</div>
+</div>
+</body>
+</html>

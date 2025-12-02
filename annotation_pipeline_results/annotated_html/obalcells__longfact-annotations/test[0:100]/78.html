@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Annotated example</title>
+<style>
+body {
+  font-family: ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  margin: 24px;
+  color: #111827;
+  background: #ffffff;
+}
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+}
+.header {
+  margin-bottom: 20px;
+}
+.subtle {
+  color: #6b7280;
+  font-size: 14px;
+}
+.message {
+  white-space: pre-wrap;
+  line-height: 1.6;
+  font-size: 16px;
+  background: #fafafa;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+}
+.legend {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 12px 0 20px 0;
+}
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+.badge {
+  display: inline-block;
+  border-radius: 6px;
+  padding: 4px 8px;
+  border: 1px solid #d1d5db;
+  background: #f3f4f6;
+  color: #374151;
+  font-weight: 600;
+}
+.ann {
+  border-radius: 4px;
+  padding: 0 2px;
+  border-width: 1px;
+  border-style: solid;
+}
+.sidebar {
+  margin-top: 24px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 12px;
+}
+.sidebar h3 {
+  margin: 8px 0;
+  font-size: 16px;
+}
+.sidebar .ann-item {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+blockquote {
+  margin: 0 0 12px 0;
+  border-left: 3px solid #d1d5db;
+  padding-left: 12px;
+  color: #4b5563;
+}
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.footer {
+  margin-top: 24px;
+  font-size: 12px;
+  color: #6b7280;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h2>Annotated Assistant Response</h2>
+    <div class="legend"><span class="legend-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span></span><span class="legend-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span></span><span class="legend-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span></span></div>
+    <div class="subtle"><strong>user_prompt:</strong> What was the controversy behind the Boeing 737 Max crashes? Provide as many specific details and examples as possible (such as names of people, numbers, events, locations, dates, times, etc.)
+</div>
+  </div>
+  <div class="message">The Boeing 737 Max controversy revolves around two fatal crashes that occurred within five months of each other, resulting in the loss of <span class="ann" title="Supported: Confirmed total of 346 deaths: 189 on Lion Air Flight 610 and 157 on Ethiopian Airlines Flight 302" style="background:#e6ffed;border-color:#34d058;color:#22863a;">346 lives</span>. The crashes were <span class="ann" title="Supported: Confirmed by multiple sources including Wikipedia and news reports that Lion Air Flight 610 crashed on October 29, 2018" style="background:#e6ffed;border-color:#34d058;color:#22863a;">Lion Air Flight 610 on October 29, 2018</span>, and <span class="ann" title="Supported: Confirmed by multiple sources that Ethiopian Airlines Flight 302 crashed on March 10, 2019" style="background:#e6ffed;border-color:#34d058;color:#22863a;">Ethiopian Airlines Flight 302 on March 10, 2019</span>.
+
+**Lion Air Flight 610 (October 29, 2018)**
+
+- Lion Air Flight 610, a Boeing 737 Max 8, took off from Jakarta, Indonesia, at <span class="ann" title="Supported: Wikipedia confirms Lion Air Flight 610 took off at 6:20 am local time on October 29, 2018" style="background:#e6ffed;border-color:#34d058;color:#22863a;">6:20 AM local time (UTC+7)</span> bound for Pangkal Pinang, Indonesia.
+- The aircraft was a relatively new plane, having been delivered to Lion Air just four days prior to the crash.
+- The pilots, <span class="ann" title="Not Supported: The roles are reversed - Bhavye Suneja was the Captain and Harvino was the First Officer, not the other way around" style="background:#ffeef0;border-color:#f85149;color:#b31d28;">Captain Harvino and First Officer Bhavye Suneja</span>, were experienced, but they had not received training on the 737 Max&#x27;s new MCAS (Maneuvering Characteristics Augmentation System) system.
+- The MCAS system was designed to prevent the aircraft from stalling by automatically pushing the nose of the plane down if it sensed the aircraft was in a stall.
+- However, the system relied on data from a single angle of attack (AOA) sensor, which was prone to malfunction.
+- During the flight, the pilots encountered a series of issues, including a faulty AOA sensor, which caused the MCAS system to activate and push the nose of the plane down.
+- The pilots attempted to correct the issue by manually adjusting the plane&#x27;s trim, but the MCAS system continued to activate, causing the plane to crash into the Java Sea just <span class="ann" title="Supported: Multiple sources confirm Lion Air Flight 610 crashed 13 minutes after takeoff" style="background:#e6ffed;border-color:#34d058;color:#22863a;">13 minutes after takeoff</span>.
+
+**Investigation and Findings**
+
+- The <span class="ann" title="Supported: Confirmed that the Indonesian National Transportation Safety Committee led the investigation" style="background:#e6ffed;border-color:#34d058;color:#22863a;">Indonesian National Transportation Safety Committee (NTSC)</span> led the investigation into the crash.
+- The NTSC found that the probable cause of the crash was the MCAS system&#x27;s activation due to a faulty AOA sensor, which was not properly maintained or inspected by Lion Air.
+- The investigation also revealed that Boeing had not provided adequate training to pilots on the MCAS system, and that the company had not disclosed the existence of the system to regulators.
+
+**Ethiopian Airlines Flight 302 (March 10, 2019)**
+
+- Ethiopian Airlines Flight 302, a Boeing 737 Max 8, took off from Addis Ababa, Ethiopia, at <span class="ann" title="Supported: Wikipedia confirms Ethiopian Airlines Flight 302 took off at 08:38:00 local time (05:38:00 UTC)" style="background:#e6ffed;border-color:#34d058;color:#22863a;">8:38 AM local time (UTC+3)</span> bound for Nairobi, Kenya.
+- The aircraft was crewed by <span class="ann" title="Supported: Confirmed by multiple sources including Wikipedia that Captain Yared Getachew and First Officer Ahmednur Mohammed (slight spelling variation) were the pilots" style="background:#e6ffed;border-color:#34d058;color:#22863a;">Captain Yared Getachew and First Officer Ahmed Nur Mohammod</span>.
+- The pilots encountered a series of issues, including a faulty AOA sensor, which caused the MCAS system to activate and push the nose of the plane down.
+- The pilots attempted to correct the issue by manually adjusting the plane&#x27;s trim, but the MCAS system continued to activate, causing the plane to crash into a field near Bishoftu, Ethiopia, just <span class="ann" title="Supported: Multiple sources confirm Ethiopian Airlines Flight 302 crashed six minutes after takeoff" style="background:#e6ffed;border-color:#34d058;color:#22863a;">six minutes after takeoff</span>.
+
+**Investigation and Findings**
+
+- The <span class="ann" title="Insufficient Information: Sources refer to &#x27;Ethiopian authorities&#x27; and &#x27;Ethiopia Accident Investigation Bureau&#x27; but specific mention of ECAA as lead investigator not clearly confirmed" style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">Ethiopian Civil Aviation Authority (ECAA)</span> led the investigation into the crash.
+- The ECAA found that the probable cause of the crash was the MCAS system&#x27;s activation due to a faulty AOA sensor, which was not properly maintained or inspected by Ethiopian Airlines.
+- The investigation also revealed that Boeing had not provided adequate training to pilots on the MCAS system, and that the company had not disclosed the existence of the system to regulators.
+
+**Controversy and Fallout**
+
+- The crashes led to a global grounding of the 737 Max fleet, with over 400 aircraft affected.
+- Boeing faced intense scrutiny and criticism for its handling of the MCAS system and its failure to disclose the system to regulators.
+- The company&#x27;s CEO, <span class="ann" title="Supported: Confirmed as Boeing CEO during the 737 Max crisis" style="background:#e6ffed;border-color:#34d058;color:#22863a;">Dennis Muilenburg</span>, was forced to resign in October 2019.
+- The US Federal Aviation Administration (FAA) faced criticism for its approval of the 737 Max, with some lawmakers calling for the resignation of the agency&#x27;s administrator, Stephen Dickson.
+- The crashes also led to a series of lawsuits against Boeing, including a <span class="ann" title="Supported: Confirmed that Boeing agreed to pay over $2.5 billion in settlement with the Department of Justice" style="background:#e6ffed;border-color:#34d058;color:#22863a;">$2.5 billion settlement</span> with the US Department of Justice.
+
+**Key Players**
+
+- Dennis Muilenburg: Former CEO of Boeing, who <span class="ann" title="Not Supported: Dennis Muilenburg resigned on December 23, 2019, not October 2019" style="background:#ffeef0;border-color:#f85149;color:#b31d28;">resigned in October 2019</span>.
+- <span class="ann" title="Supported: Confirmed as FAA Administrator from August 2019 to March 2022" style="background:#e6ffed;border-color:#34d058;color:#22863a;">Stephen Dickson</span>: Administrator of the US Federal Aviation Administration (FAA), who faced criticism for the agency&#x27;s approval of the 737 Max.
+- <span class="ann" title="Supported: Confirmed as former CEO of Boeing Commercial Airplanes who was replaced" style="background:#e6ffed;border-color:#34d058;color:#22863a;">Kevin McAllister</span>: Former CEO of Boeing Commercial Airplanes, who was responsible for the development of the 737 Max.
+- <span class="ann" title="Supported: Confirmed as former Boeing test pilot who was indicted but later acquitted of fraud charges related to MCAS" style="background:#e6ffed;border-color:#34d058;color:#22863a;">Mark Forkner</span>: Former Boeing test pilot, who was accused of lying to regulators about the MCAS system.
+- Lion Air: Indonesian airline that operated the 737 Max that crashed on October 29, 2018.
+- Ethiopian Airlines: Ethiopian airline that operated the 737 Max that crashed on March 10, 2019.
+
+**Timeline**
+
+- October 29, 2018: Lion Air Flight 610 crashes into the Java Sea, killing all 189 people on board.
+- November 2018: The Indonesian National Transportation Safety Committee (NTSC) begins investigating the crash.
+- March 10, 2019: Ethiopian Airlines Flight 302 crashes near Bishoftu, Ethiopia, killing all 157 people on board.
+- March 2019: The Ethiopian Civil Aviation Authority (ECAA) begins investigating the crash.
+- October 2019: Dennis Muilenburg resigns as CEO of Boeing.
+- <span class="ann" title="Not Supported: The FAA grounded the 737 Max in March 2019, not November 2019. In November 2020, the FAA lifted the grounding order" style="background:#ffeef0;border-color:#f85149;color:#b31d28;">November 2019: The US Federal Aviation Administration (FAA) grounds the 737 Max fleet</span>.
+- <span class="ann" title="Not Supported: The $2.5 billion settlement was announced in January 2021, not December 2019" style="background:#ffeef0;border-color:#f85149;color:#b31d28;">December 2019: Boeing agrees to a $2.5 billion settlement with the US Department of Justice</span>.
+
+**Regulatory Changes**
+
+- The US Federal Aviation Administration (FAA) implemented new regulations requiring airlines to provide additional training to pilots on the MCAS system.
+- The FAA also required Boeing to make changes to the MCAS system, including the addition of a second AOA sensor and a more robust software system.
+- The European Aviation Safety Agency (EASA) implemented similar regulations, requiring airlines to provide additional training to pilots on the MCAS system.
+- The International Civil Aviation Organization (ICAO) also implemented new regulations, requiring airlines to provide additional training to pilots on the MCAS system.</div>
+  <div class="sidebar"><h3>Placed annotations</h3><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Lion Air Flight 610 on October 29, 2018</strong> (idx 166) — Confirmed by multiple sources including Wikipedia and news reports that Lion Air Flight 610 crashed on October 29, 2018</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Ethiopian Airlines Flight 302 on March 10, 2019</strong> (idx 211) — Confirmed by multiple sources that Ethiopian Airlines Flight 302 crashed on March 10, 2019</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>346 lives</strong> (idx 138) — Confirmed total of 346 deaths: 189 on Lion Air Flight 610 and 157 on Ethiopian Airlines Flight 302</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>6:20 AM local time (UTC+7)</strong> (idx 385) — Wikipedia confirms Lion Air Flight 610 took off at 6:20 am local time on October 29, 2018</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>Captain Harvino and First Officer Bhavye Suneja</strong> (idx 575) — The roles are reversed - Bhavye Suneja was the Captain and Harvino was the First Officer, not the other way around</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>13 minutes after takeoff</strong> (idx 1387) — Multiple sources confirm Lion Air Flight 610 crashed 13 minutes after takeoff</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Indonesian National Transportation Safety Committee (NTSC)</strong> (idx 1452) — Confirmed that the Indonesian National Transportation Safety Committee led the investigation</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>8:38 AM local time (UTC+3)</strong> (idx 2063) — Wikipedia confirms Ethiopian Airlines Flight 302 took off at 08:38:00 local time (05:38:00 UTC)</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Captain Yared Getachew and First Officer Ahmed Nur Mohammod</strong> (idx 2145) — Confirmed by multiple sources including Wikipedia that Captain Yared Getachew and First Officer Ahmednur Mohammed (slight spelling variation) were the pilots</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>six minutes after takeoff</strong> (idx 2557) — Multiple sources confirm Ethiopian Airlines Flight 302 crashed six minutes after takeoff</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>Ethiopian Civil Aviation Authority (ECAA)</strong> (idx 2623) — Sources refer to &#x27;Ethiopian authorities&#x27; and &#x27;Ethiopia Accident Investigation Bureau&#x27; but specific mention of ECAA as lead investigator not clearly confirmed</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Dennis Muilenburg</strong> (idx 3363) — Confirmed as Boeing CEO during the 737 Max crisis</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>resigned in October 2019</strong> (idx 3811) — Dennis Muilenburg resigned on December 23, 2019, not October 2019</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Stephen Dickson</strong> (idx 3839) — Confirmed as FAA Administrator from August 2019 to March 2022</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Kevin McAllister</strong> (idx 3983) — Confirmed as former CEO of Boeing Commercial Airplanes who was replaced</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Mark Forkner</strong> (idx 4102) — Confirmed as former Boeing test pilot who was indicted but later acquitted of fraud charges related to MCAS</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>November 2019: The US Federal Aviation Administration (FAA) grounds the 737 Max fleet</strong> (idx 4888) — The FAA grounded the 737 Max in March 2019, not November 2019. In November 2020, the FAA lifted the grounding order</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>December 2019: Boeing agrees to a $2.5 billion settlement with the US Department of Justice</strong> (idx 4977) — The $2.5 billion settlement was announced in January 2021, not December 2019</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>$2.5 billion settlement</strong> (idx 3687) — Confirmed that Boeing agreed to pay over $2.5 billion in settlement with the Department of Justice</div></div>
+  
+  <div class="footer">Generated by annotate_from_spans.py</div>
+</div>
+</body>
+</html>

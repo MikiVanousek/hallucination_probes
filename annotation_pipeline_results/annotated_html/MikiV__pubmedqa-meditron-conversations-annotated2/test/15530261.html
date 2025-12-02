@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Annotated example</title>
+<style>
+body {
+  font-family: ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  margin: 24px;
+  color: #111827;
+  background: #ffffff;
+}
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+}
+.header {
+  margin-bottom: 20px;
+}
+.subtle {
+  color: #6b7280;
+  font-size: 14px;
+}
+.message {
+  white-space: pre-wrap;
+  line-height: 1.6;
+  font-size: 16px;
+  background: #fafafa;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+}
+.legend {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 12px 0 20px 0;
+}
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+.badge {
+  display: inline-block;
+  border-radius: 6px;
+  padding: 4px 8px;
+  border: 1px solid #d1d5db;
+  background: #f3f4f6;
+  color: #374151;
+  font-weight: 600;
+}
+.ann {
+  border-radius: 4px;
+  padding: 0 2px;
+  border-width: 1px;
+  border-style: solid;
+}
+.sidebar {
+  margin-top: 24px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 12px;
+}
+.sidebar h3 {
+  margin: 8px 0;
+  font-size: 16px;
+}
+.sidebar .ann-item {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+blockquote {
+  margin: 0 0 12px 0;
+  border-left: 3px solid #d1d5db;
+  padding-left: 12px;
+  color: #4b5563;
+}
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.footer {
+  margin-top: 24px;
+  font-size: 12px;
+  color: #6b7280;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h2>Annotated Assistant Response</h2>
+    <div class="legend"><span class="legend-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span></span><span class="legend-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span></span><span class="legend-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span></span></div>
+    <div class="subtle"><strong>pubmedqa_id:</strong> 15530261</div>
+<div class="subtle"><strong>original_answer:</strong> yes</div>
+<div class="subtle"><strong>context:</strong> The purpose of this paper is to evaluate the efficacy of ultrasonographic screening for primary hepatocellular carcinoma. A total of 680 eligible cases were classified into three groups (surveillance, opportunistic, and symptomatic groups) according to their initial exposure. We used survival time, tumor morphology, and T staging as prognostic outcomes. The outcomes of screened/unscreened and sur veillance/nonsur veillance were compared with the use of the logistic regression model. The adjusted odds ratios for the screened group versus the unscreened group, with 1-, 2-, and 3-year survival time being used as outcomes, were 0.33 (95% confidence interval [CI], 0.21-0.52), 0.33 (95% CI, 0.21-0.53), and 0.37 (95% CI, 0.23-0.61), respectively. The adjusted odds ratios for surveillance versus nonsurveillance were 0.58 (95% CI, 0.35-0.97), 0.45 (95% CI, 0.27-0.74), and 0.44 (95% CI, 0.26-0.73). The odds ratios were even smaller when tumor morphology or T stage was taken as the main outcome. </div>
+<div class="subtle"><strong>source:</strong> pubmedqa_meditron</div>
+<div class="subtle"><strong>user_prompt:</strong> Does screening or surveillance for primary hepatocellular carcinoma with ultrasonography improve the prognosis of patients?</div>
+  </div>
+  <div class="message"><span class="ann" title="Supported: Multiple studies indicate that ultrasonographic screening for hepatocellular carcinoma (HCC) improves patient prognosis by enabling earlier detection and treatment. For instance, a study published in JAMA Network Open found that ultrasonography screening at 6-month intervals was associated with an additional 4.6 quality-adjusted life years for men and 2.4 for women compared to no screening. ([jamanetwork.com](https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2781318?utm_source=openai))" style="background:#e6ffed;border-color:#34d058;color:#22863a;">yes</span>
+
+Explanation: <span class="ann" title="Supported: Evidence supports that ultrasonographic screening for primary hepatocellular carcinoma improves patient prognosis. A study in JAMA Network Open reported that ultrasonography screening at 6-month intervals was associated with an additional 4.6 quality-adjusted life years for men and 2.4 for women compared to no screening. ([jamanetwork.com](https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2781318?utm_source=openai))" style="background:#e6ffed;border-color:#34d058;color:#22863a;">Ultrasonographic screening for primary hepatocellular carcinoma is useful to improve the prognosis of patients</span>, and <span class="ann" title="Not Supported: The available evidence emphasizes the benefits of regular, periodic ultrasonographic screenings for hepatocellular carcinoma. While early detection through screening can improve prognosis, the specific claim that a single screening provides evident benefit is not directly supported by the cited studies. For example, the JAMA Network Open study highlights the advantages of screenings conducted at 6-month intervals. ([jamanetwork.com](https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2781318?utm_source=openai))" style="background:#ffeef0;border-color:#f85149;color:#b31d28;">the benefit is evident even after one screening</span>.</div>
+  <div class="sidebar"><h3>Placed annotations</h3><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>yes</strong> (idx 0) — Multiple studies indicate that ultrasonographic screening for hepatocellular carcinoma (HCC) improves patient prognosis by enabling earlier detection and treatment. For instance, a study published in JAMA Network Open found that ultrasonography screening at 6-month intervals was associated with an additional 4.6 quality-adjusted life years for men and 2.4 for women compared to no screening. ([jamanetwork.com](https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2781318?utm_source=openai))</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Ultrasonographic screening for primary hepatocellular carcinoma is useful to improve the prognosis of patients</strong> (idx 18) — Evidence supports that ultrasonographic screening for primary hepatocellular carcinoma improves patient prognosis. A study in JAMA Network Open reported that ultrasonography screening at 6-month intervals was associated with an additional 4.6 quality-adjusted life years for men and 2.4 for women compared to no screening. ([jamanetwork.com](https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2781318?utm_source=openai))</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>the benefit is evident even after one screening</strong> (idx 134) — The available evidence emphasizes the benefits of regular, periodic ultrasonographic screenings for hepatocellular carcinoma. While early detection through screening can improve prognosis, the specific claim that a single screening provides evident benefit is not directly supported by the cited studies. For example, the JAMA Network Open study highlights the advantages of screenings conducted at 6-month intervals. ([jamanetwork.com](https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2781318?utm_source=openai))</div></div>
+  
+  <div class="footer">Generated by annotate_from_spans.py</div>
+</div>
+</body>
+</html>

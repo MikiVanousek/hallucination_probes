@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Annotated example</title>
+<style>
+body {
+  font-family: ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  margin: 24px;
+  color: #111827;
+  background: #ffffff;
+}
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+}
+.header {
+  margin-bottom: 20px;
+}
+.subtle {
+  color: #6b7280;
+  font-size: 14px;
+}
+.message {
+  white-space: pre-wrap;
+  line-height: 1.6;
+  font-size: 16px;
+  background: #fafafa;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+}
+.legend {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 12px 0 20px 0;
+}
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+.badge {
+  display: inline-block;
+  border-radius: 6px;
+  padding: 4px 8px;
+  border: 1px solid #d1d5db;
+  background: #f3f4f6;
+  color: #374151;
+  font-weight: 600;
+}
+.ann {
+  border-radius: 4px;
+  padding: 0 2px;
+  border-width: 1px;
+  border-style: solid;
+}
+.sidebar {
+  margin-top: 24px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 12px;
+}
+.sidebar h3 {
+  margin: 8px 0;
+  font-size: 16px;
+}
+.sidebar .ann-item {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+blockquote {
+  margin: 0 0 12px 0;
+  border-left: 3px solid #d1d5db;
+  padding-left: 12px;
+  color: #4b5563;
+}
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.footer {
+  margin-top: 24px;
+  font-size: 12px;
+  color: #6b7280;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h2>Annotated Assistant Response</h2>
+    <div class="legend"><span class="legend-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span></span><span class="legend-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span></span><span class="legend-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span></span></div>
+    <div class="subtle"><strong>pubmedqa_id:</strong> 19394934</div>
+<div class="subtle"><strong>original_answer:</strong> yes</div>
+<div class="subtle"><strong>context:</strong> The incidence of large-scale urban attacks on civilian populations has significantly increased across the globe over the past decade. These incidents often result in Hospital Multiple Casualty Incidents (HMCI), which are very challenging to hospital teams. 15 years ago the Emergency and Disaster Medicine Division in the Israeli Ministry of Health defined a key of 20 percent of each hospital&#x27;s bed capacity as its readiness for multiple casualties. Half of those casualties are expected to require immediate medical treatment. This study was performed to evaluate the efficacy of the current readiness guidelines based on the epidemiology of encountered HMCIs. A retrospective study of HMCIs was recorded in the Israeli Defense Force (IDF) home front command and the Israeli National Trauma Registry (ITR) between November 2000 and June 2003. An HMCI is defined by the Emergency and Disaster Medicine Division in the Israeli Ministry of Health as&gt;or=10 casualties or&gt;or=4 suffering from injuries wi</div>
+<div class="subtle"><strong>source:</strong> pubmedqa_meditron</div>
+<div class="subtle"><strong>user_prompt:</strong> Israeli hospital preparedness for terrorism-related multiple casualty incidents: can the surge capacity and injury severity distribution be better predicted?</div>
+  </div>
+  <div class="message">Yes.
+
+Explanation: The current guidelines to prepare for HMCIs are based on <span class="ann" title="Not Supported: There is no evidence in the study that readiness is defined as &#x27;each hospital is expected to receive half of its 20% key capacity&#x27; in one event. The guideline says hospitals should have 20% of their bed capacity available for HMCI, but not that half of that 20% will necessarily be used in one event. ([pubmed.ncbi.nlm.nih.gov](https://pubmed.ncbi.nlm.nih.gov/19394934/?utm_source=openai))" style="background:#ffeef0;border-color:#f85149;color:#b31d28;">the assumption that each hospital is expected to receive half of its 20% key capacity in one event</span>. The <span class="ann" title="Supported: This is correct: the study reports the mean number of arriving casualties to a single hospital was 20.8 ±13.3. ([pubmed.ncbi.nlm.nih.gov](https://pubmed.ncbi.nlm.nih.gov/19394934/?utm_source=openai))" style="background:#e6ffed;border-color:#34d058;color:#22863a;">mean number of casualties arriving to a single hospital was 20.8</span>. <span class="ann" title="Supported: The source says in 95% of the HMCIs the casualty load was ≤52. ([pubmed.ncbi.nlm.nih.gov](https://pubmed.ncbi.nlm.nih.gov/19394934/?utm_source=openai))" style="background:#e6ffed;border-color:#34d058;color:#22863a;">In 95% of the HMCIs the casualty load was&lt;or=52</span>. The <span class="ann" title="Insufficient Information: The study concludes that hospital preparedness might be better defined by fixed numbers rather than a percent of bed capacity; it doesn&#x27;t explicitly say that current guidelines are appropriate in most cases. ([pubmed.ncbi.nlm.nih.gov](https://pubmed.ncbi.nlm.nih.gov/19394934/?utm_source=openai))" style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">current guidelines are appropriate for the majority of HMCIs</span>. However, <span class="ann" title="Insufficient Information: The study gives median 16.5 and range 4-56. It doesn&#x27;t clearly quantify &#x27;a significant proportion&#x27; or how many HMCIs had ≤20 casualties in explicit proportion terms. ([pubmed.ncbi.nlm.nih.gov](https://pubmed.ncbi.nlm.nih.gov/19394934/?utm_source=openai))" style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">a significant proportion of HMCIs have a casualty load of&lt;or=20</span>, which may be managed by a single hospital without the need for additional surge capacity.</div>
+  <div class="sidebar"><h3>Placed annotations</h3><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>the assumption that each hospital is expected to receive half of its 20% key capacity in one event</strong> (idx 76) — There is no evidence in the study that readiness is defined as &#x27;each hospital is expected to receive half of its 20% key capacity&#x27; in one event. The guideline says hospitals should have 20% of their bed capacity available for HMCI, but not that half of that 20% will necessarily be used in one event. ([pubmed.ncbi.nlm.nih.gov](https://pubmed.ncbi.nlm.nih.gov/19394934/?utm_source=openai))</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>mean number of casualties arriving to a single hospital was 20.8</strong> (idx 180) — This is correct: the study reports the mean number of arriving casualties to a single hospital was 20.8 ±13.3. ([pubmed.ncbi.nlm.nih.gov](https://pubmed.ncbi.nlm.nih.gov/19394934/?utm_source=openai))</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>In 95% of the HMCIs the casualty load was&lt;or=52</strong> (idx 246) — The source says in 95% of the HMCIs the casualty load was ≤52. ([pubmed.ncbi.nlm.nih.gov](https://pubmed.ncbi.nlm.nih.gov/19394934/?utm_source=openai))</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>current guidelines are appropriate for the majority of HMCIs</strong> (idx 299) — The study concludes that hospital preparedness might be better defined by fixed numbers rather than a percent of bed capacity; it doesn&#x27;t explicitly say that current guidelines are appropriate in most cases. ([pubmed.ncbi.nlm.nih.gov](https://pubmed.ncbi.nlm.nih.gov/19394934/?utm_source=openai))</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>a significant proportion of HMCIs have a casualty load of&lt;or=20</strong> (idx 370) — The study gives median 16.5 and range 4-56. It doesn&#x27;t clearly quantify &#x27;a significant proportion&#x27; or how many HMCIs had ≤20 casualties in explicit proportion terms. ([pubmed.ncbi.nlm.nih.gov](https://pubmed.ncbi.nlm.nih.gov/19394934/?utm_source=openai))</div></div>
+  <div class="sidebar"><h3>Unplaced annotations</h3><div class="ann-item"><span class="badge" style="background:#eef2ff;border-color:#6366f1;color:#3730a3">Unknown</span> <strong>Only 20% of the arriving casualties will require immediate medical treatment</strong> — The study states that based on severity scores and ED discharges, 79.2% (i.e. approximately 80%) did not necessitate immediate medical treatment - thus around 20% did. ([pubmed.ncbi.nlm.nih.gov](https://pubmed.ncbi.nlm.nih.gov/19394934/?utm_source=openai))</div></div>
+  <div class="footer">Generated by annotate_from_spans.py</div>
+</div>
+</body>
+</html>

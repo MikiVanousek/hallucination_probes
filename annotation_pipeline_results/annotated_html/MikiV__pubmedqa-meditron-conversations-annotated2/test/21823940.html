@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Annotated example</title>
+<style>
+body {
+  font-family: ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  margin: 24px;
+  color: #111827;
+  background: #ffffff;
+}
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+}
+.header {
+  margin-bottom: 20px;
+}
+.subtle {
+  color: #6b7280;
+  font-size: 14px;
+}
+.message {
+  white-space: pre-wrap;
+  line-height: 1.6;
+  font-size: 16px;
+  background: #fafafa;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+}
+.legend {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 12px 0 20px 0;
+}
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+.badge {
+  display: inline-block;
+  border-radius: 6px;
+  padding: 4px 8px;
+  border: 1px solid #d1d5db;
+  background: #f3f4f6;
+  color: #374151;
+  font-weight: 600;
+}
+.ann {
+  border-radius: 4px;
+  padding: 0 2px;
+  border-width: 1px;
+  border-style: solid;
+}
+.sidebar {
+  margin-top: 24px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 12px;
+}
+.sidebar h3 {
+  margin: 8px 0;
+  font-size: 16px;
+}
+.sidebar .ann-item {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+blockquote {
+  margin: 0 0 12px 0;
+  border-left: 3px solid #d1d5db;
+  padding-left: 12px;
+  color: #4b5563;
+}
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.footer {
+  margin-top: 24px;
+  font-size: 12px;
+  color: #6b7280;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h2>Annotated Assistant Response</h2>
+    <div class="legend"><span class="legend-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span></span><span class="legend-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span></span><span class="legend-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span></span></div>
+    <div class="subtle"><strong>pubmedqa_id:</strong> 21823940</div>
+<div class="subtle"><strong>original_answer:</strong> no</div>
+<div class="subtle"><strong>context:</strong> Research on stroke survivors&#x27; driving safety has typically used either self-reports or government records, but the extent to which the 2 may differ is not known. We compared government records and self-reports of motor vehicle collisions and driving convictions in a sample of stroke survivors. The 56 participants were originally recruited for a prospective study on driving and community re-integration post-stroke; the study population consisted of moderately impaired stroke survivors without severe communication disorders who had been referred for a driving assessment. The driving records of the 56 participants for the 5 years before study entry and the 1-year study period were acquired with written consent from the Ministry of Transportation of Ontario (MTO), Canada. Self-reports of collisions and convictions were acquired via a semistructured interview and then compared with the MTO records. Forty-three participants completed the study. For 7 (13.5%) the MTO records did not match the</div>
+<div class="subtle"><strong>source:</strong> pubmedqa_meditron</div>
+<div class="subtle"><strong>user_prompt:</strong> Department of Transportation vs self-reported data on motor vehicle collisions and driving convictions for stroke survivors: do they agree?</div>
+  </div>
+  <div class="message">No
+
+# Introduction
+The number of stroke survivors is increasing, and the number of stroke survivors who continue to drive is also increasing [bib_ref] Driving status in the first year after stroke, <span class="ann" title="Not Supported: No major stroke / driving study with author or location " style="background:#ffeef0;border-color:#f85149;color:#b31d28;">Louth</span> [/bib_ref]. The risk of motor vehicle collisions (MVCs) is 2 to 3 times higher among stroke survivors than among age-matched controls [bib_ref] Driving status 1 year after stroke: a population-based study, Bernhardt [/bib_ref] [bib_ref] Driving after stroke: a prospective cohort study to assess driving skills, driving..., Dorsch [/bib_ref] [bib_ref] Stroke survivors&#x27; driving behavior: a prospective cohort study with 1-year follow-up, Louth [/bib_ref], and this risk increases with the severity of the stroke [bib_ref] Driving after stroke: a prospective cohort study to assess driving skills, driving..., Dorsch [/bib_ref] [bib_ref] Stroke survivors&#x27; driving behavior: a prospective cohort study with 1-year follow-up, Louth [/bib_ref] [bib_ref] Driving status of stroke survivors, Stalvey [/bib_ref]. Driving is a major concern for stroke survivors and their families [bib_ref] Stroke survivors&#x27; driving behavior: a prospective cohort study with 1-year follow-up, Louth [/bib_ref] [bib_ref] Driving after stroke: a prospective cohort study to assess driving skills, driving..., Dorsch [/bib_ref] [bib_ref] Driving status of stroke survivors, Stalvey [/bib_ref] [bib_ref] Driving after stroke: the experience of stroke survivors and their families, Louth [/bib_ref] [bib_ref] Driving after stroke: perceptions of patients and their families, Dorsch [/bib_ref] [bib_ref] Driving and stroke: patient and carer perspectives, Cott [/bib_ref] [bib_ref] Driving after stroke: a qualitative study of the patient&#x27;s perspective, Dorsch [/bib_ref] [bib_ref] Driving and stroke: a qualitative study of the patient&#x27;s perspective, Dorsch [/bib_ref] [bib_ref] Driving and stroke: a qualitative study of the patient&#x27;s perspective, Dorsch [/bib_ref] [bib_ref] Driving after stroke: an exploratory study of patient&#x27;s and family&#x27;s perspectives, Dorsch [/bib_ref] [bib_ref] Driving and stroke: a qualitative study of the patient&#x27;s perspective, Dorsch [/bib_ref] [bib_ref] Stroke survivors&#x27; perceptions of driving after stroke, Louth [/bib_ref] [bib_ref</div>
+  <div class="sidebar"><h3>Placed annotations</h3><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>Louth</strong> (idx 198) — No major stroke / driving study with author or location </div></div>
+  
+  <div class="footer">Generated by annotate_from_spans.py</div>
+</div>
+</body>
+</html>

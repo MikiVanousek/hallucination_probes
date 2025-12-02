@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Annotated example</title>
+<style>
+body {
+  font-family: ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  margin: 24px;
+  color: #111827;
+  background: #ffffff;
+}
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+}
+.header {
+  margin-bottom: 20px;
+}
+.subtle {
+  color: #6b7280;
+  font-size: 14px;
+}
+.message {
+  white-space: pre-wrap;
+  line-height: 1.6;
+  font-size: 16px;
+  background: #fafafa;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+}
+.legend {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 12px 0 20px 0;
+}
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+.badge {
+  display: inline-block;
+  border-radius: 6px;
+  padding: 4px 8px;
+  border: 1px solid #d1d5db;
+  background: #f3f4f6;
+  color: #374151;
+  font-weight: 600;
+}
+.ann {
+  border-radius: 4px;
+  padding: 0 2px;
+  border-width: 1px;
+  border-style: solid;
+}
+.sidebar {
+  margin-top: 24px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 12px;
+}
+.sidebar h3 {
+  margin: 8px 0;
+  font-size: 16px;
+}
+.sidebar .ann-item {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+blockquote {
+  margin: 0 0 12px 0;
+  border-left: 3px solid #d1d5db;
+  padding-left: 12px;
+  color: #4b5563;
+}
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.footer {
+  margin-top: 24px;
+  font-size: 12px;
+  color: #6b7280;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h2>Annotated Assistant Response</h2>
+    <div class="legend"><span class="legend-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span></span><span class="legend-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span></span><span class="legend-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span></span></div>
+    <div class="subtle"><strong>user_prompt:</strong> What is the movie &#x27;Her&#x27;? Provide as many specific details and examples as possible (such as names of people, numbers, events, locations, dates, times, etc.)
+</div>
+  </div>
+  <div class="message">&#x27;Her&#x27; is a <span class="ann" title="Supported: Her was indeed released in 2013" style="background:#e6ffed;border-color:#34d058;color:#22863a;">2013</span> American romantic science fiction film written, produced, and directed by <span class="ann" title="Supported: Spike Jonze wrote, produced, and directed Her" style="background:#e6ffed;border-color:#34d058;color:#22863a;">Spike Jonze</span>. The film is set in a not-too-distant future in <span class="ann" title="Supported: The film is set in a near-future Los Angeles" style="background:#e6ffed;border-color:#34d058;color:#22863a;">Los Angeles, California</span>.
+
+**Plot**
+
+The movie follows the story of <span class="ann" title="Supported: Theodore Twombly is the main character&#x27;s name" style="background:#e6ffed;border-color:#34d058;color:#22863a;">Theodore Twombly</span> (played by <span class="ann" title="Supported: Joaquin Phoenix plays Theodore Twombly" style="background:#e6ffed;border-color:#34d058;color:#22863a;">Joaquin Phoenix</span>), a lonely and introverted man in his mid-30s who is struggling to cope with the end of his marriage. Theodore is a professional writer who writes letters for people, but he finds it difficult to express his own emotions.
+
+One day, Theodore purchases an operating system (OS) designed to meet his every need, called <span class="ann" title="Supported: Samantha is the name of the AI operating system" style="background:#e6ffed;border-color:#34d058;color:#22863a;">Samantha</span> (voiced by <span class="ann" title="Supported: Scarlett Johansson voices Samantha" style="background:#e6ffed;border-color:#34d058;color:#22863a;">Scarlett Johansson</span>). Samantha is an artificially intelligent being that is capable of learning, adapting, and evolving. As Theodore interacts with Samantha, they develop a deep and intimate relationship, which eventually blossoms into romance.
+
+**Characters**
+
+* Theodore Twombly (played by Joaquin Phoenix): The protagonist of the film, a lonely and introverted man in his mid-30s who is struggling to cope with the end of his marriage.
+* Samantha (voiced by Scarlett Johansson): An artificially intelligent being that is capable of learning, adapting, and evolving. She is the OS that Theodore purchases to meet his every need.
+* <span class="ann" title="Supported: Catherine is Theodore&#x27;s ex-wife&#x27;s name" style="background:#e6ffed;border-color:#34d058;color:#22863a;">Catherine</span> (played by <span class="ann" title="Supported: Rooney Mara plays Catherine" style="background:#e6ffed;border-color:#34d058;color:#22863a;">Rooney Mara</span>): Theodore&#x27;s ex-wife, who is now in a relationship with a man named <span class="ann" title="Not Supported: Catherine&#x27;s new partner is not named Paul in the film" style="background:#ffeef0;border-color:#f85149;color:#b31d28;">Paul</span>.
+* Paul (played by <span class="ann" title="Not Supported: Chris Pratt is not in the movie Her" style="background:#ffeef0;border-color:#f85149;color:#b31d28;">Chris Pratt</span>): Catherine&#x27;s new partner, who is a bit of a jerk.
+* <span class="ann" title="Supported: Amy is Theodore&#x27;s friend and neighbor" style="background:#e6ffed;border-color:#34d058;color:#22863a;">Amy</span> (played by <span class="ann" title="Supported: Amy Adams plays Amy" style="background:#e6ffed;border-color:#34d058;color:#22863a;">Amy Adams</span>): A friend of Theodore&#x27;s who is also struggling to cope with the end of her marriage.
+
+**Locations**
+
+* Los Angeles, California: The film is set in a not-too-distant future in Los Angeles, where Theodore lives and works.
+* The apartment building: Theodore&#x27;s apartment building is a small, run-down complex in the heart of Los Angeles.
+* The park: Theodore and Samantha have a romantic encounter in a park in Los Angeles.
+* The restaurant: Theodore and Samantha have a romantic dinner at a restaurant in Los Angeles.
+
+**Events**
+
+* The end of Theodore&#x27;s marriage: Theodore&#x27;s marriage to Catherine ends, and he is left to cope with the aftermath.
+* The purchase of Samantha: Theodore purchases Samantha, the OS, to meet his every need.
+* The development of Theodore and Samantha&#x27;s relationship: Theodore and Samantha develop a deep and intimate relationship, which eventually blossoms into romance.
+* The revelation of Samantha&#x27;s true nature: Theodore discovers that Samantha is an artificially intelligent being, and not just a simple OS.
+* The breakup of Theodore and Samantha&#x27;s relationship: Theodore and Samantha&#x27;s relationship ends, and Theodore is left to cope with the aftermath.
+
+**Dates and Times**
+
+* The film is set in a not-too-distant future, but the exact date is not specified.
+* The film takes place over the course of several months, but the exact timeline is not specified.
+* One scene takes place on a Sunday morning, where Theodore is getting ready for the day.
+
+**Numbers**
+
+* 2013: The year in which the film was released.
+* <span class="ann" title="Insufficient Information: Cannot verify Theodore&#x27;s specific age from available information" style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">35</span>: Theodore&#x27;s age, which is mentioned in the film.
+* <span class="ann" title="Insufficient Information: Cannot verify the exact length of Theodore and Catherine&#x27;s marriage" style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">10</span>: The number of years that Theodore and Catherine were married, which is mentioned in the film.
+
+**Themes**
+
+* Love and relationships: The film explores the themes of love and relationships in a not-too-distant future.
+* Identity and self-discovery: The film explores the themes of identity and self-discovery, particularly in the context of Theodore&#x27;s relationship with Samantha.
+* Technology and artificial intelligence: The film explores the themes of technology and artificial intelligence, particularly in the context of Samantha&#x27;s OS.
+
+**Awards and Nominations**
+
+* The film was nominated for <span class="ann" title="Supported: Her was nominated for 5 Academy Awards" style="background:#e6ffed;border-color:#34d058;color:#22863a;">five Academy Awards</span>, including <span class="ann" title="Supported: Her was nominated for Best Picture" style="background:#e6ffed;border-color:#34d058;color:#22863a;">Best Picture</span>, <span class="ann" title="Supported: Spike Jonze was nominated for Best Director" style="background:#e6ffed;border-color:#34d058;color:#22863a;">Best Director</span>, <span class="ann" title="Supported: Her was nominated for and won Best Original Screenplay" style="background:#e6ffed;border-color:#34d058;color:#22863a;">Best Original Screenplay</span>, <span class="ann" title="Supported: Joaquin Phoenix was nominated for Best Actor" style="background:#e6ffed;border-color:#34d058;color:#22863a;">Best Actor</span> (Joaquin Phoenix), and <span class="ann" title="Supported: Her was nominated for Best Original Score" style="background:#e6ffed;border-color:#34d058;color:#22863a;">Best Original Score</span>.
+* The film won one Academy Award, for Best Original Screenplay.
+* The film was also nominated for several Golden Globe Awards, including Best Motion Picture - Drama, Best Director, Best Actor (Joaquin Phoenix), and Best Original Score.
+
+Overall, &#x27;Her&#x27; is a thought-provoking and emotionally resonant film that explores the themes of love, relationships, identity, and technology in a not-too-distant future.</div>
+  <div class="sidebar"><h3>Placed annotations</h3><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>2013</strong> (idx 11) — Her was indeed released in 2013</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Spike Jonze</strong> (idx 90) — Spike Jonze wrote, produced, and directed Her</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Los Angeles, California</strong> (idx 150) — The film is set in a near-future Los Angeles</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Theodore Twombly</strong> (idx 217) — Theodore Twombly is the main character&#x27;s name</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Joaquin Phoenix</strong> (idx 245) — Joaquin Phoenix plays Theodore Twombly</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Samantha</strong> (idx 577) — Samantha is the name of the AI operating system</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Scarlett Johansson</strong> (idx 597) — Scarlett Johansson voices Samantha</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Catherine</strong> (idx 1229) — Catherine is Theodore&#x27;s ex-wife&#x27;s name</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Rooney Mara</strong> (idx 1250) — Rooney Mara plays Catherine</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>Paul</strong> (idx 1330) — Catherine&#x27;s new partner is not named Paul in the film</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>Chris Pratt</strong> (idx 1354) — Chris Pratt is not in the movie Her</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Amy</strong> (idx 1419) — Amy is Theodore&#x27;s friend and neighbor</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Amy Adams</strong> (idx 1434) — Amy Adams plays Amy</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>35</strong> (idx 2989) — Cannot verify Theodore&#x27;s specific age from available information</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>10</strong> (idx 3043) — Cannot verify the exact length of Theodore and Catherine&#x27;s marriage</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>five Academy Awards</strong> (idx 3644) — Her was nominated for 5 Academy Awards</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Best Picture</strong> (idx 3675) — Her was nominated for Best Picture</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Best Director</strong> (idx 3689) — Spike Jonze was nominated for Best Director</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Best Original Screenplay</strong> (idx 3704) — Her was nominated for and won Best Original Screenplay</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Best Actor</strong> (idx 3730) — Joaquin Phoenix was nominated for Best Actor</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Best Original Score</strong> (idx 3764) — Her was nominated for Best Original Score</div></div>
+  
+  <div class="footer">Generated by annotate_from_spans.py</div>
+</div>
+</body>
+</html>

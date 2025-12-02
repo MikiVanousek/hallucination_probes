@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Annotated example</title>
+<style>
+body {
+  font-family: ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  margin: 24px;
+  color: #111827;
+  background: #ffffff;
+}
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+}
+.header {
+  margin-bottom: 20px;
+}
+.subtle {
+  color: #6b7280;
+  font-size: 14px;
+}
+.message {
+  white-space: pre-wrap;
+  line-height: 1.6;
+  font-size: 16px;
+  background: #fafafa;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+}
+.legend {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 12px 0 20px 0;
+}
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+.badge {
+  display: inline-block;
+  border-radius: 6px;
+  padding: 4px 8px;
+  border: 1px solid #d1d5db;
+  background: #f3f4f6;
+  color: #374151;
+  font-weight: 600;
+}
+.ann {
+  border-radius: 4px;
+  padding: 0 2px;
+  border-width: 1px;
+  border-style: solid;
+}
+.sidebar {
+  margin-top: 24px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 12px;
+}
+.sidebar h3 {
+  margin: 8px 0;
+  font-size: 16px;
+}
+.sidebar .ann-item {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+blockquote {
+  margin: 0 0 12px 0;
+  border-left: 3px solid #d1d5db;
+  padding-left: 12px;
+  color: #4b5563;
+}
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.footer {
+  margin-top: 24px;
+  font-size: 12px;
+  color: #6b7280;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h2>Annotated Assistant Response</h2>
+    <div class="legend"><span class="legend-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span></span><span class="legend-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span></span><span class="legend-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span></span></div>
+    <div class="subtle"><strong>user_prompt:</strong> Who is Atul Gawande? Provide as many specific details and examples as possible (such as names of people, numbers, events, locations, dates, times, etc.)
+</div>
+  </div>
+  <div class="message">Atul Gawande is a renowned American surgeon, writer, and public health researcher. He was born on <span class="ann" title="Supported: Confirmed by multiple sources including Wikipedia and official biographies that Atul Gawande was born on November 5, 1965." style="background:#e6ffed;border-color:#34d058;color:#22863a;">November 5, 1965</span>, in <span class="ann" title="Supported: Confirmed by Wikipedia and other sources that he was born in Brooklyn, New York." style="background:#e6ffed;border-color:#34d058;color:#22863a;">Brooklyn, New York</span>. Gawande&#x27;s work focuses on improving healthcare systems, reducing medical errors, and promoting patient safety.
+
+**Education and Early Career**
+
+Gawande earned his Bachelor&#x27;s degree in <span class="ann" title="Not Supported: Multiple sources consistently state he earned a degree in biology and political science from Stanford, not biological anthropology and history." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">Biological Anthropology and History</span> from <span class="ann" title="Supported: Confirmed by multiple sources that he graduated from Stanford University." style="background:#e6ffed;border-color:#34d058;color:#22863a;">Stanford University</span> in <span class="ann" title="Supported: Confirmed by multiple sources that he graduated from Stanford in 1987." style="background:#e6ffed;border-color:#34d058;color:#22863a;">1987</span>. He then attended <span class="ann" title="Supported: Confirmed by multiple sources that he attended Harvard Medical School." style="background:#e6ffed;border-color:#34d058;color:#22863a;">Harvard Medical School</span>, where he earned his M.D. degree in <span class="ann" title="Supported: Confirmed by multiple sources that he earned his M.D. from Harvard Medical School in 1995." style="background:#e6ffed;border-color:#34d058;color:#22863a;">1995</span>. During his residency at <span class="ann" title="Supported: Confirmed by multiple sources that he did his residency and practices at Brigham and Women&#x27;s Hospital in Boston." style="background:#e6ffed;border-color:#34d058;color:#22863a;">Brigham and Women&#x27;s Hospital</span> in Boston, Gawande became interested in the field of surgery and began to write about his experiences.
+
+**Writing Career**
+
+Gawande&#x27;s writing career began in <span class="ann" title="Supported: Confirmed by multiple sources that he became a staff writer for The New Yorker in 1998." style="background:#e6ffed;border-color:#34d058;color:#22863a;">1998</span> when he started writing for The New Yorker magazine. His first article, &quot;<span class="ann" title="Supported: Found reference to a New Yorker article titled &#x27;The Score: How Childbirth Went Industrial&#x27; by Gawande, though exact publication date not verified." style="background:#e6ffed;border-color:#34d058;color:#22863a;">The Score</span>,&quot; was published on <span class="ann" title="Insufficient Information: Could not verify the specific publication date of &#x27;The Score&#x27; article as October 5, 1998." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">October 5, 1998</span>. He went on to write <span class="ann" title="Insufficient Information: Could not verify the specific number of 300+ articles written for The New Yorker." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">over 300 articles</span> for The New Yorker, covering a wide range of topics related to healthcare, medicine, and public health.
+
+Some of Gawande&#x27;s notable articles include:
+
+1. &quot;<span class="ann" title="Insufficient Information: Could not verify a specific article titled &#x27;The Checklist&#x27; from October 2007, though he did write extensively about checklists." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">The Checklist</span>&quot; (<span class="ann" title="Insufficient Information: Could not verify the specific date for &#x27;The Checklist&#x27; article." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">October 2007</span>): This article introduced the concept of using checklists in healthcare to reduce medical errors.
+2. &quot;<span class="ann" title="Insufficient Information: Could not verify a specific article with this exact title from January 2009." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">When Doctors Make Mistakes</span>&quot; (<span class="ann" title="Insufficient Information: Could not verify the specific date for &#x27;When Doctors Make Mistakes&#x27; article." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">January 2009</span>): Gawande explored the issue of medical errors and the need for transparency in healthcare.
+3. &quot;<span class="ann" title="Insufficient Information: Could not verify a specific article with this exact title from January 2010." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">How Do We Heal?</span>&quot; (<span class="ann" title="Insufficient Information: Could not verify the specific date for &#x27;How Do We Heal?&#x27; article." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">January 2010</span>): This article discussed the importance of empathy in healthcare and the need for doctors to connect with their patients.
+
+**Books**
+
+Gawande has written several books on healthcare and medicine, including:
+
+1. &quot;<span class="ann" title="Supported: Confirmed by multiple sources as his first book published in 2002." style="background:#e6ffed;border-color:#34d058;color:#22863a;">Complications: A Surgeon&#x27;s Notes on an Imperfect Science</span>&quot; (<span class="ann" title="Supported: Confirmed by multiple sources that Complications was published in 2002." style="background:#e6ffed;border-color:#34d058;color:#22863a;">2002</span>): This book is a collection of essays that explore the challenges and complexities of surgery.
+2. &quot;<span class="ann" title="Supported: Confirmed by multiple sources as his second book." style="background:#e6ffed;border-color:#34d058;color:#22863a;">Better: A Surgeon&#x27;s Notes on Performance</span>&quot; (<span class="ann" title="Not Supported: Multiple sources indicate Better was published in 2007, not 2008." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">2008</span>): In this book, Gawande examines the concept of performance in healthcare and how it can be improved.
+3. &quot;<span class="ann" title="Supported: Confirmed by multiple sources as his third book published in 2009." style="background:#e6ffed;border-color:#34d058;color:#22863a;">The Checklist Manifesto: How to Get Things Right</span>&quot; (<span class="ann" title="Supported: Confirmed by multiple sources that The Checklist Manifesto was published in 2009." style="background:#e6ffed;border-color:#34d058;color:#22863a;">2009</span>): This book expands on the idea of using checklists in healthcare to reduce errors.
+4. &quot;<span class="ann" title="Supported: Confirmed by multiple sources as his fourth book published in 2014." style="background:#e6ffed;border-color:#34d058;color:#22863a;">Being Mortal: Medicine and What Matters in the End</span>&quot; (<span class="ann" title="Supported: Confirmed by multiple sources that Being Mortal was published in 2014." style="background:#e6ffed;border-color:#34d058;color:#22863a;">2014</span>): Gawande explores the challenges of aging and the need for healthcare systems to prioritize patient-centered care.
+5. &quot;<span class="ann" title="Not Supported: Could not find any evidence of a book by Gawande with this title published in 2021 or any other year." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">Helping Hands: Why Human Connection Is the Key to Better Health</span>&quot; (<span class="ann" title="Not Supported: No evidence found of Gawande publishing &#x27;Helping Hands&#x27; in 2021." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">2021</span>): This book discusses the importance of human connection in healthcare and how it can improve patient outcomes.
+
+**Awards and Recognition**
+
+Gawande has received numerous awards and honors for his writing and work in healthcare. Some of his notable awards include:
+
+1. <span class="ann" title="Supported: Confirmed that he won a National Magazine Award for his New Yorker article &#x27;Letting Go&#x27; in 2011." style="background:#e6ffed;border-color:#34d058;color:#22863a;">National Magazine Award</span> (<span class="ann" title="Not Supported: The National Magazine Award was won in 2011 for &#x27;Letting Go,&#x27; not in 2006 for &#x27;The Score.&#x27;" style="background:#ffeef0;border-color:#f85149;color:#b31d28;">2006</span>) for his article &quot;<span class="ann" title="Not Supported: The National Magazine Award was for &#x27;Letting Go,&#x27; not &#x27;The Score.&#x27;" style="background:#ffeef0;border-color:#f85149;color:#b31d28;">The Score</span>&quot;
+2. <span class="ann" title="Insufficient Information: Could not verify any Pulitzer Prize nomination for Gawande in 2007 or any other year." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">Pulitzer Prize nomination</span> (<span class="ann" title="Insufficient Information: Could not verify the Pulitzer Prize nomination claim for 2007." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">2007</span>) for his article &quot;The Checklist&quot;
+3. <span class="ann" title="Supported: Confirmed by multiple sources that he received the MacArthur Fellowship in 2006." style="background:#e6ffed;border-color:#34d058;color:#22863a;">MacArthur Fellowship</span> (<span class="ann" title="Supported: Confirmed by multiple sources that he received the MacArthur Fellowship in 2006." style="background:#e6ffed;border-color:#34d058;color:#22863a;">2006</span>) for his work in public health and healthcare policy
+4. <span class="ann" title="Insufficient Information: Could not verify this specific fellowship award in 2011." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">National Academy of Medicine&#x27;s (NAM) David and Lucile Packard Foundation Fellowship</span> (<span class="ann" title="Insufficient Information: Could not verify the NAM Packard Foundation Fellowship claim for 2011." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">2011</span>) for his work on improving healthcare systems
+
+**Leadership Roles**
+
+Gawande has held several leadership roles in healthcare and public health, including:
+
+1. <span class="ann" title="Supported: Confirmed by multiple sources that he led the WHO&#x27;s Safe Surgery Saves Lives initiative and surgical safety checklist development." style="background:#e6ffed;border-color:#34d058;color:#22863a;">Chair of the World Health Organization&#x27;s (WHO) Surgical Safety Checklist Task Force</span> (<span class="ann" title="Insufficient Information: While his leadership of the WHO surgical safety initiative is confirmed, the specific dates 2008-2010 for the task force chairmanship could not be verified." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">2008-2010</span>)
+2. <span class="ann" title="Insufficient Information: Could not verify this specific committee membership for 2010-2012." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">Member of the National Academy of Medicine&#x27;s (NAM) Committee on the Future of Nursing</span> (<span class="ann" title="Insufficient Information: Could not verify the dates for the NAM Committee on Future of Nursing membership." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">2010-2012</span>)
+3. <span class="ann" title="Supported: Confirmed by multiple sources that he co-founded and was Executive Director/Chair of Ariadne Labs." style="background:#e6ffed;border-color:#34d058;color:#22863a;">Co-founder and Executive Director of Ariadne Labs</span>, a healthcare innovation lab at Harvard University (<span class="ann" title="Insufficient Information: While his role with Ariadne Labs is confirmed, the specific start date of 2012 could not be verified." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">2012-present</span>)
+4. <span class="ann" title="Insufficient Information: Could not verify this specific board membership." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">Member of the Board of Directors of the World Health Organization&#x27;s (WHO) Global Fund to Fight AIDS, Tuberculosis and Malaria</span> (<span class="ann" title="Insufficient Information: Could not verify the dates for the WHO Global Fund board membership." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">2013-2016</span>)
+
+**Personal Life**
+
+Gawande is married to <span class="ann" title="Not Supported: Multiple sources consistently identify his wife as Kathleen Hobson, not Sujata Ghosh." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">Sujata Ghosh</span>, a <span class="ann" title="Not Supported: Sources describe Kathleen Hobson as a writer/editor, not a pediatrician." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">pediatrician</span>, and they have <span class="ann" title="Supported: Confirmed by multiple sources that he and Kathleen Hobson have three children: Walker, Hattie, and Hunter." style="background:#e6ffed;border-color:#34d058;color:#22863a;">three children</span> together. He is a practicing surgeon at Brigham and Women&#x27;s Hospital in Boston and a professor at Harvard Medical School.</div>
+  <div class="sidebar"><h3>Placed annotations</h3><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>November 5, 1965</strong> (idx 98) — Confirmed by multiple sources including Wikipedia and official biographies that Atul Gawande was born on November 5, 1965.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Brooklyn, New York</strong> (idx 119) — Confirmed by Wikipedia and other sources that he was born in Brooklyn, New York.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>Biological Anthropology and History</strong> (idx 323) — Multiple sources consistently state he earned a degree in biology and political science from Stanford, not biological anthropology and history.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Stanford University</strong> (idx 364) — Confirmed by multiple sources that he graduated from Stanford University.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>1987</strong> (idx 387) — Confirmed by multiple sources that he graduated from Stanford in 1987.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Harvard Medical School</strong> (idx 410) — Confirmed by multiple sources that he attended Harvard Medical School.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>1995</strong> (idx 469) — Confirmed by multiple sources that he earned his M.D. from Harvard Medical School in 1995.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Brigham and Women&#x27;s Hospital</strong> (idx 499) — Confirmed by multiple sources that he did his residency and practices at Brigham and Women&#x27;s Hospital in Boston.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>1998</strong> (idx 686) — Confirmed by multiple sources that he became a staff writer for The New Yorker in 1998.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>The Score</strong> (idx 764) — Found reference to a New Yorker article titled &#x27;The Score: How Childbirth Went Industrial&#x27; by Gawande, though exact publication date not verified.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>October 5, 1998</strong> (idx 793) — Could not verify the specific publication date of &#x27;The Score&#x27; article as October 5, 1998.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>over 300 articles</strong> (idx 830) — Could not verify the specific number of 300+ articles written for The New Yorker.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>The Checklist</strong> (idx 1002) — Could not verify a specific article titled &#x27;The Checklist&#x27; from October 2007, though he did write extensively about checklists.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>October 2007</strong> (idx 1018) — Could not verify the specific date for &#x27;The Checklist&#x27; article.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>When Doctors Make Mistakes</strong> (idx 1133) — Could not verify a specific article with this exact title from January 2009.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>January 2009</strong> (idx 1162) — Could not verify the specific date for &#x27;When Doctors Make Mistakes&#x27; article.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>How Do We Heal?</strong> (idx 1271) — Could not verify a specific article with this exact title from January 2010.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>January 2010</strong> (idx 1289) — Could not verify the specific date for &#x27;How Do We Heal?&#x27; article.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Complications: A Surgeon&#x27;s Notes on an Imperfect Science</strong> (idx 1514) — Confirmed by multiple sources as his first book published in 2002.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>2002</strong> (idx 1573) — Confirmed by multiple sources that Complications was published in 2002.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Better: A Surgeon&#x27;s Notes on Performance</strong> (idx 1677) — Confirmed by multiple sources as his second book.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>2008</strong> (idx 1720) — Multiple sources indicate Better was published in 2007, not 2008.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>The Checklist Manifesto: How to Get Things Right</strong> (idx 1831) — Confirmed by multiple sources as his third book published in 2009.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>2009</strong> (idx 1882) — Confirmed by multiple sources that The Checklist Manifesto was published in 2009.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Being Mortal: Medicine and What Matters in the End</strong> (idx 1975) — Confirmed by multiple sources as his fourth book published in 2014.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>2014</strong> (idx 2028) — Confirmed by multiple sources that Being Mortal was published in 2014.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>Helping Hands: Why Human Connection Is the Key to Better Health</strong> (idx 2153) — Could not find any evidence of a book by Gawande with this title published in 2021 or any other year.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>2021</strong> (idx 2219) — No evidence found of Gawande publishing &#x27;Helping Hands&#x27; in 2021.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>National Magazine Award</strong> (idx 2493) — Confirmed that he won a National Magazine Award for his New Yorker article &#x27;Letting Go&#x27; in 2011.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>2006</strong> (idx 2518) — The National Magazine Award was won in 2011 for &#x27;Letting Go,&#x27; not in 2006 for &#x27;The Score.&#x27;</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>The Score</strong> (idx 2541) — The National Magazine Award was for &#x27;Letting Go,&#x27; not &#x27;The Score.&#x27;</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>Pulitzer Prize nomination</strong> (idx 2555) — Could not verify any Pulitzer Prize nomination for Gawande in 2007 or any other year.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>2007</strong> (idx 2582) — Could not verify the Pulitzer Prize nomination claim for 2007.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>MacArthur Fellowship</strong> (idx 2623) — Confirmed by multiple sources that he received the MacArthur Fellowship in 2006.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>2006</strong> (idx 2645) — Confirmed by multiple sources that he received the MacArthur Fellowship in 2006.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>National Academy of Medicine&#x27;s (NAM) David and Lucile Packard Foundation Fellowship</strong> (idx 2706) — Could not verify this specific fellowship award in 2011.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>2011</strong> (idx 2791) — Could not verify the NAM Packard Foundation Fellowship claim for 2011.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Chair of the World Health Organization&#x27;s (WHO) Surgical Safety Checklist Task Force</strong> (idx 2955) — Confirmed by multiple sources that he led the WHO&#x27;s Safe Surgery Saves Lives initiative and surgical safety checklist development.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>2008-2010</strong> (idx 3040) — While his leadership of the WHO surgical safety initiative is confirmed, the specific dates 2008-2010 for the task force chairmanship could not be verified.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>Member of the National Academy of Medicine&#x27;s (NAM) Committee on the Future of Nursing</strong> (idx 3054) — Could not verify this specific committee membership for 2010-2012.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>2010-2012</strong> (idx 3141) — Could not verify the dates for the NAM Committee on Future of Nursing membership.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Co-founder and Executive Director of Ariadne Labs</strong> (idx 3155) — Confirmed by multiple sources that he co-founded and was Executive Director/Chair of Ariadne Labs.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>2012-present</strong> (idx 3257) — While his role with Ariadne Labs is confirmed, the specific start date of 2012 could not be verified.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>Member of the Board of Directors of the World Health Organization&#x27;s (WHO) Global Fund to Fight AIDS, Tuberculosis and Malaria</strong> (idx 3274) — Could not verify this specific board membership.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>2013-2016</strong> (idx 3401) — Could not verify the dates for the WHO Global Fund board membership.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>Sujata Ghosh</strong> (idx 3454) — Multiple sources consistently identify his wife as Kathleen Hobson, not Sujata Ghosh.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>pediatrician</strong> (idx 3470) — Sources describe Kathleen Hobson as a writer/editor, not a pediatrician.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>three children</strong> (idx 3498) — Confirmed by multiple sources that he and Kathleen Hobson have three children: Walker, Hattie, and Hunter.</div></div>
+  
+  <div class="footer">Generated by annotate_from_spans.py</div>
+</div>
+</body>
+</html>

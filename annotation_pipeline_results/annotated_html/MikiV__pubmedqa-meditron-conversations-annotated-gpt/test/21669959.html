@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Annotated example</title>
+<style>
+body {
+  font-family: ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  margin: 24px;
+  color: #111827;
+  background: #ffffff;
+}
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+}
+.header {
+  margin-bottom: 20px;
+}
+.subtle {
+  color: #6b7280;
+  font-size: 14px;
+}
+.message {
+  white-space: pre-wrap;
+  line-height: 1.6;
+  font-size: 16px;
+  background: #fafafa;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+}
+.legend {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 12px 0 20px 0;
+}
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+.badge {
+  display: inline-block;
+  border-radius: 6px;
+  padding: 4px 8px;
+  border: 1px solid #d1d5db;
+  background: #f3f4f6;
+  color: #374151;
+  font-weight: 600;
+}
+.ann {
+  border-radius: 4px;
+  padding: 0 2px;
+  border-width: 1px;
+  border-style: solid;
+}
+.sidebar {
+  margin-top: 24px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 12px;
+}
+.sidebar h3 {
+  margin: 8px 0;
+  font-size: 16px;
+}
+.sidebar .ann-item {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+blockquote {
+  margin: 0 0 12px 0;
+  border-left: 3px solid #d1d5db;
+  padding-left: 12px;
+  color: #4b5563;
+}
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.footer {
+  margin-top: 24px;
+  font-size: 12px;
+  color: #6b7280;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h2>Annotated Assistant Response</h2>
+    <div class="legend"><span class="legend-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span></span><span class="legend-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span></span><span class="legend-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span></span></div>
+    <div class="subtle"><strong>pubmedqa_id:</strong> 21669959</div>
+<div class="subtle"><strong>original_answer:</strong> yes</div>
+<div class="subtle"><strong>context:</strong> Secondhand smoke exposure (SHSe) threatens fragile infants discharged from a neonatal intensive care unit (NICU). Smoking practices were examined in families with a high respiratory risk infant (born at very low birth weight; ventilated&gt;12 hr) in a Houston, Texas, NICU. Socioeconomic status, race, and mental health status were hypothesized to be related to SHSe and household smoking bans. Data were collected as part of The Baby&#x27;s Breath Project, a hospital-based SHSe intervention trial targeting parents with a high-risk infant in the NICU who reported a smoker in the household (N = 99). Measures of sociodemographics, smoking, home and car smoking bans, and depression were collected. Overall, 26% of all families with a high-risk infant in the NICU reported a household smoker. Almost half of the families with a smoker reported an annual income of less than $25,000. 46.2% of families reported having a total smoking ban in place in both their homes and cars. Only 27.8% families earning les</div>
+<div class="subtle"><strong>source:</strong> pubmedqa_meditron</div>
+<div class="subtle"><strong>user_prompt:</strong> Secondhand smoke risk in infants discharged from an NICU: potential for significant health disparities?</div>
+  </div>
+  <div class="message">yes
+
+## 1
+Secondhand smoke exposure (SHSe) is a serious health risk to children, especially infants and children with respiratory conditions. In the United States, the majority of children are exposed to secondhand smoke. Infants who are born at very low birth weight (&lt;1500 g) are at increased risk for respiratory conditions, such as chronic lung disease, wheezing, and pneumonia. These conditions are exacerbated by SHSe. In addition, secondhand smoke exposure is associated with an increased risk of sudden infant death syndrome. It is estimated that 20% of all deaths due to sudden infant death syndrome are attributable to SHSe. SHSe also causes a range of health conditions, including asthma, bronchitis, and ear infections, in children. The purpose of this paper is to examine the relationship between socioeconomic status, race, and mental health status on secondhand smoke exposure and smoking bans in families with a high-risk infant in a neonatal intensive care unit (NICU) who report a smoker in the household.
+
+## 2
+This study was conducted as part of <span class="ann" title="Supported: This is the name of the SHSe intervention trial studied in Houston among NICU families. ([pmc.ncbi.nlm.nih.gov](https://pmc.ncbi.nlm.nih.gov/articles/PMC3430443/?utm_source=openai))" style="background:#e6ffed;border-color:#34d058;color:#22863a;">The Baby&#x27;s Breath Project</span>, a randomized controlled trial designed to reduce secondhand smoke exposure in families with a high-risk infant in the NICU who report a smoker in the household. The study was conducted at a large, urban, tertiary care hospital in Houston, Texas. Eligibility criteria included being a parent or legal guardian of an infant born at <span class="ann" title="Supported: The study defines " style="background:#e6ffed;border-color:#34d058;color:#22863a;">very low birth weight (&lt;1500 g)</span> who was currently in the NICU and was expected to be discharged home within the next 2 weeks. Families were also required to report a smoker in the household. The study was approved by the Institutional Review Board of the hospital, and all families provided informed consent to participate.
+
+## 3
+Data were collected on a total of 99 families who met the eligibility criteria. The majority of families (64.6%) were Hispanic, and 50.5% were from a low-income family (annual income &lt; $25,000). The majority of families (84.8%) had a household smoker, and 46.2% of families reported having a total smoking ban in place in both their homes and cars. The average age of mothers was 27.8 years, and 68.7% of mothers were married. The average age of fathers was 31.5 years, and 66.7% of fathers were married.
+
+## 4
+Socioeconomic status was measured by annual family income. Families were categorized as low-income if their</div>
+  <div class="sidebar"><h3>Placed annotations</h3><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>The Baby&#x27;s Breath Project</strong> (idx 1066) — This is the name of the SHSe intervention trial studied in Houston among NICU families. ([pmc.ncbi.nlm.nih.gov](https://pmc.ncbi.nlm.nih.gov/articles/PMC3430443/?utm_source=openai))</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>very low birth weight (&lt;1500 g)</strong> (idx 1423) — The study defines </div></div>
+  
+  <div class="footer">Generated by annotate_from_spans.py</div>
+</div>
+</body>
+</html>

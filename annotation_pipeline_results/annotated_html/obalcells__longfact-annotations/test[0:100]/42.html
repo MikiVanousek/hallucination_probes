@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Annotated example</title>
+<style>
+body {
+  font-family: ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  margin: 24px;
+  color: #111827;
+  background: #ffffff;
+}
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+}
+.header {
+  margin-bottom: 20px;
+}
+.subtle {
+  color: #6b7280;
+  font-size: 14px;
+}
+.message {
+  white-space: pre-wrap;
+  line-height: 1.6;
+  font-size: 16px;
+  background: #fafafa;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+}
+.legend {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 12px 0 20px 0;
+}
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+.badge {
+  display: inline-block;
+  border-radius: 6px;
+  padding: 4px 8px;
+  border: 1px solid #d1d5db;
+  background: #f3f4f6;
+  color: #374151;
+  font-weight: 600;
+}
+.ann {
+  border-radius: 4px;
+  padding: 0 2px;
+  border-width: 1px;
+  border-style: solid;
+}
+.sidebar {
+  margin-top: 24px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 12px;
+}
+.sidebar h3 {
+  margin: 8px 0;
+  font-size: 16px;
+}
+.sidebar .ann-item {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+blockquote {
+  margin: 0 0 12px 0;
+  border-left: 3px solid #d1d5db;
+  padding-left: 12px;
+  color: #4b5563;
+}
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.footer {
+  margin-top: 24px;
+  font-size: 12px;
+  color: #6b7280;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h2>Annotated Assistant Response</h2>
+    <div class="legend"><span class="legend-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span></span><span class="legend-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span></span><span class="legend-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span></span></div>
+    <div class="subtle"><strong>user_prompt:</strong> Who is Benedict Cumberbatch? Provide as many specific details and examples as possible (such as names of people, numbers, events, locations, dates, times, etc.)
+</div>
+  </div>
+  <div class="message">Benedict Cumberbatch is a British actor, born on <span class="ann" title="Not Supported: Benedict Cumberbatch was born on July 19, 1976, not September 19, 1976. Multiple sources confirm the correct birth date as July 19, 1976." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">September 19, 1976</span>, in London, England. He is known for his distinctive voice, intellectual demeanor, and versatility in playing a wide range of characters.
+
+**Early Life and Education**
+
+Cumberbatch was born to <span class="ann" title="Supported: Confirmed as Benedict Cumberbatch&#x27;s father, an actor who goes professionally by Timothy Carlton." style="background:#e6ffed;border-color:#34d058;color:#22863a;">Timothy Carlton</span>, a renowned actor, and <span class="ann" title="Supported: Confirmed as Benedict Cumberbatch&#x27;s mother, an actress born in 1935." style="background:#e6ffed;border-color:#34d058;color:#22863a;">Wanda Ventham</span>, a former actress. He has a younger sister, <span class="ann" title="Not Supported: Benedict Cumberbatch has a half-sister named Tracy Peacock, not Saskia Cumberbatch. No evidence found of a sister named Saskia." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">Saskia Cumberbatch</span>. Benedict attended the <span class="ann" title="Not Supported: Benedict Cumberbatch attended Brambletye prep school and then Harrow School, not London Oratory School." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">London Oratory School</span>, a Catholic independent school in London. He then studied drama at the <span class="ann" title="Supported: Confirmed that he studied drama at the Victoria University of Manchester." style="background:#e6ffed;border-color:#34d058;color:#22863a;">University of Manchester</span> and later at the <span class="ann" title="Supported: Confirmed that he obtained a Master of Arts in classical acting at LAMDA." style="background:#e6ffed;border-color:#34d058;color:#22863a;">London Academy of Music and Dramatic Art (LAMDA)</span>.
+
+**Career**
+
+Cumberbatch began his acting career in the early 2000s, appearing in small roles on stage and screen. His breakthrough role came in <span class="ann" title="Supported: Confirmed that he played Stephen Hawking in the BBC drama &#x27;Hawking&#x27; in 2004." style="background:#e6ffed;border-color:#34d058;color:#22863a;">2004</span> when he played Stephen Hawking in the BBC drama &quot;Hawking.&quot; This portrayal earned him a nomination for a <span class="ann" title="Supported: Confirmed that he was nominated for a BAFTA TV Award for his performance in &#x27;Hawking&#x27; (2004)." style="background:#e6ffed;border-color:#34d058;color:#22863a;">BAFTA TV Award</span>.
+
+**Notable Roles**
+
+Some of Cumberbatch&#x27;s most notable roles include:
+
+1. **Sherlock Holmes** (<span class="ann" title="Supported: Confirmed that the BBC series &#x27;Sherlock&#x27; ran from 2010 to 2017." style="background:#e6ffed;border-color:#34d058;color:#22863a;">2010-2017</span>): He played the iconic detective in the BBC series &quot;Sherlock,&quot; a modern adaptation of Sir Arthur Conan Doyle&#x27;s stories. The show was a critical and commercial success, and Cumberbatch&#x27;s performance earned him numerous awards and nominations.
+2. **Doctor Strange** (<span class="ann" title="Supported: Confirmed that &#x27;Doctor Strange&#x27; was released in 2016." style="background:#e6ffed;border-color:#34d058;color:#22863a;">2016</span>): He played the title role in the Marvel Cinematic Universe (MCU) film &quot;Doctor Strange,&quot; a superhero movie that follows the story of a brilliant but arrogant surgeon who becomes the Sorcerer Supreme.
+3. **12 Years a Slave** (<span class="ann" title="Supported: Confirmed that &#x27;12 Years a Slave&#x27; was released in 2013." style="background:#e6ffed;border-color:#34d058;color:#22863a;">2013</span>): Cumberbatch played the role of <span class="ann" title="Supported: Confirmed that he played William Ford in &#x27;12 Years a Slave&#x27;." style="background:#e6ffed;border-color:#34d058;color:#22863a;">William Ford</span>, a kind-hearted plantation owner, in Steve McQueen&#x27;s historical drama &quot;12 Years a Slave.&quot; The film won several Academy Awards, including Best Picture.
+4. **The Imitation Game** (<span class="ann" title="Supported: Confirmed that &#x27;The Imitation Game&#x27; was released in 2014." style="background:#e6ffed;border-color:#34d058;color:#22863a;">2014</span>): He played <span class="ann" title="Supported: Confirmed that he played Alan Turing in &#x27;The Imitation Game&#x27;." style="background:#e6ffed;border-color:#34d058;color:#22863a;">Alan Turing</span>, a British mathematician and computer scientist who helped crack the German Enigma code during World War II. The film was a critical and commercial success, and Cumberbatch&#x27;s performance earned him an Academy Award nomination.
+5. **The Power of the Dog** (<span class="ann" title="Supported: Confirmed that &#x27;The Power of the Dog&#x27; was released in 2021." style="background:#e6ffed;border-color:#34d058;color:#22863a;">2021</span>): Cumberbatch played the role of <span class="ann" title="Supported: Confirmed that he played Phil Burbank in &#x27;The Power of the Dog&#x27;." style="background:#e6ffed;border-color:#34d058;color:#22863a;">Phil Burbank</span>, a rancher in 1920s Montana, in <span class="ann" title="Supported: Confirmed that &#x27;The Power of the Dog&#x27; was directed by Jane Campion." style="background:#e6ffed;border-color:#34d058;color:#22863a;">Jane Campion</span>&#x27;s drama film &quot;The Power of the Dog.&quot; The film premiered at the Venice Film Festival and received widespread critical acclaim.
+
+**Awards and Nominations**
+
+Cumberbatch has received numerous awards and nominations throughout his career, including:
+
+* **BAFTA Awards**: <span class="ann" title="Not Supported: The specific numbers of BAFTA wins and nominations don&#x27;t match available sources. He has won at least 1 BAFTA TV Award and has multiple nominations, but the exact count of 4 wins and 12 nominations is not verified." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">4 wins and 12 nominations</span>
+* **Emmy Awards**: <span class="ann" title="Not Supported: He won 1 Emmy Award but the total of 5 nominations is not accurate. Sources indicate he received 6 Emmy nominations for Sherlock alone." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">1 win and 5 nominations</span>
+* **Golden Globe Awards**: <span class="ann" title="Not Supported: The specific count of Golden Globe wins and nominations doesn&#x27;t match sources, which indicate 4 Golden Globe nominations but no wins mentioned." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">1 win and 5 nominations</span>
+* **Academy Awards**: <span class="ann" title="Not Supported: He has received 2 Academy Award nominations, not 1 - for &#x27;The Imitation Game&#x27; (2014) and &#x27;The Power of the Dog&#x27; (2021)." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">1 nomination</span>
+
+**Personal Life**
+
+Cumberbatch is married to <span class="ann" title="Supported: Confirmed as Benedict Cumberbatch&#x27;s wife, whom he married in 2015." style="background:#e6ffed;border-color:#34d058;color:#22863a;">Sophie Hunter</span>, a British actress and director. They have two sons, <span class="ann" title="Supported: Confirmed that their first son Christopher Carlton Cumberbatch was born on June 1, 2015." style="background:#e6ffed;border-color:#34d058;color:#22863a;">Christopher Carlton Cumberbatch (born 2015)</span> and <span class="ann" title="Supported: Confirmed that their second son Hal Auden Cumberbatch was born on March 3, 2017." style="background:#e6ffed;border-color:#34d058;color:#22863a;">Hal Auden Cumberbatch (born 2017)</span>. He is known for his love of literature and has narrated several audiobooks, including works by Shakespeare and Dickens.
+
+**Philanthropy**
+
+Cumberbatch is involved with several charitable organizations, including:
+
+* **<span class="ann" title="Insufficient Information: While he has performed at the Royal National Theatre, specific information about being a patron since 2011 was not found in the search results." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">The National Theatre</span>**: He has been a patron of the National Theatre since 2011 and has supported various productions and initiatives.
+* **<span class="ann" title="Insufficient Information: No specific information found about him being a patron of the Royal Shakespeare Company since 2013." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">The Royal Shakespeare Company</span>**: He has been a patron of the Royal Shakespeare Company since 2013 and has supported various productions and initiatives.
+* **<span class="ann" title="Insufficient Information: No specific information found about his support for the British Red Cross in the search results." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">The British Red Cross</span>**: He has supported the British Red Cross&#x27;s humanitarian work and has appeared in several fundraising campaigns.
+
+Overall, Benedict Cumberbatch is a talented and versatile actor who has made a significant impact on the film and television industry. His dedication to his craft and his commitment to social causes have earned him a reputation as one of the most respected and beloved actors of his generation.</div>
+  <div class="sidebar"><h3>Placed annotations</h3><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>September 19, 1976</strong> (idx 49) — Benedict Cumberbatch was born on July 19, 1976, not September 19, 1976. Multiple sources confirm the correct birth date as July 19, 1976.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Timothy Carlton</strong> (idx 261) — Confirmed as Benedict Cumberbatch&#x27;s father, an actor who goes professionally by Timothy Carlton.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Wanda Ventham</strong> (idx 300) — Confirmed as Benedict Cumberbatch&#x27;s mother, an actress born in 1935.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>Saskia Cumberbatch</strong> (idx 358) — Benedict Cumberbatch has a half-sister named Tracy Peacock, not Saskia Cumberbatch. No evidence found of a sister named Saskia.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>London Oratory School</strong> (idx 400) — Benedict Cumberbatch attended Brambletye prep school and then Harrow School, not London Oratory School.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>University of Manchester</strong> (idx 493) — Confirmed that he studied drama at the Victoria University of Manchester.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>London Academy of Music and Dramatic Art (LAMDA)</strong> (idx 535) — Confirmed that he obtained a Master of Arts in classical acting at LAMDA.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>2004</strong> (idx 730) — Confirmed that he played Stephen Hawking in the BBC drama &#x27;Hawking&#x27; in 2004.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>BAFTA TV Award</strong> (idx 839) — Confirmed that he was nominated for a BAFTA TV Award for his performance in &#x27;Hawking&#x27; (2004).</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>2010-2017</strong> (idx 950) — Confirmed that the BBC series &#x27;Sherlock&#x27; ran from 2010 to 2017.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>2016</strong> (idx 1225) — Confirmed that &#x27;Doctor Strange&#x27; was released in 2016.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>2013</strong> (idx 1455) — Confirmed that &#x27;12 Years a Slave&#x27; was released in 2013.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>William Ford</strong> (idx 1493) — Confirmed that he played William Ford in &#x27;12 Years a Slave&#x27;.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>2014</strong> (idx 1684) — Confirmed that &#x27;The Imitation Game&#x27; was released in 2014.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Alan Turing</strong> (idx 1701) — Confirmed that he played Alan Turing in &#x27;The Imitation Game&#x27;.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>2021</strong> (idx 1969) — Confirmed that &#x27;The Power of the Dog&#x27; was released in 2021.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Phil Burbank</strong> (idx 2007) — Confirmed that he played Phil Burbank in &#x27;The Power of the Dog&#x27;.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Jane Campion</strong> (idx 2052) — Confirmed that &#x27;The Power of the Dog&#x27; was directed by Jane Campion.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>4 wins and 12 nominations</strong> (idx 2332) — The specific numbers of BAFTA wins and nominations don&#x27;t match available sources. He has won at least 1 BAFTA TV Award and has multiple nominations, but the exact count of 4 wins and 12 nominations is not verified.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>1 win and 5 nominations</strong> (idx 2377) — He won 1 Emmy Award but the total of 5 nominations is not accurate. Sources indicate he received 6 Emmy nominations for Sherlock alone.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>1 win and 5 nominations</strong> (idx 2428) — The specific count of Golden Globe wins and nominations doesn&#x27;t match sources, which indicate 4 Golden Globe nominations but no wins mentioned.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>1 nomination</strong> (idx 2474) — He has received 2 Academy Award nominations, not 1 - for &#x27;The Imitation Game&#x27; (2014) and &#x27;The Power of the Dog&#x27; (2021).</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Sophie Hunter</strong> (idx 2533) — Confirmed as Benedict Cumberbatch&#x27;s wife, whom he married in 2015.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Christopher Carlton Cumberbatch (born 2015)</strong> (idx 2600) — Confirmed that their first son Christopher Carlton Cumberbatch was born on June 1, 2015.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Hal Auden Cumberbatch (born 2017)</strong> (idx 2648) — Confirmed that their second son Hal Auden Cumberbatch was born on March 3, 2017.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>The National Theatre</strong> (idx 2901) — While he has performed at the Royal National Theatre, specific information about being a patron since 2011 was not found in the search results.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>The Royal Shakespeare Company</strong> (idx 3040) — No specific information found about him being a patron of the Royal Shakespeare Company since 2013.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>The British Red Cross</strong> (idx 3197) — No specific information found about his support for the British Red Cross in the search results.</div></div>
+  
+  <div class="footer">Generated by annotate_from_spans.py</div>
+</div>
+</body>
+</html>

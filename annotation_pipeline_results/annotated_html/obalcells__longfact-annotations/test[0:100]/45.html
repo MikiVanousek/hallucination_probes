@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Annotated example</title>
+<style>
+body {
+  font-family: ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  margin: 24px;
+  color: #111827;
+  background: #ffffff;
+}
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+}
+.header {
+  margin-bottom: 20px;
+}
+.subtle {
+  color: #6b7280;
+  font-size: 14px;
+}
+.message {
+  white-space: pre-wrap;
+  line-height: 1.6;
+  font-size: 16px;
+  background: #fafafa;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+}
+.legend {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 12px 0 20px 0;
+}
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+.badge {
+  display: inline-block;
+  border-radius: 6px;
+  padding: 4px 8px;
+  border: 1px solid #d1d5db;
+  background: #f3f4f6;
+  color: #374151;
+  font-weight: 600;
+}
+.ann {
+  border-radius: 4px;
+  padding: 0 2px;
+  border-width: 1px;
+  border-style: solid;
+}
+.sidebar {
+  margin-top: 24px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 12px;
+}
+.sidebar h3 {
+  margin: 8px 0;
+  font-size: 16px;
+}
+.sidebar .ann-item {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+blockquote {
+  margin: 0 0 12px 0;
+  border-left: 3px solid #d1d5db;
+  padding-left: 12px;
+  color: #4b5563;
+}
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.footer {
+  margin-top: 24px;
+  font-size: 12px;
+  color: #6b7280;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h2>Annotated Assistant Response</h2>
+    <div class="legend"><span class="legend-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span></span><span class="legend-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span></span><span class="legend-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span></span></div>
+    <div class="subtle"><strong>user_prompt:</strong> Who is Max Theiler? Provide as many specific details and examples as possible (such as names of people, numbers, events, locations, dates, times, etc.)
+</div>
+  </div>
+  <div class="message">Max Theiler was a South African-born British medical researcher who made significant contributions to the field of virology. He was born on <span class="ann" title="Not Supported: Multiple reliable sources consistently state Max Theiler was born on January 30, 1899, not June 30, 1899. This is confirmed by Nobel Prize official biography, Wikipedia, Britannica, and other authoritative sources." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">June 30, 1899</span>, in Pretoria, South Africa, to a <span class="ann" title="Not Supported: Sources consistently state that both of Max Theiler&#x27;s parents emigrated from Switzerland, not Germany. His father Arnold Theiler was Swiss-born, and his mother Emma Jegge was also Swiss." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">family of German descent</span>.
+
+Theiler earned his medical degree from the <span class="ann" title="Not Supported: Max Theiler attended University of Cape Town Medical School, graduating in 1918, not University of Pretoria in 1921. He then went to London for further medical training." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">University of Pretoria in 1921</span>. He then moved to the United Kingdom, where he worked at the <span class="ann" title="Insufficient Information: No sources found confirm that Theiler worked at the Lister Institute. Sources consistently state he studied at St Thomas&#x27;s Hospital Medical School and London School of Hygiene and Tropical Medicine." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">Lister Institute of Preventive Medicine in London</span>. In 1922, he began working under the supervision of <span class="ann" title="Insufficient Information: While Sir Almroth Wright was a real British bacteriologist, no sources found confirm that Max Theiler worked under his supervision at any institution." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">Sir Almroth Wright</span>, a renowned British bacteriologist.
+
+In 1926, Theiler moved to the United States to work at the <span class="ann" title="Supported: Confirmed that Theiler moved to the Rockefeller Foundation (also called Rockefeller Institute) in New York in 1930, where he became director of the Virus Laboratory." style="background:#e6ffed;border-color:#34d058;color:#22863a;">Rockefeller Institute for Medical Research</span> (now Rockefeller University) in New York City. During his time at the Rockefeller Institute, he conducted extensive research on yellow fever, a viral disease that was prevalent in tropical regions.
+
+Theiler&#x27;s work on yellow fever led to the development of a vaccine against the disease. He <span class="ann" title="Not Supported: Sources indicate that by 1927 Theiler and colleagues proved yellow fever was caused by a virus (not a bacterium), but the virus isolation and identification had been done earlier by other researchers like Adrian Stokes." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">isolated the yellow fever virus in 1927</span> and began experimenting with different methods of inactivating the virus. In 1936, he developed a method of inactivating the virus using <span class="ann" title="Not Supported: No sources mention formaldehyde in connection with Theiler&#x27;s vaccine development. The 17D vaccine was developed through serial passage in chicken embryos, not through formaldehyde inactivation." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">formaldehyde</span>, which resulted in the creation of a safe and effective vaccine.
+
+Theiler&#x27;s yellow fever vaccine was first tested in humans in 1936. The initial trials were conducted in the United States, but later, the vaccine was tested in Africa, where yellow fever was a major public health concern. The vaccine was found to be highly effective in preventing the disease, and it was soon adopted for use in yellow fever-endemic regions.
+
+Theiler&#x27;s work on yellow fever earned him numerous awards and recognition. In 1951, he was awarded the <span class="ann" title="Not Supported: Max Theiler received the 1951 Nobel Prize alone, not shared with a team. All sources confirm he was the sole recipient of the 1951 Nobel Prize in Physiology or Medicine." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">Nobel Prize in Physiology or Medicine, along with a team of researchers from the United States</span>, for his development of the yellow fever vaccine. Theiler was the <span class="ann" title="Supported: Confirmed by multiple sources that Theiler was the first African-born Nobel laureate when he received the prize in 1951." style="background:#e6ffed;border-color:#34d058;color:#22863a;">first South African-born scientist to receive the Nobel Prize</span>.
+
+Theiler continued to work at the Rockefeller Institute until his retirement in 1964. He passed away on <span class="ann" title="Not Supported: Multiple sources consistently state that Max Theiler died on August 11, 1972, not August 9, 1972." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">August 9, 1972</span>, at the age of 73, in New York City.
+
+Some notable events and achievements in Theiler&#x27;s career include:
+
+- 1921: Earned his medical degree from the University of Pretoria.
+- 1922: Began working under the supervision of Sir Almroth Wright at the Lister Institute of Preventive Medicine in London.
+- 1926: Moved to the United States to work at the Rockefeller Institute for Medical Research in New York City.
+- 1927: Isolated the yellow fever virus.
+- 1936: Developed a method of inactivating the yellow fever virus using formaldehyde, resulting in the creation of a safe and effective vaccine.
+- 1936: Conducted the first human trials of the yellow fever vaccine.
+- 1951: Awarded the Nobel Prize in Physiology or Medicine, along with a team of researchers from the United States, for his development of the yellow fever vaccine.
+
+Some notable people associated with Theiler&#x27;s work include:
+
+- Sir Almroth Wright: A renowned British bacteriologist who supervised Theiler&#x27;s work at the Lister Institute of Preventive Medicine in London.
+- The Rockefeller Institute for Medical Research: A research institution in New York City where Theiler worked from 1926 to 1964.
+- The Nobel Committee: Awarded Theiler the Nobel Prize in Physiology or Medicine in 1951 for his development of the yellow fever vaccine.
+
+Some notable locations associated with Theiler&#x27;s work include:
+
+- Pretoria, South Africa: Theiler&#x27;s birthplace and hometown.
+- London, United Kingdom: The location of the Lister Institute of Preventive Medicine, where Theiler worked under the supervision of Sir Almroth Wright.
+- New York City, United States: The location of the Rockefeller Institute for Medical Research, where Theiler worked from 1926 to 1964.
+- Africa: The location where Theiler&#x27;s yellow fever vaccine was tested and found to be highly effective in preventing the disease.</div>
+  <div class="sidebar"><h3>Placed annotations</h3><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>June 30, 1899</strong> (idx 140) — Multiple reliable sources consistently state Max Theiler was born on January 30, 1899, not June 30, 1899. This is confirmed by Nobel Prize official biography, Wikipedia, Britannica, and other authoritative sources.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>family of German descent</strong> (idx 187) — Sources consistently state that both of Max Theiler&#x27;s parents emigrated from Switzerland, not Germany. His father Arnold Theiler was Swiss-born, and his mother Emma Jegge was also Swiss.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>University of Pretoria in 1921</strong> (idx 257) — Max Theiler attended University of Cape Town Medical School, graduating in 1918, not University of Pretoria in 1921. He then went to London for further medical training.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>Lister Institute of Preventive Medicine in London</strong> (idx 349) — No sources found confirm that Theiler worked at the Lister Institute. Sources consistently state he studied at St Thomas&#x27;s Hospital Medical School and London School of Hygiene and Tropical Medicine.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>Sir Almroth Wright</strong> (idx 451) — While Sir Almroth Wright was a real British bacteriologist, no sources found confirm that Max Theiler worked under his supervision at any institution.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Rockefeller Institute for Medical Research</strong> (idx 566) — Confirmed that Theiler moved to the Rockefeller Foundation (also called Rockefeller Institute) in New York in 1930, where he became director of the Virus Laboratory.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>isolated the yellow fever virus in 1927</strong> (idx 899) — Sources indicate that by 1927 Theiler and colleagues proved yellow fever was caused by a virus (not a bacterium), but the virus isolation and identification had been done earlier by other researchers like Adrian Stokes.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>formaldehyde</strong> (idx 1076) — No sources mention formaldehyde in connection with Theiler&#x27;s vaccine development. The 17D vaccine was developed through serial passage in chicken embryos, not through formaldehyde inactivation.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>Nobel Prize in Physiology or Medicine, along with a team of researchers from the United States</strong> (idx 1618) — Max Theiler received the 1951 Nobel Prize alone, not shared with a team. All sources confirm he was the sole recipient of the 1951 Nobel Prize in Physiology or Medicine.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>first South African-born scientist to receive the Nobel Prize</strong> (idx 1779) — Confirmed by multiple sources that Theiler was the first African-born Nobel laureate when he received the prize in 1951.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>August 9, 1972</strong> (idx 1946) — Multiple sources consistently state that Max Theiler died on August 11, 1972, not August 9, 1972.</div></div>
+  <div class="sidebar"><h3>Unplaced annotations</h3><div class="ann-item"><span class="badge" style="background:#eef2ff;border-color:#6366f1;color:#3730a3">Unknown</span> <strong>17D</strong> — Confirmed that the 17D strain was the successful yellow fever vaccine developed by Theiler and his colleague Hugh Smith in 1937.</div><div class="ann-item"><span class="badge" style="background:#eef2ff;border-color:#6366f1;color:#3730a3">Unknown</span> <strong>Hugh Smith</strong> — Confirmed that Hugh Smith was Theiler&#x27;s colleague who worked with him on developing the 17D vaccine strain.</div></div>
+  <div class="footer">Generated by annotate_from_spans.py</div>
+</div>
+</body>
+</html>

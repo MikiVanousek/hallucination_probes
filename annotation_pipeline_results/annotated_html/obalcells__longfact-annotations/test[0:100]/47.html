@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Annotated example</title>
+<style>
+body {
+  font-family: ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  margin: 24px;
+  color: #111827;
+  background: #ffffff;
+}
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+}
+.header {
+  margin-bottom: 20px;
+}
+.subtle {
+  color: #6b7280;
+  font-size: 14px;
+}
+.message {
+  white-space: pre-wrap;
+  line-height: 1.6;
+  font-size: 16px;
+  background: #fafafa;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+}
+.legend {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 12px 0 20px 0;
+}
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+.badge {
+  display: inline-block;
+  border-radius: 6px;
+  padding: 4px 8px;
+  border: 1px solid #d1d5db;
+  background: #f3f4f6;
+  color: #374151;
+  font-weight: 600;
+}
+.ann {
+  border-radius: 4px;
+  padding: 0 2px;
+  border-width: 1px;
+  border-style: solid;
+}
+.sidebar {
+  margin-top: 24px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 12px;
+}
+.sidebar h3 {
+  margin: 8px 0;
+  font-size: 16px;
+}
+.sidebar .ann-item {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+blockquote {
+  margin: 0 0 12px 0;
+  border-left: 3px solid #d1d5db;
+  padding-left: 12px;
+  color: #4b5563;
+}
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.footer {
+  margin-top: 24px;
+  font-size: 12px;
+  color: #6b7280;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h2>Annotated Assistant Response</h2>
+    <div class="legend"><span class="legend-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span></span><span class="legend-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span></span><span class="legend-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span></span></div>
+    <div class="subtle"><strong>user_prompt:</strong> What is the Great Synagogue of Sydney? Provide as many specific details and examples as possible (such as names of people, numbers, events, locations, dates, times, etc.)
+</div>
+  </div>
+  <div class="message">The Great Synagogue of Sydney is a historic synagogue located in the heart of Sydney, Australia. It is one of the oldest and most prominent synagogues in the country. Here are some specific details and examples:
+
+**History and Architecture:**
+
+The Great Synagogue was built in <span class="ann" title="Not Supported: The synagogue was built between 1874-1878 and consecrated on 4 March 1878, not 1878-1881." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">1878-1881</span>, designed by architect <span class="ann" title="Not Supported: The architect was Thomas Rowe, not John Sulman. John Sulman was a different architect who arrived in Sydney in 1885, after the synagogue was built." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">John Sulman</span>, and officially opened on <span class="ann" title="Not Supported: The synagogue was consecrated on 4 March 1878, not 28 September 1881." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">28 September 1881</span>. The synagogue is a stunning example of Victorian-era architecture, with a mix of Gothic and Romanesque styles. The building features a striking clock tower, which is <span class="ann" title="Insufficient Information: No specific height measurements for the clock tower were found in the sources." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">60 meters (197 feet)</span> tall, and a grand entrance with a large wooden door.
+
+**Location:**
+
+The Great Synagogue is situated at <span class="ann" title="Not Supported: The correct address is 187a Elizabeth Street, not 180 Elizabeth Street." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">180 Elizabeth Street</span>, Sydney, New South Wales, Australia. It is located in the heart of the city, near the famous Martin Place and the Sydney Opera House.
+
+**Community and Congregation:**
+
+The Great Synagogue is the spiritual home of the <span class="ann" title="Not Supported: The Sydney Hebrew Congregation was formally established on 2 November 1831, not 1844. 1844 was when the York Street Synagogue was consecrated." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">Sydney Hebrew Congregation, which was established in 1844</span>. The congregation has a long history of serving the Jewish community in Sydney, with many notable members and leaders. Some notable rabbis who have served at the Great Synagogue include:
+
+* <span class="ann" title="Not Supported: No evidence found of a Rabbi Marcus Emet serving at the Great Synagogue. The completion lists him repeatedly across multiple decades, which appears to be fabricated." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">Rabbi Marcus Emet</span> (1844-1852)
+* <span class="ann" title="Not Supported: Moses Rintel was a rabbi in Melbourne, not Sydney, and served from 1849-1880. He was not associated with the Great Synagogue of Sydney." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">Rabbi Moses Rintel</span> (1852-1868)
+* <span class="ann" title="Not Supported: Jacob Danglow was a rabbi in Melbourne (St Kilda), not Sydney. He served from 1905-1957 and was not associated with the Great Synagogue of Sydney." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">Rabbi Jacob Danglow</span> (1868-1881)
+* <span class="ann" title="Insufficient Information: No evidence found of this rabbi serving at the Great Synagogue of Sydney." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">Rabbi Benjamin Benisch</span> (1881-1893)
+* Rabbi Marcus Emet (1893-1904)
+* <span class="ann" title="Insufficient Information: No evidence found of this rabbi serving at the Great Synagogue of Sydney in the dates mentioned." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">Rabbi David de Sola Pool</span> (1904-1914)
+* Rabbi Marcus Emet (1914-1925)
+* Rabbi David de Sola Pool (1925-1934)
+* Rabbi Marcus Emet (1934-1944)
+* Rabbi David de Sola Pool (1944-1954)
+* Rabbi Marcus Emet (1954-1964)
+* Rabbi David de Sola Pool (1964-1974)
+* Rabbi Marcus Emet (1974-1984)
+* Rabbi David de Sola Pool (1984-1994)
+* Rabbi Marcus Emet (1994-2004)
+* Rabbi David de Sola Pool (2004-2014)
+* Rabbi Marcus Emet (2014-present)
+
+**Notable Events:**
+
+The Great Synagogue has hosted many notable events over the years, including:
+
+* The <span class="ann" title="Insufficient Information: No verification found for this specific claim about the first Jewish wedding in Australia occurring at the Great Synagogue in 1825." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">first Jewish wedding in Australia, which took place in 1825</span>
+* The <span class="ann" title="Not Supported: The first Jewish burial in Australia was Joseph Levy in 1788, not 1825, and it was without Jewish rites." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">first Jewish funeral in Australia, which took place in 1825</span>
+* The consecration of the synagogue in 1881
+* The <span class="ann" title="Insufficient Information: No verification found for this specific visit to the Great Synagogue." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">visit of the Chief Rabbi of England, Rabbi Hermann Adler, in 1891</span>
+* The visit of the Chief Rabbi of South Africa, Rabbi Moses M. L. Sacks, in 1935
+* The <span class="ann" title="Insufficient Information: No verification found for this specific visit to the Great Synagogue." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">visit of the Israeli Prime Minister, David Ben-Gurion, in 1954</span>
+* The visit of the Israeli President, Chaim Herzog, in 1985
+* The visit of the Australian Prime Minister, John Howard, in 2002
+
+**Numbers and Statistics:**
+
+* The Great Synagogue has a <span class="ann" title="Not Supported: Sources indicate the synagogue was designed to accommodate up to 1,000 worshippers, not 1,200." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">seating capacity of 1,200 people</span>
+* The synagogue has a <span class="ann" title="Insufficient Information: No specific floor area measurements were found in the sources." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">total floor area of 2,500 square meters</span> (26,910 square feet)
+* The clock tower is 60 meters (197 feet) tall
+* The synagogue has a <span class="ann" title="Insufficient Information: No specific count of artifacts was found in the sources." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">collection of over 1,000 Jewish artifacts and relics</span>
+* The synagogue has a <span class="ann" title="Not Supported: The Rabbi L A Falk Memorial Library holds more than 7,500 books and serials, not over 10,000." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">library with over 10,000 Jewish books and manuscripts</span>
+
+**Preservation and Restoration:**
+
+The Great Synagogue has undergone several restoration and preservation projects over the years, including:
+
+* A <span class="ann" title="Insufficient Information: No verification found for this specific restoration project and cost." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">major restoration project in the 1970s, which cost $1.5 million</span>
+* A <span class="ann" title="Insufficient Information: No verification found for this specific conservation project and cost." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">conservation project in the 1990s, which cost $2.5 million</span>
+* A <span class="ann" title="Insufficient Information: No verification found for this specific restoration project and cost." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">major restoration project in 2014, which cost $10 million</span>
+
+**Tourism and Education:**
+
+The Great Synagogue offers guided tours and educational programs for visitors, including:
+
+* Guided tours of the synagogue and its grounds
+* Educational programs for schools and community groups
+* Lectures and workshops on Jewish history and culture
+* Exhibitions and displays of Jewish artifacts and relics
+
+Overall, the Great Synagogue of Sydney is a significant cultural and historical landmark in Australia, and a testament to the rich and diverse Jewish community in Sydney.</div>
+  <div class="sidebar"><h3>Placed annotations</h3><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>1878-1881</strong> (idx 277) — The synagogue was built between 1874-1878 and consecrated on 4 March 1878, not 1878-1881.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>John Sulman</strong> (idx 310) — The architect was Thomas Rowe, not John Sulman. John Sulman was a different architect who arrived in Sydney in 1885, after the synagogue was built.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>28 September 1881</strong> (idx 348) — The synagogue was consecrated on 4 March 1878, not 28 September 1881.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>60 meters (197 feet)</strong> (idx 533) — No specific height measurements for the clock tower were found in the sources.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>180 Elizabeth Street</strong> (idx 658) — The correct address is 187a Elizabeth Street, not 180 Elizabeth Street.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>Sydney Hebrew Congregation, which was established in 1844</strong> (idx 896) — The Sydney Hebrew Congregation was formally established on 2 November 1831, not 1844. 1844 was when the York Street Synagogue was consecrated.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>Rabbi Marcus Emet</strong> (idx 1144) — No evidence found of a Rabbi Marcus Emet serving at the Great Synagogue. The completion lists him repeatedly across multiple decades, which appears to be fabricated.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>Rabbi Moses Rintel</strong> (idx 1176) — Moses Rintel was a rabbi in Melbourne, not Sydney, and served from 1849-1880. He was not associated with the Great Synagogue of Sydney.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>Rabbi Jacob Danglow</strong> (idx 1209) — Jacob Danglow was a rabbi in Melbourne (St Kilda), not Sydney. He served from 1905-1957 and was not associated with the Great Synagogue of Sydney.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>Rabbi Benjamin Benisch</strong> (idx 1243) — No evidence found of this rabbi serving at the Great Synagogue of Sydney.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>Rabbi David de Sola Pool</strong> (idx 1312) — No evidence found of this rabbi serving at the Great Synagogue of Sydney in the dates mentioned.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>first Jewish wedding in Australia, which took place in 1825</strong> (idx 1846) — No verification found for this specific claim about the first Jewish wedding in Australia occurring at the Great Synagogue in 1825.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>first Jewish funeral in Australia, which took place in 1825</strong> (idx 1912) — The first Jewish burial in Australia was Joseph Levy in 1788, not 1825, and it was without Jewish rites.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>visit of the Chief Rabbi of England, Rabbi Hermann Adler, in 1891</strong> (idx 2022) — No verification found for this specific visit to the Great Synagogue.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>visit of the Israeli Prime Minister, David Ben-Gurion, in 1954</strong> (idx 2175) — No verification found for this specific visit to the Great Synagogue.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>seating capacity of 1,200 people</strong> (idx 2423) — Sources indicate the synagogue was designed to accommodate up to 1,000 worshippers, not 1,200.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>total floor area of 2,500 square meters</strong> (idx 2478) — No specific floor area measurements were found in the sources.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>collection of over 1,000 Jewish artifacts and relics</strong> (idx 2608) — No specific count of artifacts was found in the sources.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>library with over 10,000 Jewish books and manuscripts</strong> (idx 2683) — The Rabbi L A Falk Memorial Library holds more than 7,500 books and serials, not over 10,000.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>major restoration project in the 1970s, which cost $1.5 million</strong> (idx 2885) — No verification found for this specific restoration project and cost.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>conservation project in the 1990s, which cost $2.5 million</strong> (idx 2953) — No verification found for this specific conservation project and cost.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>major restoration project in 2014, which cost $10 million</strong> (idx 3016) — No verification found for this specific restoration project and cost.</div></div>
+  
+  <div class="footer">Generated by annotate_from_spans.py</div>
+</div>
+</body>
+</html>

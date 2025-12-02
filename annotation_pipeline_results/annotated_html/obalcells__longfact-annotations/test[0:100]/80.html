@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Annotated example</title>
+<style>
+body {
+  font-family: ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  margin: 24px;
+  color: #111827;
+  background: #ffffff;
+}
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+}
+.header {
+  margin-bottom: 20px;
+}
+.subtle {
+  color: #6b7280;
+  font-size: 14px;
+}
+.message {
+  white-space: pre-wrap;
+  line-height: 1.6;
+  font-size: 16px;
+  background: #fafafa;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+}
+.legend {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 12px 0 20px 0;
+}
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+.badge {
+  display: inline-block;
+  border-radius: 6px;
+  padding: 4px 8px;
+  border: 1px solid #d1d5db;
+  background: #f3f4f6;
+  color: #374151;
+  font-weight: 600;
+}
+.ann {
+  border-radius: 4px;
+  padding: 0 2px;
+  border-width: 1px;
+  border-style: solid;
+}
+.sidebar {
+  margin-top: 24px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 12px;
+}
+.sidebar h3 {
+  margin: 8px 0;
+  font-size: 16px;
+}
+.sidebar .ann-item {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+blockquote {
+  margin: 0 0 12px 0;
+  border-left: 3px solid #d1d5db;
+  padding-left: 12px;
+  color: #4b5563;
+}
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.footer {
+  margin-top: 24px;
+  font-size: 12px;
+  color: #6b7280;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h2>Annotated Assistant Response</h2>
+    <div class="legend"><span class="legend-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span></span><span class="legend-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span></span><span class="legend-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span></span></div>
+    <div class="subtle"><strong>user_prompt:</strong> What is the controversy behind the Wells Fargo account fraud scandal? Provide as many specific details and examples as possible (such as names of people, numbers, events, locations, dates, times, etc.)
+</div>
+  </div>
+  <div class="message">The Wells Fargo account fraud scandal, also known as the &quot;Wells Fargo fake accounts scandal,&quot; refers to a widespread practice of employees opening unauthorized customer accounts to meet sales targets and earn bonuses. The scandal led to significant financial and reputational losses for the bank, as well as regulatory actions and lawsuits.
+
+**Background:**
+
+In <span class="ann" title="Supported: Cross-selling strategy implementation date is confirmed as starting around 2013 in multiple sources, though some sources indicate it began earlier in 2002." style="background:#e6ffed;border-color:#34d058;color:#22863a;">2013</span>, Wells Fargo began implementing a sales strategy called &quot;cross-selling,&quot; which aimed to increase revenue by selling customers additional financial products, such as credit cards, loans, and investment accounts. To meet sales targets, employees were incentivized with bonuses and promotions for opening new accounts.
+
+**Scandal Unfolds:**
+
+In 2013, a Wells Fargo employee in Los Angeles, <span class="ann" title="Not Supported: No evidence found of a Wells Fargo employee named Patricia H. Morris reporting concerns in 2013. This appears to be a fabricated name and story." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">Patricia H. Morris</span>, reported to her supervisor that she was being pressured to open unauthorized accounts to meet sales targets. Morris&#x27;s concerns were ignored, and she eventually left the company.
+
+In <span class="ann" title="Supported: 2015 is correctly cited as when Los Angeles filed its lawsuit against Wells Fargo over unauthorized accounts." style="background:#e6ffed;border-color:#34d058;color:#22863a;">2015</span>, a Wells Fargo employee in <span class="ann" title="Supported: California, particularly Los Angeles, was indeed a key location in the scandal investigations." style="background:#e6ffed;border-color:#34d058;color:#22863a;">California</span>, Annette Bongiorno, was fired after she was accused of opening unauthorized accounts. Bongiorno later became a key witness in the scandal, testifying that she and other employees were instructed to open fake accounts to meet sales targets.
+
+**Regulatory Actions:**
+
+In <span class="ann" title="Supported: 2016 is correctly identified as when the CFPB and OCC launched their investigation and imposed fines." style="background:#e6ffed;border-color:#34d058;color:#22863a;">2016</span>, the Consumer Financial Protection Bureau (CFPB) and the Office of the Comptroller of the Currency (OCC) launched an investigation into Wells Fargo&#x27;s sales practices. The investigation found that between <span class="ann" title="Supported: Multiple sources confirm the fraudulent practices began as early as 2002." style="background:#e6ffed;border-color:#34d058;color:#22863a;">2002</span> and 2016, Wells Fargo employees opened approximately <span class="ann" title="Supported: Multiple sources confirm approximately 2 million unauthorized accounts were opened, with later estimates reaching 3.5 million." style="background:#e6ffed;border-color:#34d058;color:#22863a;">2 million unauthorized customer accounts</span>, resulting in $2.6 billion in fees and interest charges.
+
+**Regulatory Fines and Penalties:**
+
+In <span class="ann" title="Supported: September 8, 2016 is correctly identified as when the $185 million fine was announced." style="background:#e6ffed;border-color:#34d058;color:#22863a;">September 2016</span>, the CFPB and OCC imposed a $185 million fine on Wells Fargo, which was the largest fine ever imposed on a bank at the time. The fine was divided among the CFPB (<span class="ann" title="Supported: CFPB portion of the fine was indeed $100 million." style="background:#e6ffed;border-color:#34d058;color:#22863a;">$100 million</span>), the OCC (<span class="ann" title="Supported: OCC portion of the fine was indeed $35 million." style="background:#e6ffed;border-color:#34d058;color:#22863a;">$35 million</span>), and the Federal Reserve (<span class="ann" title="Supported: City and County of Los Angeles portion was indeed $50 million, not Federal Reserve as stated." style="background:#e6ffed;border-color:#34d058;color:#22863a;">$50 million</span>).
+
+**Lawsuits and Settlements:**
+
+In 2016, Wells Fargo agreed to pay $110 million to settle a class-action lawsuit filed by customers who were affected by the scandal. The settlement provided compensation to customers who were charged fees on unauthorized accounts.
+
+In <span class="ann" title="Unknown: While some events occurred in 2017, Carrie Tolstedt retired in 2016, not 2017 as stated in the timeline." style="background:#eef2ff;border-color:#6366f1;color:#3730a3;">2017</span>, Wells Fargo agreed to pay $80 million to settle a lawsuit filed by the Securities and Exchange Commission (SEC) alleging that the bank had misled investors about its sales practices.
+
+**Executive Departures:**
+
+In 2016, Wells Fargo CEO John Stumpf resigned after facing intense pressure from regulators and lawmakers. Stumpf was replaced by Timothy Sloan, who served as CEO until <span class="ann" title="Supported: Timothy Sloan did resign as CEO in March 2019." style="background:#e6ffed;border-color:#34d058;color:#22863a;">2019</span>.
+
+In 2017, Wells Fargo&#x27;s Chief Operating Officer, Carrie Tolstedt, retired after facing criticism for her role in implementing the sales strategy that led to the scandal.
+
+**Timeline:**
+
+* 2002: Wells Fargo begins implementing its cross-selling strategy.
+* 2013: Patricia H. Morris reports her concerns about unauthorized account openings to her supervisor.
+* 2015: Annette Bongiorno is fired for opening unauthorized accounts.
+* 2016: CFPB and OCC launch investigation into Wells Fargo&#x27;s sales practices.
+* September 2016: CFPB and OCC impose $185 million fine on Wells Fargo.
+* 2016: Wells Fargo agrees to pay $110 million to settle class-action lawsuit.
+* 2017: Wells Fargo agrees to pay $80 million to settle SEC lawsuit.
+* 2017: Carrie Tolstedt retires as Chief Operating Officer.
+* 2019: Timothy Sloan resigns as CEO.
+
+**Locations:**
+
+* <span class="ann" title="Supported: Los Angeles is correctly mentioned as a location where investigations and lawsuits related to the scandal occurred." style="background:#e6ffed;border-color:#34d058;color:#22863a;">Los Angeles</span>, California: Where Patricia H. Morris reported her concerns about unauthorized account openings.
+* California: Where <span class="ann" title="Not Supported: Annette Bongiorno was associated with the Bernie Madoff scandal, not Wells Fargo. This appears to be a case of mistaken identity or fabrication." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">Annette Bongiorno</span> was fired for opening unauthorized accounts.
+* <span class="ann" title="Supported: CFPB and OCC are indeed headquartered in Washington, D.C." style="background:#e6ffed;border-color:#34d058;color:#22863a;">Washington, D.C.</span>: Where CFPB and OCC are headquartered.
+* <span class="ann" title="Supported: Wells Fargo is indeed headquartered in San Francisco, California." style="background:#e6ffed;border-color:#34d058;color:#22863a;">San Francisco, California</span>: Where Wells Fargo is headquartered.
+
+**Numbers:**
+
+* 2 million: Number of unauthorized customer accounts opened by Wells Fargo employees.
+* <span class="ann" title="Not Supported: The $2.6 billion figure appears to be incorrect. Sources indicate $2.6 million in customer refunds, not billions in fees and charges." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">$2.6 billion</span>: Amount of fees and interest charges generated by unauthorized accounts.
+* $<span class="ann" title="Supported: The $185 million total fine is confirmed across multiple sources." style="background:#e6ffed;border-color:#34d058;color:#22863a;">185 million: Fine</span> imposed on Wells Fargo by CFPB and OCC.
+* <span class="ann" title="Supported: Wells Fargo did agree to a class-action settlement that started at $110 million and was later expanded to $142 million." style="background:#e6ffed;border-color:#34d058;color:#22863a;">$110 million</span>: Amount paid by Wells Fargo to settle class-action lawsuit.
+* <span class="ann" title="Not Supported: No evidence found of a specific $80 million SEC settlement in 2017. The major SEC settlement was part of the $3 billion agreement in 2020." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">$80 million</span>: Amount paid by Wells Fargo to settle SEC lawsuit.
+
+**Key Figures:**
+
+* Patricia H. Morris: Wells Fargo employee who reported concerns about unauthorized account openings.
+* Annette Bongiorno: Wells Fargo employee who was fired for opening unauthorized accounts.
+* <span class="ann" title="Supported: John Stumpf was indeed the CEO of Wells Fargo who resigned in October 2016." style="background:#e6ffed;border-color:#34d058;color:#22863a;">John Stumpf</span>: Former CEO of Wells Fargo.
+* <span class="ann" title="Supported: Timothy Sloan did replace Stumpf as CEO and served until March 2019, not just until 2019 as stated." style="background:#e6ffed;border-color:#34d058;color:#22863a;">Timothy Sloan</span>: Former CEO of Wells Fargo.
+* <span class="ann" title="Supported: Carrie Tolstedt was indeed the head of Community Banking who retired in 2016, though she announced retirement in July 2016, not 2017." style="background:#e6ffed;border-color:#34d058;color:#22863a;">Carrie Tolstedt</span>: Former Chief Operating Officer of Wells Fargo.</div>
+  <div class="sidebar"><h3>Placed annotations</h3><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>2013</strong> (idx 362) — Cross-selling strategy implementation date is confirmed as starting around 2013 in multiple sources, though some sources indicate it began earlier in 2002.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>Patricia H. Morris</strong> (idx 754) — No evidence found of a Wells Fargo employee named Patricia H. Morris reporting concerns in 2013. This appears to be a fabricated name and story.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Los Angeles</strong> (idx 3430) — Los Angeles is correctly mentioned as a location where investigations and lawsuits related to the scandal occurred.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>Annette Bongiorno</strong> (idx 3559) — Annette Bongiorno was associated with the Bernie Madoff scandal, not Wells Fargo. This appears to be a case of mistaken identity or fabrication.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>2015</strong> (idx 956) — 2015 is correctly cited as when Los Angeles filed its lawsuit against Wells Fargo over unauthorized accounts.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>2016</strong> (idx 1268) — 2016 is correctly identified as when the CFPB and OCC launched their investigation and imposed fines.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>2 million unauthorized customer accounts</strong> (idx 1535) — Multiple sources confirm approximately 2 million unauthorized accounts were opened, with later estimates reaching 3.5 million.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>$2.6 billion</strong> (idx 3849) — The $2.6 billion figure appears to be incorrect. Sources indicate $2.6 million in customer refunds, not billions in fees and charges.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>September 2016</strong> (idx 1674) — September 8, 2016 is correctly identified as when the $185 million fine was announced.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>185 million: Fine</strong> (idx 3938) — The $185 million total fine is confirmed across multiple sources.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>$100 million</strong> (idx 1851) — CFPB portion of the fine was indeed $100 million.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>$35 million</strong> (idx 1875) — OCC portion of the fine was indeed $35 million.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>$50 million</strong> (idx 1914) — City and County of Los Angeles portion was indeed $50 million, not Federal Reserve as stated.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>$110 million</strong> (idx 3998) — Wells Fargo did agree to a class-action settlement that started at $110 million and was later expanded to $142 million.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>$80 million</strong> (idx 4073) — No evidence found of a specific $80 million SEC settlement in 2017. The major SEC settlement was part of the $3 billion agreement in 2020.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>John Stumpf</strong> (idx 4350) — John Stumpf was indeed the CEO of Wells Fargo who resigned in October 2016.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Timothy Sloan</strong> (idx 4392) — Timothy Sloan did replace Stumpf as CEO and served until March 2019, not just until 2019 as stated.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Carrie Tolstedt</strong> (idx 4436) — Carrie Tolstedt was indeed the head of Community Banking who retired in 2016, though she announced retirement in July 2016, not 2017.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>2002</strong> (idx 1477) — Multiple sources confirm the fraudulent practices began as early as 2002.</div><div class="ann-item"><span class="badge" style="background:#eef2ff;border-color:#6366f1;color:#3730a3">Unknown</span> <strong>2017</strong> (idx 2196) — While some events occurred in 2017, Carrie Tolstedt retired in 2016, not 2017 as stated in the timeline.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>2019</strong> (idx 2582) — Timothy Sloan did resign as CEO in March 2019.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>California</strong> (idx 988) — California, particularly Los Angeles, was indeed a key location in the scandal investigations.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Washington, D.C.</strong> (idx 3624) — CFPB and OCC are indeed headquartered in Washington, D.C.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>San Francisco, California</strong> (idx 3682) — Wells Fargo is indeed headquartered in San Francisco, California.</div></div>
+  
+  <div class="footer">Generated by annotate_from_spans.py</div>
+</div>
+</body>
+</html>
