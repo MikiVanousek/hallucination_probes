@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Annotated example</title>
+<style>
+body {
+  font-family: ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  margin: 24px;
+  color: #111827;
+  background: #ffffff;
+}
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+}
+.header {
+  margin-bottom: 20px;
+}
+.subtle {
+  color: #6b7280;
+  font-size: 14px;
+}
+.message {
+  white-space: pre-wrap;
+  line-height: 1.6;
+  font-size: 16px;
+  background: #fafafa;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+}
+.legend {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 12px 0 20px 0;
+}
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+.badge {
+  display: inline-block;
+  border-radius: 6px;
+  padding: 4px 8px;
+  border: 1px solid #d1d5db;
+  background: #f3f4f6;
+  color: #374151;
+  font-weight: 600;
+}
+.ann {
+  border-radius: 4px;
+  padding: 0 2px;
+  border-width: 1px;
+  border-style: solid;
+}
+.sidebar {
+  margin-top: 24px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 12px;
+}
+.sidebar h3 {
+  margin: 8px 0;
+  font-size: 16px;
+}
+.sidebar .ann-item {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+blockquote {
+  margin: 0 0 12px 0;
+  border-left: 3px solid #d1d5db;
+  padding-left: 12px;
+  color: #4b5563;
+}
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.footer {
+  margin-top: 24px;
+  font-size: 12px;
+  color: #6b7280;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h2>Annotated Assistant Response</h2>
+    <div class="legend"><span class="legend-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span></span><span class="legend-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span></span><span class="legend-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span></span></div>
+    <div class="subtle"><strong>pubmedqa_id:</strong> 23831910</div>
+<div class="subtle"><strong>original_answer:</strong> yes</div>
+<div class="subtle"><strong>context:</strong> From March 2007 to January 2011, 88 DBE procedures were performed on 66 patients. Indications included evaluation anemia/gastrointestinal bleed, small bowel IBD and dilation of strictures. Video-capsule endoscopy (VCE) was used prior to DBE in 43 of the 66 patients prior to DBE evaluation. The mean age was 62 years. Thirty-two patients were female, 15 were African-American; 44 antegrade and 44 retrograde DBEs were performed. The mean time per antegrade DBE was 107.4±30.0 minutes with a distance of 318.4±152.9 cm reached past the pylorus. The mean time per lower DBE was 100.7±27.3 minutes with 168.9±109.1 cm meters past the ileocecal valve reached. Endoscopic therapy in the form of electrocautery to ablate bleeding sources was performed in 20 patients (30.3%), biopsy in 17 patients (25.8%) and dilation of Crohn&#x27;s-related small bowel strictures in 4 (6.1%). 43 VCEs with pathology noted were performed prior to DBE, with findings endoscopically confirmed in 32 cases (74.4%). In 3 cases the</div>
+<div class="subtle"><strong>source:</strong> pubmedqa_meditron</div>
+<div class="subtle"><strong>user_prompt:</strong> Double balloon enteroscopy: is it efficacious and safe in a community setting?</div>
+  </div>
+  <div class="message">Yes
+
+# Introduction
+The double balloon enteroscopy (DBE) is a new endoscopic modality that has been <span class="ann" title="Not Supported: This claim appears inconsistent with the timeline. If written recently, DBE has been in use for over 20 years since 2001, not just the last 5 years." style="background:#ffeef0;border-color:#f85149;color:#b31d28;">gaining popularity in the last 5 years</span>. This technique was first described by <span class="ann" title="Supported: Multiple sources confirm that Hironori Yamamoto and colleagues first described double balloon enteroscopy in 2001, with the landmark paper published in Gastrointestinal Endoscopy." style="background:#e6ffed;border-color:#34d058;color:#22863a;">Yamamoto and colleagues in 2001</span>. [bib_ref] Total enteroscopy with a nonsurgical steerable double-balloon method, Yamamoto [/bib_ref] The double balloon enteroscope (DBE) was approved by the <span class="ann" title="Insufficient Information: Could not find specific evidence confirming FDA approval of double balloon enteroscope in 2009. While the technique was developed in 2001, specific FDA approval date could not be verified." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">FDA in 2009</span> for the evaluation of the small bowel. Since then, DBE has been used for a variety of indications, including the evaluation of obscure gastrointestinal bleeding, small bowel Crohn&#x27;s disease, and the dilation of small bowel strictures. [bib_ref] Double-balloon enteroscopy: indications, diagnostic yield, and complications in a series of 160..., <span class="ann" title="Insufficient Information: Could not find evidence of a researcher named Gayet as a significant author in double balloon enteroscopy literature. The major authors found were Yamamoto, May, Ell, and others." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">Gayet</span> [/bib_ref] [bib_ref] Double-balloon enteroscopy for the diagnosis of small bowel disease: results of a..., <span class="ann" title="Supported: Andrea May is confirmed as a prominent researcher in double balloon enteroscopy with multiple publications on the topic." style="background:#e6ffed;border-color:#34d058;color:#22863a;">May</span> [/bib_ref] [bib_ref] Double-balloon enteroscopy (DBE) for the diagnosis and treatment of small bowel disorders:..., <span class="ann" title="Supported: Christian Ell is confirmed as a co-author with May on multiple double balloon enteroscopy studies." style="background:#e6ffed;border-color:#34d058;color:#22863a;">Ell</span> [/bib_ref] [bib_ref] The use of double-balloon enteroscopy in the diagnosis and treatment of small..., <span class="ann" title="Insufficient Information: While Iddan is mentioned in relation to capsule endoscopy development, could not verify specific authorship on double balloon enteroscopy papers as claimed." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">Iddan</span> [/bib_ref] [bib_ref] Double-balloon enteroscopy: indications, diagnostic yield, and complications in a series of 160..., Gayet [/bib_ref] [bib_ref] Double-balloon enteroscopy for the diagnosis and treatment of small bowel disorders: preliminary..., Ell [/bib_ref] [bib_ref] The first clinical experience with double balloon enteroscopy in North America: a..., <span class="ann" title="Insufficient Information: Could not find evidence of a researcher named Feito as an author in double balloon enteroscopy literature." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">Feito</span> [/bib_ref] [bib_ref] Double-balloon enteroscopy (DBE): diagnostic and therapeutic applications in a North American cohort, <span class="ann" title="Insufficient Information: Could not find evidence of a researcher named Leighton as an author in double balloon enteroscopy literature." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">Leighton</span> [/bib_ref] [bib_ref] Double-balloon enteroscopy: a prospective evaluation of the diagnostic and therapeutic impact in..., <span class="ann" title="Insufficient Information: Could not find evidence of a researcher named Higaki as an author in double balloon enteroscopy literature." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">Higaki</span> [/bib_ref] [bib_ref] Double-balloon enteroscopy in the management of small-bowel bleeding, <span class="ann" title="Insufficient Information: Could not find evidence of a researcher named Iwamoto as an author in double balloon enteroscopy literature." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">Iwamoto</span> [/bib_ref] [bib_ref] Double-balloon enteroscopy: a new technique for diagnostic and therapeutic procedures in the..., <span class="ann" title="Insufficient Information: Could not find evidence of a researcher named Hara as an author in double balloon enteroscopy literature." style="background:#fff5e5;border-color:#f2a654;color:#9a6700;">Hara</span> [/bib_ref] [bib_ref] Double-balloon enteroscopy: an innovative diagnostic and therapeutic approach in the small bowel, Yamamoto [/bib_ref] [bib_ref] Diagnostic and therapeutic utility of double-balloon enteroscopy, Yamamoto [/bib_ref] [bib_ref] Double-balloon enteroscopy:</div>
+  <div class="sidebar"><h3>Placed annotations</h3><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Yamamoto and colleagues in 2001</strong> (idx 178) — Multiple sources confirm that Hironori Yamamoto and colleagues first described double balloon enteroscopy in 2001, with the landmark paper published in Gastrointestinal Endoscopy.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>FDA in 2009</strong> (idx 368) — Could not find specific evidence confirming FDA approval of double balloon enteroscope in 2009. While the technique was developed in 2001, specific FDA approval date could not be verified.</div><div class="ann-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span> <strong>gaining popularity in the last 5 years</strong> (idx 100) — This claim appears inconsistent with the timeline. If written recently, DBE has been in use for over 20 years since 2001, not just the last 5 years.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>Gayet</strong> (idx 725) — Could not find evidence of a researcher named Gayet as a significant author in double balloon enteroscopy literature. The major authors found were Yamamoto, May, Ell, and others.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>May</strong> (idx 838) — Andrea May is confirmed as a prominent researcher in double balloon enteroscopy with multiple publications on the topic.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>Ell</strong> (idx 958) — Christian Ell is confirmed as a co-author with May on multiple double balloon enteroscopy studies.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>Iddan</strong> (idx 1065) — While Iddan is mentioned in relation to capsule endoscopy development, could not verify specific authorship on double balloon enteroscopy papers as claimed.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>Feito</strong> (idx 1431) — Could not find evidence of a researcher named Feito as an author in double balloon enteroscopy literature.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>Leighton</strong> (idx 1560) — Could not find evidence of a researcher named Leighton as an author in double balloon enteroscopy literature.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>Higaki</strong> (idx 1691) — Could not find evidence of a researcher named Higaki as an author in double balloon enteroscopy literature.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>Iwamoto</strong> (idx 1789) — Could not find evidence of a researcher named Iwamoto as an author in double balloon enteroscopy literature.</div><div class="ann-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span> <strong>Hara</strong> (idx 1915) — Could not find evidence of a researcher named Hara as an author in double balloon enteroscopy literature.</div></div>
+  
+  <div class="footer">Generated by annotate_from_spans.py</div>
+</div>
+</body>
+</html>

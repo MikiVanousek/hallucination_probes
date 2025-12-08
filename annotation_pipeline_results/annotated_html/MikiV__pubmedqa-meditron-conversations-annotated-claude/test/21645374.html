@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Annotated example</title>
+<style>
+body {
+  font-family: ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  margin: 24px;
+  color: #111827;
+  background: #ffffff;
+}
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+}
+.header {
+  margin-bottom: 20px;
+}
+.subtle {
+  color: #6b7280;
+  font-size: 14px;
+}
+.message {
+  white-space: pre-wrap;
+  line-height: 1.6;
+  font-size: 16px;
+  background: #fafafa;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+}
+.legend {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 12px 0 20px 0;
+}
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+.badge {
+  display: inline-block;
+  border-radius: 6px;
+  padding: 4px 8px;
+  border: 1px solid #d1d5db;
+  background: #f3f4f6;
+  color: #374151;
+  font-weight: 600;
+}
+.ann {
+  border-radius: 4px;
+  padding: 0 2px;
+  border-width: 1px;
+  border-style: solid;
+}
+.sidebar {
+  margin-top: 24px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 12px;
+}
+.sidebar h3 {
+  margin: 8px 0;
+  font-size: 16px;
+}
+.sidebar .ann-item {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+blockquote {
+  margin: 0 0 12px 0;
+  border-left: 3px solid #d1d5db;
+  padding-left: 12px;
+  color: #4b5563;
+}
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.footer {
+  margin-top: 24px;
+  font-size: 12px;
+  color: #6b7280;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h2>Annotated Assistant Response</h2>
+    <div class="legend"><span class="legend-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span></span><span class="legend-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span></span><span class="legend-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span></span></div>
+    <div class="subtle"><strong>pubmedqa_id:</strong> 21645374</div>
+<div class="subtle"><strong>original_answer:</strong> yes</div>
+<div class="subtle"><strong>context:</strong> Programmed cell death (PCD) is the regulated death of cells within an organism. The lace plant (Aponogeton madagascariensis) produces perforations in its leaves through PCD. The leaves of the plant consist of a latticework of longitudinal and transverse veins enclosing areoles. PCD occurs in the cells at the center of these areoles and progresses outwards, stopping approximately five cells from the vasculature. The role of mitochondria during PCD has been recognized in animals; however, it has been less studied during PCD in plants. The following paper elucidates the role of mitochondrial dynamics during developmentally regulated PCD in vivo in A. madagascariensis. A single areole within a window stage leaf (PCD is occurring) was divided into three areas based on the progression of PCD; cells that will not undergo PCD (NPCD), cells in early stages of PCD (EPCD), and cells in late stages of PCD (LPCD). Window stage leaves were stained with the mitochondrial dye MitoTracker Red CMXRos an</div>
+<div class="subtle"><strong>source:</strong> pubmedqa_meditron</div>
+<div class="subtle"><strong>user_prompt:</strong> Do mitochondria play a role in remodelling lace plant leaves during programmed cell death?</div>
+  </div>
+  <div class="message">yes
+Explanation: The results show that <span class="ann" title="Supported: Multiple research papers confirm that mitochondria undergo dynamic changes during PCD in lace plant leaves, including changes in distribution, motility, and aggregation patterns." style="background:#e6ffed;border-color:#34d058;color:#22863a;">mitochondria undergo a series of dynamic changes during PCD in lace plant leaves</span>. The <span class="ann" title="Supported: The term ΔΨm for mitochondrial membrane potential is correctly used and extensively documented in the research papers about lace plant PCD." style="background:#e6ffed;border-color:#34d058;color:#22863a;">mitochondrial membrane potential (ΔΨm)</span> is maintained in the <span class="ann" title="Supported: NPCD (Non-Programmed Cell Death) is a well-established term used in lace plant research to describe cells that will not undergo PCD." style="background:#e6ffed;border-color:#34d058;color:#22863a;">NPCD region</span>, but decreases in <span class="ann" title="Supported: EPCD (Early-Programmed Cell Death) is a documented stage in lace plant PCD research, referring to cells in early stages of programmed cell death." style="background:#e6ffed;border-color:#34d058;color:#22863a;">EPCD</span> and <span class="ann" title="Supported: LPCD (Late-Programmed Cell Death) is a documented stage in lace plant PCD research, referring to cells in late stages of programmed cell death." style="background:#e6ffed;border-color:#34d058;color:#22863a;">LPCD</span>. These results suggest that mitochondrial dynamics and ΔΨm are involved in the regulation of PCD in lace plant leaves. The results also suggest that <span class="ann" title="Supported: PTP (Permeability Transition Pore) formation is discussed in the research as a potential mechanism examined through cyclosporine A treatment." style="background:#e6ffed;border-color:#34d058;color:#22863a;">PTP formation</span> during PCD is a potential mechanism by which the mitochondrial membrane potential is disrupted.</div>
+  <div class="sidebar"><h3>Placed annotations</h3><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>mitochondria undergo a series of dynamic changes during PCD in lace plant leaves</strong> (idx 39) — Multiple research papers confirm that mitochondria undergo dynamic changes during PCD in lace plant leaves, including changes in distribution, motility, and aggregation patterns.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>mitochondrial membrane potential (ΔΨm)</strong> (idx 125) — The term ΔΨm for mitochondrial membrane potential is correctly used and extensively documented in the research papers about lace plant PCD.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>NPCD region</strong> (idx 185) — NPCD (Non-Programmed Cell Death) is a well-established term used in lace plant research to describe cells that will not undergo PCD.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>EPCD</strong> (idx 215) — EPCD (Early-Programmed Cell Death) is a documented stage in lace plant PCD research, referring to cells in early stages of programmed cell death.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>LPCD</strong> (idx 224) — LPCD (Late-Programmed Cell Death) is a documented stage in lace plant PCD research, referring to cells in late stages of programmed cell death.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>PTP formation</strong> (idx 378) — PTP (Permeability Transition Pore) formation is discussed in the research as a potential mechanism examined through cyclosporine A treatment.</div></div>
+  <div class="sidebar"><h3>Unplaced annotations</h3><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>mitochondrial membrane potential (ΔΨm) is maintained in the NPCD region, but decreases in EPCD and LPCD</strong> (idx 125) — Research papers confirm that mitochondrial membrane potential is maintained in NPCD cells but shows loss in LPCD cells, with EPCD showing intermediate stages.</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>PTP formation during PCD is a potential mechanism by which the mitochondrial membrane potential is disrupted</strong> (idx 378) — The research papers discuss PTP formation as a potential mechanism for mitochondrial membrane potential disruption during PCD, examined indirectly through CsA treatment.</div></div>
+  <div class="footer">Generated by annotate_from_spans.py</div>
+</div>
+</body>
+</html>
