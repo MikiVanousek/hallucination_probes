@@ -35,6 +35,7 @@ dependencies = [
   # Experiment tracking
   "wandb>=0.15.0",
   "ipykernel>=7.1.0",
+  "deepl>=1.25.0",
 ]
 
 [tool.setuptools]

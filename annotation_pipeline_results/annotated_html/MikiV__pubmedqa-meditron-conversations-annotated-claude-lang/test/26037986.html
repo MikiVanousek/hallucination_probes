@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Annotated example</title>
+<style>
+body {
+  font-family: ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  margin: 24px;
+  color: #111827;
+  background: #ffffff;
+}
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+}
+.header {
+  margin-bottom: 20px;
+}
+.subtle {
+  color: #6b7280;
+  font-size: 14px;
+}
+.message {
+  white-space: pre-wrap;
+  line-height: 1.6;
+  font-size: 16px;
+  background: #fafafa;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+}
+.legend {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 12px 0 20px 0;
+}
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+.badge {
+  display: inline-block;
+  border-radius: 6px;
+  padding: 4px 8px;
+  border: 1px solid #d1d5db;
+  background: #f3f4f6;
+  color: #374151;
+  font-weight: 600;
+}
+.ann {
+  border-radius: 4px;
+  padding: 0 2px;
+  border-width: 1px;
+  border-style: solid;
+}
+.sidebar {
+  margin-top: 24px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 12px;
+}
+.sidebar h3 {
+  margin: 8px 0;
+  font-size: 16px;
+}
+.sidebar .ann-item {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+blockquote {
+  margin: 0 0 12px 0;
+  border-left: 3px solid #d1d5db;
+  padding-left: 12px;
+  color: #4b5563;
+}
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.footer {
+  margin-top: 24px;
+  font-size: 12px;
+  color: #6b7280;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h2>Annotated Assistant Response</h2>
+    <div class="legend"><span class="legend-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span></span><span class="legend-item"><span class="badge" style="background:#ffeef0;border-color:#f85149;color:#b31d28">Not Supported</span></span><span class="legend-item"><span class="badge" style="background:#fff5e5;border-color:#f2a654;color:#9a6700">Insufficient Information</span></span></div>
+    <div class="subtle"><strong>pubmedqa_id:</strong> 26037986</div>
+<div class="subtle"><strong>original_answer:</strong> maybe</div>
+<div class="subtle"><strong>context:</strong> Emergency surgery is associated with poorer outcomes and higher mortality with recent studies suggesting the 30-day mortality to be 14-15%. The aim of this study was to analyse the 30-day mortality, age-related 30-day mortality and 1-year mortality following emergency laparotomy. We hope this will encourage prospective data collection, improvement of care and initiate strategies to establish best practice in this area. This was a retrospective study of patients who underwent emergency laparotomy from June 2010 to May 2012. The primary end point of the study was 30-day mortality, age-related 30-day mortality and 1-year all-cause mortality. 477 laparotomies were performed in 446 patients. 57% were aged&lt;70 and 43% aged&gt;70 years. 30-day mortality was 12, 4% in those aged&lt;70 years and 22% in those&gt;70 years (p&lt;0.001). 1-year mortality was 25, 15% in those aged under 70 years and 38% in those aged&gt;70 years (p&lt;0.001).</div>
+<div class="subtle"><strong>source:</strong> pubmedqa_meditron</div>
+<div class="subtle"><strong>user_prompt:</strong> 30-Day and 1-year mortality in emergency general surgery laparotomies: an area of concern and need for improvement?</div>
+  </div>
+  <div class="message">ano
+Vysvětlení: třicetidenní úmrtnost je u urgentních laparotomií ve všeobecné chirurgii <span class="ann" title="Supported: Multiple studies confirm high 30-day mortality rates in emergency laparotomy, ranging from 8-17% overall, with rates as high as 31.5% in elderly patients" style="background:#e6ffed;border-color:#34d058;color:#22863a;">vysoká,</span> přičemž <span class="ann" title="Supported: Extensive evidence shows elderly patients (≥65-70 years) have significantly higher mortality rates, with studies showing 30-day mortality of 15.3% vs 4.9% in younger patients, and rates up to 31.5% vs 8.8% in some studies" style="background:#e6ffed;border-color:#34d058;color:#22863a;">u starších pacientů je výrazně vyšší</span>. <span class="ann" title="Supported: Studies document 1-year mortality rates ranging from 5.5% to 47% depending on patient population, with elderly patients showing particularly high rates (27.9% vs 14.3% in non-elderly)" style="background:#e6ffed;border-color:#34d058;color:#22863a;">jednoletá mortalita je rovněž vysoká,</span> s <span class="ann" title="Supported: Evidence consistently shows elderly patients have significantly higher 1-year mortality rates, with studies showing rates of 27.9% vs 14.3% in non-elderly patients, and up to 47% in patients over 80" style="background:#e6ffed;border-color:#34d058;color:#22863a;">významně vyšší mortalitou u starších osob</span>. Tato zjištění zdůrazňují <span class="ann" title="Supported: Multiple studies and audit programs (like NELA) explicitly state the need for improvement in emergency laparotomy care, particularly for elderly patients, with recommendations for enhanced protocols and multidisciplinary approaches" style="background:#e6ffed;border-color:#34d058;color:#22863a;">potřebu zlepšení péče v</span> této oblasti.</div>
+  <div class="sidebar"><h3>Placed annotations</h3><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>vysoká,</strong> (idx 89) — Multiple studies confirm high 30-day mortality rates in emergency laparotomy, ranging from 8-17% overall, with rates as high as 31.5% in elderly patients</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>u starších pacientů je výrazně vyšší</strong> (idx 105) — Extensive evidence shows elderly patients (≥65-70 years) have significantly higher mortality rates, with studies showing 30-day mortality of 15.3% vs 4.9% in younger patients, and rates up to 31.5% vs 8.8% in some studies</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>jednoletá mortalita je rovněž vysoká,</strong> (idx 143) — Studies document 1-year mortality rates ranging from 5.5% to 47% depending on patient population, with elderly patients showing particularly high rates (27.9% vs 14.3% in non-elderly)</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>významně vyšší mortalitou u starších osob</strong> (idx 183) — Evidence consistently shows elderly patients have significantly higher 1-year mortality rates, with studies showing rates of 27.9% vs 14.3% in non-elderly patients, and up to 47% in patients over 80</div><div class="ann-item"><span class="badge" style="background:#e6ffed;border-color:#34d058;color:#22863a">Supported</span> <strong>potřebu zlepšení péče v</strong> (idx 251) — Multiple studies and audit programs (like NELA) explicitly state the need for improvement in emergency laparotomy care, particularly for elderly patients, with recommendations for enhanced protocols and multidisciplinary approaches</div></div>
+  
+  <div class="footer">Generated by annotate_from_spans.py</div>
+</div>
+</body>
+</html>
