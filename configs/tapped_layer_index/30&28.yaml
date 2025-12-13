@@ -1,7 +1,7 @@
 probe_config:
-  probe_id: meditron3_8b_lora_probe_layer_30&16
+  probe_id: meditron3_8b_lora_probe_layer_30&28
   model_name: OpenMeditron/Meditron3-8B
-  layer: [30, 16]
+  layer: [30, 28]
   lora_layers:
     - 0
     - 1
@@ -33,13 +33,14 @@ probe_config:
     - 27
     - 28
     - 29
-  lora_r: 32
+  lora_r: 16
   lora_alpha: 64
   lora_dropout: 0.05
   load_from: null
   hf_repo_id: FayElhassan/hallucination-probes
   threshold: 0.46
 wandb_project: hallucination-probes
+wandb_entity: miki-light
 upload_to_hf: true
 save_evaluation_metrics: true
 save_roc_curves: false
