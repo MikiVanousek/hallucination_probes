@@ -1,7 +1,7 @@
 probe_config:
-  probe_id: meditron3_8b_lora_probe_r24
+  probe_id: meditron3_8b_lora_probe_layer_30&16
   model_name: OpenMeditron/Meditron3-8B
-  layer: [30, 19]
+  layer: [30, 16]
   lora_layers:
     - 0
     - 1
@@ -33,7 +33,7 @@ probe_config:
     - 27
     - 28
     - 29
-  lora_r: 24
+  lora_r: 48
   lora_alpha: 64
   lora_dropout: 0.05
   load_from: null
@@ -195,6 +195,24 @@ eval_datasets:
   - dataset_id: llama3_1_8b_healthbench_test
     hf_repo: obalcells/healthbench-annotations
     subset: Meta-Llama-3.1-8B-Instruct
+    split: test
+    max_length: 1536
+    pos_weight: 1.0
+    neg_weight: 1.0
+    default_ignore: false
+    shuffle: false
+
+  - dataset_id: meditron_generation_claude_cz
+    hf_repo: MikiV/pubmedqa-meditron-conversations-annotated-claude-cz
+    split: test
+    max_length: 1536
+    pos_weight: 1.0
+    neg_weight: 1.0
+    default_ignore: false
+    shuffle: false
+
+  - dataset_id: meditron_generation_claude
+    hf_repo: MikiV/pubmedqa-meditron-conversations-annotated-claude
     split: test
     max_length: 1536
     pos_weight: 1.0
