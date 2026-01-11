@@ -1,130 +1,80 @@
-# Real-Time Detection of Hallucinated Entities in Long-Form Generation
+# Hallucination Detection for Meditron3-8B
+This repository is a fork of obalcells/hallucination_probes
 
-This is the codebase corresponding to the paper 'Real-Time Detection of Hallucinated Entities in Long-Form Generation':
-- Paper link: [arxiv.org/abs/2509.03531](https://arxiv.org/abs/2509.03531)
-- Project website: [hallucination-probes.com](https://www.hallucination-probes.com/)
+ for the project at EPFL's LiGHT laboratory, under the supervision of Annie Hartley and Fay Elhassan.
 
-## Datasets
+## Setup
+We used an Nvidia H100 GPU with 80GB of memory to run the code in this repository.
 
-All long-form datasets are provided as a [HuggingFace collection](https://huggingface.co/collections/obalcells/hallucination-probes-68bb658a4795f9294a73b991). This includes:
-- Token-level annotations of long-form generations:
-  - [LongFact annotations](https://huggingface.co/datasets/obalcells/longfact-annotations)
-  - [LongFact++ annotations](https://huggingface.co/datasets/obalcells/longfact-augmented-annotations)
-  - [HealthBench annotations](https://huggingface.co/datasets/obalcells/healthbench-annotations)
-- Prompts used to elicit long-form generations:
-  - [LongFact++ prompts](https://huggingface.co/datasets/obalcells/longfact-augmented-prompts)
-
-## Code
-
-### Setup
-
-To set environment variables, copy `env.example` to `.env` and fill in values.
-
-Run the following to get set up using `uv`:
-
-```bash
-# Install Python 3.10 and create env
-uv python install 3.10
-uv venv --python 3.10
-
-# Sync dependencies
+All dependecies pinned with uv. Make sure you have uv installed and then run
+```
 uv sync
 ```
-
-### Training a probe
-
-Edit `configs/train_config.yaml` as needed (model, datasets, LoRA layers, learning rates). Then run:
-
-```bash
-CUDA_VISIBLE_DEVICES=0 uv run python -m probe.train --config configs/train_config.yaml
+Set the following environment variables in your shell:
+```
+export WANDB_API_KEY=...
 ```
 
-Outputs (by default) are saved under `value_head_probes/{probe_id}`. To upload to Hugging Face, set `upload_to_hf: true` in the config and be sure to set `HF_WRITE_TOKEN` in your `.env` file.
-
-### Running the annotation pipeline
-
-This pipeline uses a frontier LLM with web search to label entities and align token-level spans. Environment variables required:
-
-```bash
-export ANTHROPIC_API_KEY=...   # for annotation
-export HF_WRITE_TOKEN=...      # to push to HF datasets
+If you want to upload your models to HuggingFace, also set
+```
+export HF_WRITE_TOKEN=...
 ```
 
-Run (see `annotation_pipeline/README.md` and `run.py` for full arguments):
 
-```bash
+## Reproducing Results
+### Creating the Datasets
+#### Generate Meditron Answers
+To create the dataset with annotated hallucinations, first generated answers to PubMedQA questions with Meditron3-8B. This can be done with
+```
+uv run python annotation_pipeline/meditron_dataset_creation.py \
+    --max-samples 200 \
+    --dataset-name pubmedqa-meditron-conversations \
+    --username YOUR_HF_USERNAME \
+```
+The generated answers are on HuggingFace at `MikiV/pubmedqa-meditron-conversations-labeled`.
+
+#### Annotating Hallucinations
+Make sure you have set the `ANTHROPIC_API_KEY` environment variable:
+```
+export ANTHROPIC_API_KEY=...
+```
+To annotate the Meditron answers with hallucination labels, run
+```
 uv run python -m annotation_pipeline.run \
-  --model_id "ANTHROPIC_MODEL_ID" \
-  --hf_dataset_name "ORG/DATASET" \
-  --hf_dataset_subset "SUBSET" \
-  --hf_dataset_split "SPLIT" \
-  --output_hf_dataset_name "ORG/OUTPUT_DATASET" \
-  --output_hf_dataset_subset "SUBSET" \
-  --parallel true \
-  --max_concurrent_tasks N_CONNCURRENT
+    --hf_dataset_name MikiV/pubmedqa-meditron-conversations-labeled \
+    --hf_dataset_split "train[0:200]" \
+    --hf_dataset_subset "" \
+    --output_hf_dataset_name "MikiV/pubmedqa-meditron-conversations-annotated-claude" \
+    --output_hf_dataset_split "test" \
+    --push_intermediate_every 10 \
+    --parallel False \
+    --model_id "claude-sonnet-4-20250514"
 ```
 
-As a sample command, you can run:
+The annotated dataset is on HuggingFace at `MikiV/pubmedqa-meditron-conversations-annotated-claude`
 
-```bash
-uv run python -m annotation_pipeline.run \
-  --model_id "claude-sonnet-4-20250514" \
-  --hf_dataset_name "obalcells/labeled-entity-facts" \
-  --hf_dataset_subset "annotated_Meta-Llama-3.1-8B-Instruct" \
-  --hf_dataset_split "test" \
-  --output_hf_dataset_name "andyrdt/labeled-entity-facts-test" \
-  --output_hf_dataset_subset "annotated_Meta-Llama-3.1-8B-Instruct" \
-  --parallel true \
-  --max_concurrent_tasks 10
+#### Translate To Czech
+To translate the annotated dtaset to Czech, run
+
+```
+uv run python translate_with_deepl_preserve_spans.py \
+      --dataset MikiV/pubmedqa-meditron-conversations-annotated-claude \
+      --split test \
+      --target-lang de \
+      --no-push
 ```
 
-### Demo UI
+The translated dataset is on Hugging face at `MikiV/pubmedqa-meditron-conversations-annotated-claude-cz`
 
-The demo provides a real-time visualization of hallucination detection during text generation. It consists of:
-
-- **Backend**: `demo/modal_backend.py` - A Modal app with vLLM that loads the target model and applies probe heads (and optional LoRA) to compute token-level probabilities during generation.
-- **Frontend**: `demo/probe_interface.py` - A Streamlit interface that connects to the Modal backend and visualizes token-level confidence scores.
-
-#### Prerequisites
-
-1. **Set up Modal**:
-   - Create a Modal account at [https://modal.com/signup](https://modal.com/signup) (as of August 2025, they provide $30 in free credits for new accounts)
-   - Install Modal: `pip install modal`
-   - Run `modal setup` to authenticate
-
-2. **Environment variables** (add to `.env`):
-
-   ```bash
-    HF_TOKEN=your_huggingface_token_id
-   ```
-
-#### Running the Demo
-
-Both the Modal backend and Streamlit frontend must be run from inside the `demo/` directory:
-
-```bash
-# Navigate to the demo directory
-cd demo
-
-# Deploy the Modal backend
-modal deploy modal_backend.py
-
-# Run the Streamlit frontend (also from demo/)
-streamlit run probe_interface.py
+### Training Probes
+For a given config file at `CONFIG_PATH`, run
 ```
+uv run python -m probe.train --config CONFIG_PATH
+``
 
-Open your browser to use the interface. The interface will connect to your deployed Modal backend and allow you to input prompts, generate text, and see real-time hallucination detection with color-coded tokens based on the probe's confidence scores.
+Each probe is evaluated immidiately after training. The results are logged to Weights and Biases.
 
-## Citation
 
-```bibtex
-@misc{obeso2025realtimedetectionhallucinatedentities,
-      title={Real-Time Detection of Hallucinated Entities in Long-Form Generation}, 
-      author={Oscar Obeso and Andy Arditi and Javier Ferrando and Joshua Freeman and Cameron Holmes and Neel Nanda},
-      year={2025},
-      eprint={2509.03531},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2509.03531}, 
-}
-```
+To reproduce the LoRA rank sweep, run training for all configs in `configs/lora_rank_sweep/`.
+
+To reproduce the Multi-Layer residual probing, run training for all configs in `configs/tapped_layer_index/`.
