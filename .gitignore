@@ -27,4 +27,4 @@ wandb/
 *.jsonl
 .cache/
 
-./miki_submit*
+miki_submit**
