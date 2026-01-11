@@ -1,5 +1,0 @@
-dataset,auc_before,auc_now,recall_at_0.1fpr_before,recall_at_0.1fpr_now,accuracy_before,accuracy_now,precision_before,precision_now,recall_before,recall_now,f1_before,f1_now,opt_threshold_before,opt_threshold_now
-llama3_1_8b_longform_test,0.8900,0.5106,0.6646,0.1052,0.8177,0.3908,0.7355,0.3544,0.7576,0.8765,0.7464,0.5047,0.4345,0.8286
-llama3_1_8b_longform_augmented_test,0.9033,0.5277,0.7066,0.1008,0.8290,0.4103,0.7706,0.3792,0.7729,0.9052,0.7717,0.5345,0.4422,0.8359
-llama3_1_8b_trivia_qa_test,0.9675,0.5947,0.9169,0.1552,0.9065,0.5512,0.8911,0.5352,0.9259,0.7688,0.9082,0.6311,0.5095,0.5092
-llama3_1_8b_healthbench_test,0.8812,0.5511,0.6496,0.1141,0.8323,0.3403,0.6499,0.2607,0.6981,0.9084,0.6732,0.4052,0.4887,0.8477
